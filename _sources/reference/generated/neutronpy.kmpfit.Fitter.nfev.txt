@@ -1,0 +1,6 @@
+neutronpy.kmpfit.Fitter.nfev
+============================
+
+.. currentmodule:: neutronpy.kmpfit
+
+.. autoattribute:: Fitter.nfev

@@ -1,0 +1,6 @@
+neutronpy.core.Fitter.version
+=============================
+
+.. currentmodule:: neutronpy.core
+
+.. autoattribute:: Fitter.version

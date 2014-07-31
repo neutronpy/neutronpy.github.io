@@ -1,0 +1,6 @@
+neutronpy.form_facs.Material.N_atoms
+====================================
+
+.. currentmodule:: neutronpy.form_facs
+
+.. automethod:: Material.N_atoms

@@ -1,0 +1,6 @@
+neutronpy.lattice.Lattice.volume
+================================
+
+.. currentmodule:: neutronpy.lattice
+
+.. autoattribute:: Lattice.volume

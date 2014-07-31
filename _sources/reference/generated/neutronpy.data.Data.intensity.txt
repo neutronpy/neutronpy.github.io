@@ -1,0 +1,6 @@
+neutronpy.data.Data.intensity
+=============================
+
+.. currentmodule:: neutronpy.data
+
+.. autoattribute:: Data.intensity

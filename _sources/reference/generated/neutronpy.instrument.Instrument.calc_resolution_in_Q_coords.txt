@@ -1,0 +1,6 @@
+neutronpy.instrument.Instrument.calc_resolution_in_Q_coords
+===========================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: Instrument.calc_resolution_in_Q_coords

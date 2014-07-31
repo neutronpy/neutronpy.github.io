@@ -1,0 +1,6 @@
+neutronpy.kmpfit.Fitter.version
+===============================
+
+.. currentmodule:: neutronpy.kmpfit
+
+.. autoattribute:: Fitter.version

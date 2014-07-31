@@ -1,0 +1,6 @@
+neutronpy.kmpfit.Fitter.parinfo
+===============================
+
+.. currentmodule:: neutronpy.kmpfit
+
+.. autoattribute:: Fitter.parinfo

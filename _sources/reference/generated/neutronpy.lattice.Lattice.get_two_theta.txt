@@ -1,0 +1,6 @@
+neutronpy.lattice.Lattice.get_two_theta
+=======================================
+
+.. currentmodule:: neutronpy.lattice
+
+.. automethod:: Lattice.get_two_theta

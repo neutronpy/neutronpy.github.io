@@ -1,0 +1,6 @@
+neutronpy.core.Data.dynamic_susceptibility
+==========================================
+
+.. currentmodule:: neutronpy.core
+
+.. automethod:: Data.dynamic_susceptibility

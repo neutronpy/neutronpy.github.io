@@ -1,0 +1,6 @@
+neutronpy.constants.N_A
+=======================
+
+.. currentmodule:: neutronpy.constants
+
+.. autodata:: N_A

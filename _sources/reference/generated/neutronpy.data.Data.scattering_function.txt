@@ -1,0 +1,6 @@
+neutronpy.data.Data.scattering_function
+=======================================
+
+.. currentmodule:: neutronpy.data
+
+.. automethod:: Data.scattering_function

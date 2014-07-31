@@ -1,0 +1,6 @@
+neutronpy.functions.lorentzian
+==============================
+
+.. currentmodule:: neutronpy.functions
+
+.. autofunction:: lorentzian

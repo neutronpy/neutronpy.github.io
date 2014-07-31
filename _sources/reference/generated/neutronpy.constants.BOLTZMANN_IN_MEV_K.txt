@@ -1,0 +1,6 @@
+neutronpy.constants.BOLTZMANN_IN_MEV_K
+======================================
+
+.. currentmodule:: neutronpy.constants
+
+.. autodata:: BOLTZMANN_IN_MEV_K

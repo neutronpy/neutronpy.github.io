@@ -1,0 +1,6 @@
+neutronpy.kmpfit.Fitter.maxfev
+==============================
+
+.. currentmodule:: neutronpy.kmpfit
+
+.. autoattribute:: Fitter.maxfev

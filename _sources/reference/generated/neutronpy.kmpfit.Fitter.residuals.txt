@@ -1,0 +1,6 @@
+neutronpy.kmpfit.Fitter.residuals
+=================================
+
+.. currentmodule:: neutronpy.kmpfit
+
+.. autoattribute:: Fitter.residuals

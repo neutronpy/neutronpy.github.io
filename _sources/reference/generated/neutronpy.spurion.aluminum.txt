@@ -1,0 +1,6 @@
+neutronpy.spurion.aluminum
+==========================
+
+.. currentmodule:: neutronpy.spurion
+
+.. autofunction:: aluminum

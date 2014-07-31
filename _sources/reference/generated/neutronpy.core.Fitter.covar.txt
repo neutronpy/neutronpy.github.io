@@ -1,0 +1,6 @@
+neutronpy.core.Fitter.covar
+===========================
+
+.. currentmodule:: neutronpy.core
+
+.. autoattribute:: Fitter.covar

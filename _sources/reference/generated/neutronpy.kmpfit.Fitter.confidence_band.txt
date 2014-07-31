@@ -1,0 +1,6 @@
+neutronpy.kmpfit.Fitter.confidence_band
+=======================================
+
+.. currentmodule:: neutronpy.kmpfit
+
+.. automethod:: Fitter.confidence_band

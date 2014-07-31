@@ -1,0 +1,6 @@
+neutronpy.io.save_data
+======================
+
+.. currentmodule:: neutronpy.io
+
+.. autofunction:: save_data

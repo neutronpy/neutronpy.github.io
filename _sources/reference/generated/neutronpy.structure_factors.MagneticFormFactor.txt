@@ -1,0 +1,19 @@
+neutronpy.structure_factors.MagneticFormFactor
+==============================================
+
+.. currentmodule:: neutronpy.structure_factors
+
+.. autoclass:: MagneticFormFactor
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         MagneticFormFactor.calc_mag_form_fac
+
+
+
+   
+

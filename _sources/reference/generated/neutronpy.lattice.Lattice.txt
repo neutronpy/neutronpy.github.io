@@ -1,0 +1,55 @@
+neutronpy.lattice.Lattice
+=========================
+
+.. currentmodule:: neutronpy.lattice
+
+.. autoclass:: Lattice
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         Lattice.get_angle_between_planes
+         Lattice.get_d_spacing
+         Lattice.get_q
+         Lattice.get_two_theta
+
+
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         Lattice.Bmatrix
+         Lattice.G
+         Lattice.Gstar
+         Lattice.a
+         Lattice.abg_rad
+         Lattice.alpha
+         Lattice.alpha_rad
+         Lattice.alphastar
+         Lattice.alphastar_rad
+         Lattice.astar
+         Lattice.b
+         Lattice.beta
+         Lattice.beta_rad
+         Lattice.betastar
+         Lattice.betastar_rad
+         Lattice.bstar
+         Lattice.c
+         Lattice.cstar
+         Lattice.gamma
+         Lattice.gamma_rad
+         Lattice.gammastar
+         Lattice.gammastar_rad
+         Lattice.lattice_type
+         Lattice.reciprocal_abc
+         Lattice.reciprocal_abg
+         Lattice.reciprocal_abg_rad
+         Lattice.reciprocal_volume
+         Lattice.volume
+

@@ -1,0 +1,6 @@
+neutronpy.resolution.Instrument.calc_projections
+================================================
+
+.. currentmodule:: neutronpy.resolution
+
+.. automethod:: Instrument.calc_projections

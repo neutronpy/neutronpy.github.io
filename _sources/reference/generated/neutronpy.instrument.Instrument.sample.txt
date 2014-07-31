@@ -1,0 +1,6 @@
+neutronpy.instrument.Instrument.sample
+======================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. autoattribute:: Instrument.sample

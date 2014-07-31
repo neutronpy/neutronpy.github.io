@@ -1,0 +1,6 @@
+neutronpy.core.Fitter.npar
+==========================
+
+.. currentmodule:: neutronpy.core
+
+.. autoattribute:: Fitter.npar

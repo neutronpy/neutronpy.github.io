@@ -1,0 +1,6 @@
+neutronpy.kmpfit.Fitter.epsfcn
+==============================
+
+.. currentmodule:: neutronpy.kmpfit
+
+.. autoattribute:: Fitter.epsfcn

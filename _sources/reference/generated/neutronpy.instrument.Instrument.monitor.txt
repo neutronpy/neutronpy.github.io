@@ -1,0 +1,6 @@
+neutronpy.instrument.Instrument.monitor
+=======================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. autoattribute:: Instrument.monitor

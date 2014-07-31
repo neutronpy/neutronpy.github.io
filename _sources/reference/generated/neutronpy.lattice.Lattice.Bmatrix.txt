@@ -1,0 +1,6 @@
+neutronpy.lattice.Lattice.Bmatrix
+=================================
+
+.. currentmodule:: neutronpy.lattice
+
+.. autoattribute:: Lattice.Bmatrix

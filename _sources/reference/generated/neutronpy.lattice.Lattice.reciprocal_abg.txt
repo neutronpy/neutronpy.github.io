@@ -1,0 +1,6 @@
+neutronpy.lattice.Lattice.reciprocal_abg
+========================================
+
+.. currentmodule:: neutronpy.lattice
+
+.. autoattribute:: Lattice.reciprocal_abg

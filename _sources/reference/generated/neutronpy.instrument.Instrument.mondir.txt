@@ -1,0 +1,6 @@
+neutronpy.instrument.Instrument.mondir
+======================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. autoattribute:: Instrument.mondir

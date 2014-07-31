@@ -1,0 +1,6 @@
+neutronpy.data.Analysis.width
+=============================
+
+.. currentmodule:: neutronpy.data
+
+.. automethod:: Analysis.width

@@ -1,0 +1,6 @@
+neutronpy.core.Fitter.status
+============================
+
+.. currentmodule:: neutronpy.core
+
+.. autoattribute:: Fitter.status

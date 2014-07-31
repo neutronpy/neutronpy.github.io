@@ -1,0 +1,6 @@
+neutronpy.resolution.Instrument.beam
+====================================
+
+.. currentmodule:: neutronpy.resolution
+
+.. autoattribute:: Instrument.beam

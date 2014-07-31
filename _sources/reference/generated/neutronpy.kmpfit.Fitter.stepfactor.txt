@@ -1,0 +1,6 @@
+neutronpy.kmpfit.Fitter.stepfactor
+==================================
+
+.. currentmodule:: neutronpy.kmpfit
+
+.. autoattribute:: Fitter.stepfactor

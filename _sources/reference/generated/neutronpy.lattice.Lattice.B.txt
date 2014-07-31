@@ -1,0 +1,6 @@
+neutronpy.lattice.Lattice.b
+===========================
+
+.. currentmodule:: neutronpy.lattice
+
+.. autoattribute:: Lattice.b

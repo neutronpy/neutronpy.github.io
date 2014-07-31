@@ -1,0 +1,19 @@
+neutronpy.form_facs.Ion
+=======================
+
+.. currentmodule:: neutronpy.form_facs
+
+.. autoclass:: Ion
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         Ion.calc_mag_form_fac
+
+
+
+   
+

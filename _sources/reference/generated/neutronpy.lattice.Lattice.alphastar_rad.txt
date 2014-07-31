@@ -1,0 +1,6 @@
+neutronpy.lattice.Lattice.alphastar_rad
+=======================================
+
+.. currentmodule:: neutronpy.lattice
+
+.. autoattribute:: Lattice.alphastar_rad

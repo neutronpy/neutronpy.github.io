@@ -1,0 +1,6 @@
+neutronpy.functions.gaussian2d
+==============================
+
+.. currentmodule:: neutronpy.functions
+
+.. autofunction:: gaussian2d

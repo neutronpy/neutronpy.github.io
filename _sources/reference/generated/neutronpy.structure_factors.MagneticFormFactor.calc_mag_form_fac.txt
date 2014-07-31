@@ -1,0 +1,6 @@
+neutronpy.structure_factors.MagneticFormFactor.calc_mag_form_fac
+================================================================
+
+.. currentmodule:: neutronpy.structure_factors
+
+.. automethod:: MagneticFormFactor.calc_mag_form_fac

@@ -1,0 +1,6 @@
+neutronpy.core.Fitter.maxfev
+============================
+
+.. currentmodule:: neutronpy.core
+
+.. autoattribute:: Fitter.maxfev

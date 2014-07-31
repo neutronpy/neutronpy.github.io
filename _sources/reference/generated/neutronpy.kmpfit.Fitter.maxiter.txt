@@ -1,0 +1,6 @@
+neutronpy.kmpfit.Fitter.maxiter
+===============================
+
+.. currentmodule:: neutronpy.kmpfit
+
+.. autoattribute:: Fitter.maxiter

@@ -1,0 +1,6 @@
+neutronpy.resolution.GetTau
+===========================
+
+.. currentmodule:: neutronpy.resolution
+
+.. autofunction:: GetTau

@@ -1,0 +1,6 @@
+neutronpy.constants.scattering_lengths
+======================================
+
+.. currentmodule:: neutronpy.constants
+
+.. autofunction:: scattering_lengths

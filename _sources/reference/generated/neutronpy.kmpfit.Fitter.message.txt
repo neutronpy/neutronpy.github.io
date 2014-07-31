@@ -1,0 +1,6 @@
+neutronpy.kmpfit.Fitter.message
+===============================
+
+.. currentmodule:: neutronpy.kmpfit
+
+.. autoattribute:: Fitter.message

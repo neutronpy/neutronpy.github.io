@@ -1,0 +1,6 @@
+neutronpy.kmpfit.Fitter.resid
+=============================
+
+.. currentmodule:: neutronpy.kmpfit
+
+.. autoattribute:: Fitter.resid

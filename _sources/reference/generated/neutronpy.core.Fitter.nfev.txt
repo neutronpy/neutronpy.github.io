@@ -1,0 +1,6 @@
+neutronpy.core.Fitter.nfev
+==========================
+
+.. currentmodule:: neutronpy.core
+
+.. autoattribute:: Fitter.nfev

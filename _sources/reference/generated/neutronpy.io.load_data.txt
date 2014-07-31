@@ -1,0 +1,6 @@
+neutronpy.io.load_data
+======================
+
+.. currentmodule:: neutronpy.io
+
+.. autofunction:: load_data

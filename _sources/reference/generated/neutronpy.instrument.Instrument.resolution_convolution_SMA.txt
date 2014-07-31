@@ -1,0 +1,6 @@
+neutronpy.instrument.Instrument.resolution_convolution_SMA
+==========================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: Instrument.resolution_convolution_SMA

@@ -1,0 +1,6 @@
+neutronpy.lattice.Lattice.gamma
+===============================
+
+.. currentmodule:: neutronpy.lattice
+
+.. autoattribute:: Lattice.gamma

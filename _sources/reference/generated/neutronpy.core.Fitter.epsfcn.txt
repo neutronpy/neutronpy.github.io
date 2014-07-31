@@ -1,0 +1,6 @@
+neutronpy.core.Fitter.epsfcn
+============================
+
+.. currentmodule:: neutronpy.core
+
+.. autoattribute:: Fitter.epsfcn

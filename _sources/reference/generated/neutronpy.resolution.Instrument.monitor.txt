@@ -1,0 +1,6 @@
+neutronpy.resolution.Instrument.monitor
+=======================================
+
+.. currentmodule:: neutronpy.resolution
+
+.. autoattribute:: Instrument.monitor

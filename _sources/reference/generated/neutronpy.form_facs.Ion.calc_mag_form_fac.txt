@@ -1,0 +1,6 @@
+neutronpy.form_facs.Ion.calc_mag_form_fac
+=========================================
+
+.. currentmodule:: neutronpy.form_facs
+
+.. automethod:: Ion.calc_mag_form_fac

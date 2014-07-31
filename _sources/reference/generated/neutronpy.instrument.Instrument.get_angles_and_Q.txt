@@ -1,0 +1,6 @@
+neutronpy.instrument.Instrument.get_angles_and_Q
+================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: Instrument.get_angles_and_Q

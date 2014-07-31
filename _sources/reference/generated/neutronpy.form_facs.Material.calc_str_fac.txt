@@ -1,0 +1,6 @@
+neutronpy.form_facs.Material.calc_str_fac
+=========================================
+
+.. currentmodule:: neutronpy.form_facs
+
+.. automethod:: Material.calc_str_fac

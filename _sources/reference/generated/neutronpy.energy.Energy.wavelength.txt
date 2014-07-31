@@ -1,0 +1,6 @@
+neutronpy.energy.Energy.wavelength
+==================================
+
+.. currentmodule:: neutronpy.energy
+
+.. autoattribute:: Energy.wavelength

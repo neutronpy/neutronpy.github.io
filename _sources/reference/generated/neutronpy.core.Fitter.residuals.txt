@@ -1,0 +1,6 @@
+neutronpy.core.Fitter.residuals
+===============================
+
+.. currentmodule:: neutronpy.core
+
+.. autoattribute:: Fitter.residuals

@@ -1,0 +1,6 @@
+neutronpy.form_facs.Material.abg_rad
+====================================
+
+.. currentmodule:: neutronpy.form_facs
+
+.. autoattribute:: Material.abg_rad

@@ -1,0 +1,6 @@
+neutronpy.kmpfit.Fitter.xtol
+============================
+
+.. currentmodule:: neutronpy.kmpfit
+
+.. autoattribute:: Fitter.xtol

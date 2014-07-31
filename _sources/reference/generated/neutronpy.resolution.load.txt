@@ -1,0 +1,6 @@
+neutronpy.resolution.load
+=========================
+
+.. currentmodule:: neutronpy.resolution
+
+.. autofunction:: load

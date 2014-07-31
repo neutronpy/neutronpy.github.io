@@ -1,0 +1,6 @@
+neutronpy.resolution.Instrument.method
+======================================
+
+.. currentmodule:: neutronpy.resolution
+
+.. autoattribute:: Instrument.method

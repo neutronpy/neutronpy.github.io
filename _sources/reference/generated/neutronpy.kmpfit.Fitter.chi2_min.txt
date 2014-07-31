@@ -1,0 +1,6 @@
+neutronpy.kmpfit.Fitter.chi2_min
+================================
+
+.. currentmodule:: neutronpy.kmpfit
+
+.. autoattribute:: Fitter.chi2_min

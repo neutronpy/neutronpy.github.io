@@ -1,0 +1,6 @@
+neutronpy.kmpfit.Fitter.orignorm
+================================
+
+.. currentmodule:: neutronpy.kmpfit
+
+.. autoattribute:: Fitter.orignorm

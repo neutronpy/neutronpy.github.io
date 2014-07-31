@@ -1,0 +1,6 @@
+neutronpy.lattice.Lattice.astar
+===============================
+
+.. currentmodule:: neutronpy.lattice
+
+.. autoattribute:: Lattice.astar

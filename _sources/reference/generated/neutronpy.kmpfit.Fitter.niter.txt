@@ -1,0 +1,6 @@
+neutronpy.kmpfit.Fitter.niter
+=============================
+
+.. currentmodule:: neutronpy.kmpfit
+
+.. autoattribute:: Fitter.niter

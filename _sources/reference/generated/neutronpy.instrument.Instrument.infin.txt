@@ -1,0 +1,6 @@
+neutronpy.instrument.Instrument.infin
+=====================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. autoattribute:: Instrument.infin

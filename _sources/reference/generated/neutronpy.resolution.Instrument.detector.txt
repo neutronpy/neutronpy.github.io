@@ -1,0 +1,6 @@
+neutronpy.resolution.Instrument.detector
+========================================
+
+.. currentmodule:: neutronpy.resolution
+
+.. autoattribute:: Instrument.detector

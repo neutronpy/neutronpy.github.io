@@ -1,0 +1,6 @@
+neutronpy.energy.Energy.frequency
+=================================
+
+.. currentmodule:: neutronpy.energy
+
+.. autoattribute:: Energy.frequency

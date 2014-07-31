@@ -1,0 +1,6 @@
+neutronpy.functions.resolution
+==============================
+
+.. currentmodule:: neutronpy.functions
+
+.. autofunction:: resolution

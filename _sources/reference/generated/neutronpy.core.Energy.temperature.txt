@@ -1,0 +1,6 @@
+neutronpy.core.Energy.temperature
+=================================
+
+.. currentmodule:: neutronpy.core
+
+.. autoattribute:: Energy.temperature

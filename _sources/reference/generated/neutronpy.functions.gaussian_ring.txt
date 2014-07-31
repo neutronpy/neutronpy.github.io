@@ -1,0 +1,6 @@
+neutronpy.functions.gaussian_ring
+=================================
+
+.. currentmodule:: neutronpy.functions
+
+.. autofunction:: gaussian_ring

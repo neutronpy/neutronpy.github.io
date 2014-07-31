@@ -1,0 +1,6 @@
+neutronpy.instrument.Instrument.ana
+===================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. autoattribute:: Instrument.ana

@@ -1,0 +1,6 @@
+neutronpy.core.Fitter.resid
+===========================
+
+.. currentmodule:: neutronpy.core
+
+.. autoattribute:: Fitter.resid

@@ -1,0 +1,6 @@
+neutronpy.resolution.Instrument.arms
+====================================
+
+.. currentmodule:: neutronpy.resolution
+
+.. autoattribute:: Instrument.arms

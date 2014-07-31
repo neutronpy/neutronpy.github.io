@@ -1,0 +1,6 @@
+neutronpy.resolution.Instrument.Smooth
+======================================
+
+.. currentmodule:: neutronpy.resolution
+
+.. autoattribute:: Instrument.Smooth

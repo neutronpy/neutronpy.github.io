@@ -1,0 +1,6 @@
+neutronpy.resolution.Sample.u
+=============================
+
+.. currentmodule:: neutronpy.resolution
+
+.. autoattribute:: Sample.u

@@ -1,0 +1,6 @@
+neutronpy.resolution.Instrument.orient2
+=======================================
+
+.. currentmodule:: neutronpy.resolution
+
+.. autoattribute:: Instrument.orient2

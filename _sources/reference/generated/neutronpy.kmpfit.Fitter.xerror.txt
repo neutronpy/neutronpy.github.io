@@ -1,0 +1,6 @@
+neutronpy.kmpfit.Fitter.xerror
+==============================
+
+.. currentmodule:: neutronpy.kmpfit
+
+.. autoattribute:: Fitter.xerror

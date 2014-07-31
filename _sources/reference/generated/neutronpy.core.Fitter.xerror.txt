@@ -1,0 +1,6 @@
+neutronpy.core.Fitter.xerror
+============================
+
+.. currentmodule:: neutronpy.core
+
+.. autoattribute:: Fitter.xerror

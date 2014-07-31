@@ -1,0 +1,6 @@
+neutronpy.form_facs.Material.volume
+===================================
+
+.. currentmodule:: neutronpy.form_facs
+
+.. autoattribute:: Material.volume
