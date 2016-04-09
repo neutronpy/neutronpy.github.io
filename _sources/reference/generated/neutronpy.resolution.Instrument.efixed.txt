@@ -1,6 +1,0 @@
-neutronpy.resolution.Instrument.efixed
-======================================
-
-.. currentmodule:: neutronpy.resolution
-
-.. autoattribute:: Instrument.efixed

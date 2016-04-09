@@ -1,6 +1,0 @@
-neutronpy.core.save
-===================
-
-.. currentmodule:: neutronpy.core
-
-.. autofunction:: save

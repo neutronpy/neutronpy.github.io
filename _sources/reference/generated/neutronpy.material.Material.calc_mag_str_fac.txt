@@ -1,0 +1,6 @@
+neutronpy.material.Material.calc_mag_str_fac
+============================================
+
+.. currentmodule:: neutronpy.material
+
+.. automethod:: Material.calc_mag_str_fac

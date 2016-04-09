@@ -1,0 +1,6 @@
+neutronpy.instrument.Monochromator.tau
+======================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. autoattribute:: Monochromator.tau

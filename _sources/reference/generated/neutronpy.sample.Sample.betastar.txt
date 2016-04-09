@@ -1,0 +1,6 @@
+neutronpy.sample.Sample.betastar
+================================
+
+.. currentmodule:: neutronpy.sample
+
+.. autoattribute:: Sample.betastar

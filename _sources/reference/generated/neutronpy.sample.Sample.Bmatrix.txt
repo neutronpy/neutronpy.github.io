@@ -1,0 +1,6 @@
+neutronpy.sample.Sample.Bmatrix
+===============================
+
+.. currentmodule:: neutronpy.sample
+
+.. autoattribute:: Sample.Bmatrix

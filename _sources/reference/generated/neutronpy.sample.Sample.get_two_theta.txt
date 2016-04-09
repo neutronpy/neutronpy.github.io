@@ -1,0 +1,6 @@
+neutronpy.sample.Sample.get_two_theta
+=====================================
+
+.. currentmodule:: neutronpy.sample
+
+.. automethod:: Sample.get_two_theta

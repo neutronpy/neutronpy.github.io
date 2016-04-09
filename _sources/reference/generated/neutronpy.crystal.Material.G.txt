@@ -1,0 +1,6 @@
+neutronpy.crystal.Material.G
+============================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Material.G

@@ -1,0 +1,6 @@
+neutronpy.crystal.material.Material.gamma
+=========================================
+
+.. currentmodule:: neutronpy.crystal.material
+
+.. autoattribute:: Material.gamma

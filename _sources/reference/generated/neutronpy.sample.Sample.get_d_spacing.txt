@@ -1,0 +1,6 @@
+neutronpy.sample.Sample.get_d_spacing
+=====================================
+
+.. currentmodule:: neutronpy.sample
+
+.. automethod:: Sample.get_d_spacing

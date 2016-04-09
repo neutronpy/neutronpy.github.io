@@ -1,0 +1,6 @@
+neutronpy.data.data.Data.error
+==============================
+
+.. currentmodule:: neutronpy.data.data
+
+.. autoattribute:: Data.error

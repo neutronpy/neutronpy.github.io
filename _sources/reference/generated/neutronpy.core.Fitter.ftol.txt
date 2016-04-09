@@ -1,6 +1,0 @@
-neutronpy.core.Fitter.ftol
-==========================
-
-.. currentmodule:: neutronpy.core
-
-.. autoattribute:: Fitter.ftol

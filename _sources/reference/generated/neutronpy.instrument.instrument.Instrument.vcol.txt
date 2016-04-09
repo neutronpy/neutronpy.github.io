@@ -1,0 +1,6 @@
+neutronpy.instrument.instrument.Instrument.vcol
+===============================================
+
+.. currentmodule:: neutronpy.instrument.instrument
+
+.. autoattribute:: Instrument.vcol

@@ -1,6 +1,0 @@
-neutronpy.core.Fitter.nofinitecheck
-===================================
-
-.. currentmodule:: neutronpy.core
-
-.. autoattribute:: Fitter.nofinitecheck

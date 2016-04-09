@@ -1,0 +1,6 @@
+neutronpy.material.Material.total_scattering_cross_section
+==========================================================
+
+.. currentmodule:: neutronpy.material
+
+.. autoattribute:: Material.total_scattering_cross_section

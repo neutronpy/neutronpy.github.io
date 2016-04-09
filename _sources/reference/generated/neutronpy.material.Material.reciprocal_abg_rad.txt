@@ -1,0 +1,6 @@
+neutronpy.material.Material.reciprocal_abg_rad
+==============================================
+
+.. currentmodule:: neutronpy.material
+
+.. autoattribute:: Material.reciprocal_abg_rad

@@ -1,0 +1,6 @@
+neutronpy.crystal.SpaceGroup.symbol
+===================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: SpaceGroup.symbol

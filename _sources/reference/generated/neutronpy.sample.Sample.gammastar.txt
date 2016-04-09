@@ -1,0 +1,6 @@
+neutronpy.sample.Sample.gammastar
+=================================
+
+.. currentmodule:: neutronpy.sample
+
+.. autoattribute:: Sample.gammastar

@@ -1,0 +1,6 @@
+neutronpy.crystal.Sample.beta_rad
+=================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Sample.beta_rad

@@ -1,6 +1,0 @@
-neutronpy.core.Fitter.stepfactor
-================================
-
-.. currentmodule:: neutronpy.core
-
-.. autoattribute:: Fitter.stepfactor

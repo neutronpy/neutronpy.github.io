@@ -1,0 +1,6 @@
+neutronpy.gui.launch
+====================
+
+.. currentmodule:: neutronpy.gui
+
+.. autofunction:: launch

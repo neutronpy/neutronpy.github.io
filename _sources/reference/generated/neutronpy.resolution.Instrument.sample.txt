@@ -1,6 +1,0 @@
-neutronpy.resolution.Instrument.sample
-======================================
-
-.. currentmodule:: neutronpy.resolution
-
-.. autoattribute:: Instrument.sample

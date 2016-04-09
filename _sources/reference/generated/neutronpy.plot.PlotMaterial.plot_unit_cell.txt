@@ -1,0 +1,6 @@
+neutronpy.plot.PlotMaterial.plot_unit_cell
+==========================================
+
+.. currentmodule:: neutronpy.plot
+
+.. automethod:: PlotMaterial.plot_unit_cell

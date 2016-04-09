@@ -1,6 +1,0 @@
-neutronpy.core.Fitter.rchi2_min
-===============================
-
-.. currentmodule:: neutronpy.core
-
-.. autoattribute:: Fitter.rchi2_min

@@ -1,0 +1,6 @@
+neutronpy.material.Material.apply_scattering_rules
+==================================================
+
+.. currentmodule:: neutronpy.material
+
+.. automethod:: Material.apply_scattering_rules

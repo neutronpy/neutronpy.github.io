@@ -1,0 +1,6 @@
+neutronpy.material.Material.get_angle_between_planes
+====================================================
+
+.. currentmodule:: neutronpy.material
+
+.. automethod:: Material.get_angle_between_planes

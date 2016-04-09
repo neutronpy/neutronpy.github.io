@@ -1,6 +1,0 @@
-neutronpy.form_facs.Material.c
-==============================
-
-.. currentmodule:: neutronpy.form_facs
-
-.. autoattribute:: Material.c

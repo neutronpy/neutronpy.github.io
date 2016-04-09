@@ -1,6 +1,0 @@
-neutronpy.core.Fitter.params0
-=============================
-
-.. currentmodule:: neutronpy.core
-
-.. autoattribute:: Fitter.params0

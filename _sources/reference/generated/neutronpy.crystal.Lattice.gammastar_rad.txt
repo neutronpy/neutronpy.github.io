@@ -1,0 +1,6 @@
+neutronpy.crystal.Lattice.gammastar_rad
+=======================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Lattice.gammastar_rad

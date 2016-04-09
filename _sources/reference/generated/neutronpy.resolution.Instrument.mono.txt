@@ -1,6 +1,0 @@
-neutronpy.resolution.Instrument.mono
-====================================
-
-.. currentmodule:: neutronpy.resolution
-
-.. autoattribute:: Instrument.mono

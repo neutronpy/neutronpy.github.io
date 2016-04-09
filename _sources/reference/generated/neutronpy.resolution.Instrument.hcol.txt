@@ -1,6 +1,0 @@
-neutronpy.resolution.Instrument.hcol
-====================================
-
-.. currentmodule:: neutronpy.resolution
-
-.. autoattribute:: Instrument.hcol

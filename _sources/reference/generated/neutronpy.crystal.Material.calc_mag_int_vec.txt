@@ -1,0 +1,6 @@
+neutronpy.crystal.Material.calc_mag_int_vec
+===========================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. automethod:: Material.calc_mag_int_vec

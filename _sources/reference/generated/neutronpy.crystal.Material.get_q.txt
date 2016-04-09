@@ -1,0 +1,6 @@
+neutronpy.crystal.Material.get_q
+================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. automethod:: Material.get_q

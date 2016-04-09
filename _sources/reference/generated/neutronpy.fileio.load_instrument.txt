@@ -1,0 +1,6 @@
+neutronpy.fileio.load_instrument
+================================
+
+.. currentmodule:: neutronpy.fileio
+
+.. autofunction:: load_instrument

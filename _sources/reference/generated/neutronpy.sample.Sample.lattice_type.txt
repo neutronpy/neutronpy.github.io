@@ -1,0 +1,6 @@
+neutronpy.sample.Sample.lattice_type
+====================================
+
+.. currentmodule:: neutronpy.sample
+
+.. autoattribute:: Sample.lattice_type

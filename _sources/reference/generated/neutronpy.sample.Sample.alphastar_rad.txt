@@ -1,0 +1,6 @@
+neutronpy.sample.Sample.alphastar_rad
+=====================================
+
+.. currentmodule:: neutronpy.sample
+
+.. autoattribute:: Sample.alphastar_rad

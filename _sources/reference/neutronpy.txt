@@ -9,12 +9,13 @@ Members
 .. autosummary::
     :toctree: generated/
 
-    core.Data
-    core.Energy
+    data.data.Data
+    energy.Energy
     kmpfit.Fitter
-    core.build_Q
-    core.load
-    core.save
+    instrument.instrument.Instrument
+    crystal.lattice.Lattice
+    crystal.material.Material
+    crystal.sample.Sample
 
 Submodules
 ----------
@@ -22,11 +23,14 @@ Submodules
 .. toctree::
 
    neutronpy.constants
-   neutronpy.form_facs
+   neutronpy.crystal
+   neutronpy.data
+   neutronpy.energy
+   neutronpy.fileio
    neutronpy.functions
-   neutronpy.lattice
+   neutronpy.gui
+   neutronpy.instrument
    neutronpy.models
-   neutronpy.resolution
    neutronpy.spurion
 
 Module contents

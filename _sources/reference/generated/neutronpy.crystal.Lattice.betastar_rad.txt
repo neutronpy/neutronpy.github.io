@@ -1,0 +1,6 @@
+neutronpy.crystal.Lattice.betastar_rad
+======================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Lattice.betastar_rad

@@ -1,0 +1,6 @@
+neutronpy.crystal.Sample.volume
+===============================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Sample.volume

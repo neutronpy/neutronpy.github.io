@@ -1,0 +1,65 @@
+neutronpy.crystal.material.Material
+===================================
+
+.. currentmodule:: neutronpy.crystal.material
+
+.. autoclass:: Material
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         Material.N_atoms
+         Material.calc_incoh_elas_xs
+         Material.calc_mag_int_vec
+         Material.calc_mag_str_fac
+         Material.calc_nuc_str_fac
+         Material.calc_optimal_thickness
+         Material.get_angle_between_planes
+         Material.get_d_spacing
+         Material.get_q
+         Material.get_two_theta
+         Material.plot_unit_cell
+
+
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         Material.Bmatrix
+         Material.G
+         Material.Gstar
+         Material.a
+         Material.abg_rad
+         Material.alpha
+         Material.alpha_rad
+         Material.alphastar
+         Material.alphastar_rad
+         Material.astar
+         Material.b
+         Material.beta
+         Material.beta_rad
+         Material.betastar
+         Material.betastar_rad
+         Material.bstar
+         Material.c
+         Material.cstar
+         Material.gamma
+         Material.gamma_rad
+         Material.gammastar
+         Material.gammastar_rad
+         Material.lattice_type
+         Material.reciprocal_abc
+         Material.reciprocal_abg
+         Material.reciprocal_abg_rad
+         Material.reciprocal_volume
+         Material.total_scattering_cross_section
+         Material.u
+         Material.v
+         Material.volume
+

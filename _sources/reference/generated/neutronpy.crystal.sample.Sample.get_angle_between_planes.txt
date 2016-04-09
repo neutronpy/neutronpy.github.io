@@ -1,0 +1,6 @@
+neutronpy.crystal.sample.Sample.get_angle_between_planes
+========================================================
+
+.. currentmodule:: neutronpy.crystal.sample
+
+.. automethod:: Sample.get_angle_between_planes

@@ -14,12 +14,14 @@ neutronpy.instrument.Instrument
          Instrument.calc_projections
          Instrument.calc_resolution
          Instrument.calc_resolution_in_Q_coords
+         Instrument.description_string
          Instrument.get_angles_and_Q
          Instrument.get_lattice
          Instrument.get_resolution_params
          Instrument.plot_ellipsoid
          Instrument.plot_instrument
          Instrument.plot_projections
+         Instrument.plot_slice
          Instrument.resolution_convolution
          Instrument.resolution_convolution_SMA
 
@@ -34,16 +36,13 @@ neutronpy.instrument.Instrument
          Instrument.Smooth
          Instrument.ana
          Instrument.arms
-         Instrument.beam
          Instrument.detector
-         Instrument.dir1
-         Instrument.dir2
          Instrument.efixed
+         Instrument.guide
          Instrument.hcol
          Instrument.infin
          Instrument.method
          Instrument.moncor
-         Instrument.mondir
          Instrument.monitor
          Instrument.mono
          Instrument.orient1

@@ -1,0 +1,6 @@
+neutronpy.material.Material.get_q
+=================================
+
+.. currentmodule:: neutronpy.material
+
+.. automethod:: Material.get_q

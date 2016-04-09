@@ -1,6 +1,0 @@
-neutronpy.resolution.Instrument.dir2
-====================================
-
-.. currentmodule:: neutronpy.resolution
-
-.. autoattribute:: Instrument.dir2

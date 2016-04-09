@@ -1,0 +1,6 @@
+neutronpy.material.Material.N_atoms
+===================================
+
+.. currentmodule:: neutronpy.material
+
+.. automethod:: Material.N_atoms

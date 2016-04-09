@@ -1,4 +1,4 @@
-from neutronpy.resolution import Instrument
+from neutronpy import Instrument
 from numpy import linspace
 
 EXP = Instrument()

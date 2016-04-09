@@ -1,0 +1,6 @@
+neutronpy.sample.Sample.abg_rad
+===============================
+
+.. currentmodule:: neutronpy.sample
+
+.. autoattribute:: Sample.abg_rad

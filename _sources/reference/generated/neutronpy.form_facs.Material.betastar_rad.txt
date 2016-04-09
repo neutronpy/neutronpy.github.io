@@ -1,6 +1,0 @@
-neutronpy.form_facs.Material.betastar_rad
-=========================================
-
-.. currentmodule:: neutronpy.form_facs
-
-.. autoattribute:: Material.betastar_rad

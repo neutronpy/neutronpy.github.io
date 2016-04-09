@@ -1,0 +1,6 @@
+neutronpy.crystal.Sample.abg_rad
+================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Sample.abg_rad

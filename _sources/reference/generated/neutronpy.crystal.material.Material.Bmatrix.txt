@@ -1,0 +1,6 @@
+neutronpy.crystal.material.Material.Bmatrix
+===========================================
+
+.. currentmodule:: neutronpy.crystal.material
+
+.. autoattribute:: Material.Bmatrix

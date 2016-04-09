@@ -1,0 +1,6 @@
+neutronpy.sample.Sample.reciprocal_volume
+=========================================
+
+.. currentmodule:: neutronpy.sample
+
+.. autoattribute:: Sample.reciprocal_volume

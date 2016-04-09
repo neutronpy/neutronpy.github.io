@@ -1,0 +1,6 @@
+neutronpy.structure_factors.MagneticStructureFactor.calc_mag_int_vec
+====================================================================
+
+.. currentmodule:: neutronpy.structure_factors
+
+.. automethod:: MagneticStructureFactor.calc_mag_int_vec

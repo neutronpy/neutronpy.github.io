@@ -1,6 +1,0 @@
-neutronpy.form_facs.Material.bstar
-==================================
-
-.. currentmodule:: neutronpy.form_facs
-
-.. autoattribute:: Material.bstar

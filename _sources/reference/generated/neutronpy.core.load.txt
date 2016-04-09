@@ -1,6 +1,0 @@
-neutronpy.core.load
-===================
-
-.. currentmodule:: neutronpy.core
-
-.. autofunction:: load

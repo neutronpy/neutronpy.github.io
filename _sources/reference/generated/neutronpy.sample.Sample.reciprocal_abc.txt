@@ -1,0 +1,6 @@
+neutronpy.sample.Sample.reciprocal_abc
+======================================
+
+.. currentmodule:: neutronpy.sample
+
+.. autoattribute:: Sample.reciprocal_abc

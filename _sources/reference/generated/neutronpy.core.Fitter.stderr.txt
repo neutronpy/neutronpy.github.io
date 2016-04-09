@@ -1,6 +1,0 @@
-neutronpy.core.Fitter.stderr
-============================
-
-.. currentmodule:: neutronpy.core
-
-.. autoattribute:: Fitter.stderr

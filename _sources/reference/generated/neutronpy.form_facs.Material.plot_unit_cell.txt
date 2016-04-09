@@ -1,6 +1,0 @@
-neutronpy.form_facs.Material.plot_unit_cell
-===========================================
-
-.. currentmodule:: neutronpy.form_facs
-
-.. automethod:: Material.plot_unit_cell

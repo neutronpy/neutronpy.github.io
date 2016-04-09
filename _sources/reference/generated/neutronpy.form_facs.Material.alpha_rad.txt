@@ -1,6 +1,0 @@
-neutronpy.form_facs.Material.alpha_rad
-======================================
-
-.. currentmodule:: neutronpy.form_facs
-
-.. autoattribute:: Material.alpha_rad

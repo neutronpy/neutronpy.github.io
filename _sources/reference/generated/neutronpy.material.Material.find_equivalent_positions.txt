@@ -1,0 +1,6 @@
+neutronpy.material.Material.find_equivalent_positions
+=====================================================
+
+.. currentmodule:: neutronpy.material
+
+.. automethod:: Material.find_equivalent_positions

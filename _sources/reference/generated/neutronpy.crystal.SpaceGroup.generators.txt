@@ -1,0 +1,6 @@
+neutronpy.crystal.SpaceGroup.generators
+=======================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: SpaceGroup.generators

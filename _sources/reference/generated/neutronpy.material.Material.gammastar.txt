@@ -1,0 +1,6 @@
+neutronpy.material.Material.gammastar
+=====================================
+
+.. currentmodule:: neutronpy.material
+
+.. autoattribute:: Material.gammastar

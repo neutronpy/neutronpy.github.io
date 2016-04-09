@@ -1,6 +1,0 @@
-neutronpy.core.Energy.wavevector
-================================
-
-.. currentmodule:: neutronpy.core
-
-.. autoattribute:: Energy.wavevector

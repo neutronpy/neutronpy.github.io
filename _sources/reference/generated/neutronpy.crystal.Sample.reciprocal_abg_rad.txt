@@ -1,0 +1,6 @@
+neutronpy.crystal.Sample.reciprocal_abg_rad
+===========================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Sample.reciprocal_abg_rad

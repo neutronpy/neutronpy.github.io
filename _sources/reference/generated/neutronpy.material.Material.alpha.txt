@@ -1,0 +1,6 @@
+neutronpy.material.Material.alpha
+=================================
+
+.. currentmodule:: neutronpy.material
+
+.. autoattribute:: Material.alpha

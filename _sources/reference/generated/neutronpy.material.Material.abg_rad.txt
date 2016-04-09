@@ -1,0 +1,6 @@
+neutronpy.material.Material.abg_rad
+===================================
+
+.. currentmodule:: neutronpy.material
+
+.. autoattribute:: Material.abg_rad

@@ -1,0 +1,6 @@
+neutronpy.crystal.material.Material.get_d_spacing
+=================================================
+
+.. currentmodule:: neutronpy.crystal.material
+
+.. automethod:: Material.get_d_spacing

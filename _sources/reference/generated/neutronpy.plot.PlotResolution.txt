@@ -1,0 +1,23 @@
+neutronpy.plot.PlotResolution
+=============================
+
+.. currentmodule:: neutronpy.plot
+
+.. autoclass:: PlotResolution
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         PlotResolution.description_string
+         PlotResolution.plot_ellipsoid
+         PlotResolution.plot_instrument
+         PlotResolution.plot_projections
+         PlotResolution.plot_slice
+
+
+
+   
+

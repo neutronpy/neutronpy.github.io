@@ -1,0 +1,57 @@
+neutronpy.crystal.Sample
+========================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoclass:: Sample
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         Sample.get_angle_between_planes
+         Sample.get_d_spacing
+         Sample.get_q
+         Sample.get_two_theta
+
+
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         Sample.Bmatrix
+         Sample.G
+         Sample.Gstar
+         Sample.a
+         Sample.abg_rad
+         Sample.alpha
+         Sample.alpha_rad
+         Sample.alphastar
+         Sample.alphastar_rad
+         Sample.astar
+         Sample.b
+         Sample.beta
+         Sample.beta_rad
+         Sample.betastar
+         Sample.betastar_rad
+         Sample.bstar
+         Sample.c
+         Sample.cstar
+         Sample.gamma
+         Sample.gamma_rad
+         Sample.gammastar
+         Sample.gammastar_rad
+         Sample.lattice_type
+         Sample.reciprocal_abc
+         Sample.reciprocal_abg
+         Sample.reciprocal_abg_rad
+         Sample.reciprocal_volume
+         Sample.u
+         Sample.v
+         Sample.volume
+

@@ -1,6 +1,0 @@
-neutronpy.core.Data.estimate_background
-=======================================
-
-.. currentmodule:: neutronpy.core
-
-.. automethod:: Data.estimate_background

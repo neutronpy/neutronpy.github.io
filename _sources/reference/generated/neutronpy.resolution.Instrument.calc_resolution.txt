@@ -1,6 +1,0 @@
-neutronpy.resolution.Instrument.calc_resolution
-===============================================
-
-.. currentmodule:: neutronpy.resolution
-
-.. automethod:: Instrument.calc_resolution

@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import cm
-from neutronpy.resolution import Instrument, Sample
+from neutronpy import Instrument, Sample
 from neutronpy.functions import resolution
 
 EXP = Instrument()

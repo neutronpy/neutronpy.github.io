@@ -1,6 +1,0 @@
-neutronpy.core.Data.subtract_background
-=======================================
-
-.. currentmodule:: neutronpy.core
-
-.. automethod:: Data.subtract_background

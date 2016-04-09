@@ -1,0 +1,6 @@
+neutronpy.instrument.instrument.Instrument.description_string
+=============================================================
+
+.. currentmodule:: neutronpy.instrument.instrument
+
+.. automethod:: Instrument.description_string

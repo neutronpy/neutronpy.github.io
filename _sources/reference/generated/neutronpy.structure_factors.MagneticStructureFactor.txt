@@ -11,6 +11,7 @@ neutronpy.structure_factors.MagneticStructureFactor
       .. autosummary::
          :toctree:
       
+         MagneticStructureFactor.calc_mag_int_vec
          MagneticStructureFactor.calc_mag_str_fac
 
 

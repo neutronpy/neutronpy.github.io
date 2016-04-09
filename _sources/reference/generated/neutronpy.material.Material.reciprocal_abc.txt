@@ -1,0 +1,6 @@
+neutronpy.material.Material.reciprocal_abc
+==========================================
+
+.. currentmodule:: neutronpy.material
+
+.. autoattribute:: Material.reciprocal_abc

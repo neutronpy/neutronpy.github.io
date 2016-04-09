@@ -1,0 +1,6 @@
+neutronpy.models.antiferromagnetic_disperion
+============================================
+
+.. currentmodule:: neutronpy.models
+
+.. autofunction:: antiferromagnetic_disperion

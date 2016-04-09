@@ -1,0 +1,6 @@
+neutronpy.crystal.sample.Sample.cstar
+=====================================
+
+.. currentmodule:: neutronpy.crystal.sample
+
+.. autoattribute:: Sample.cstar

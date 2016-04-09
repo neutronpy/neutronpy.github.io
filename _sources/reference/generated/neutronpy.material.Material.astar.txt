@@ -1,0 +1,6 @@
+neutronpy.material.Material.astar
+=================================
+
+.. currentmodule:: neutronpy.material
+
+.. autoattribute:: Material.astar

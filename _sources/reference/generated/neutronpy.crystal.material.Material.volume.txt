@@ -1,0 +1,6 @@
+neutronpy.crystal.material.Material.volume
+==========================================
+
+.. currentmodule:: neutronpy.crystal.material
+
+.. autoattribute:: Material.volume

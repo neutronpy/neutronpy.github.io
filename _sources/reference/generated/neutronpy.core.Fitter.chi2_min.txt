@@ -1,6 +1,0 @@
-neutronpy.core.Fitter.chi2_min
-==============================
-
-.. currentmodule:: neutronpy.core
-
-.. autoattribute:: Fitter.chi2_min

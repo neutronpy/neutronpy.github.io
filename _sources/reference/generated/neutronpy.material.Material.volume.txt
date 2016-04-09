@@ -1,0 +1,6 @@
+neutronpy.material.Material.volume
+==================================
+
+.. currentmodule:: neutronpy.material
+
+.. autoattribute:: Material.volume

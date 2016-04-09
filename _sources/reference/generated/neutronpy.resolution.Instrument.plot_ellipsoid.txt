@@ -1,6 +1,0 @@
-neutronpy.resolution.Instrument.plot_ellipsoid
-==============================================
-
-.. currentmodule:: neutronpy.resolution
-
-.. automethod:: Instrument.plot_ellipsoid

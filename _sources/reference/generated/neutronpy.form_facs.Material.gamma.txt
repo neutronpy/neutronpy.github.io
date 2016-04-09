@@ -1,6 +1,0 @@
-neutronpy.form_facs.Material.gamma
-==================================
-
-.. currentmodule:: neutronpy.form_facs
-
-.. autoattribute:: Material.gamma

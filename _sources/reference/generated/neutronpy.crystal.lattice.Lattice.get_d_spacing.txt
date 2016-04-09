@@ -1,0 +1,6 @@
+neutronpy.crystal.lattice.Lattice.get_d_spacing
+===============================================
+
+.. currentmodule:: neutronpy.crystal.lattice
+
+.. automethod:: Lattice.get_d_spacing

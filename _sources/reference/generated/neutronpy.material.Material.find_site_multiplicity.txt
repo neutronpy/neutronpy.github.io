@@ -1,0 +1,6 @@
+neutronpy.material.Material.find_site_multiplicity
+==================================================
+
+.. currentmodule:: neutronpy.material
+
+.. automethod:: Material.find_site_multiplicity

@@ -1,6 +1,0 @@
-neutronpy.instrument.Instrument.dir1
-====================================
-
-.. currentmodule:: neutronpy.instrument
-
-.. autoattribute:: Instrument.dir1

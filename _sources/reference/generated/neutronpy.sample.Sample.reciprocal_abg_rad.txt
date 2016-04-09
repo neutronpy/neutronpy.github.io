@@ -1,0 +1,6 @@
+neutronpy.sample.Sample.reciprocal_abg_rad
+==========================================
+
+.. currentmodule:: neutronpy.sample
+
+.. autoattribute:: Sample.reciprocal_abg_rad

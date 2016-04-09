@@ -1,6 +1,0 @@
-neutronpy.resolution.Instrument.ana
-===================================
-
-.. currentmodule:: neutronpy.resolution
-
-.. autoattribute:: Instrument.ana

@@ -1,0 +1,6 @@
+neutronpy.crystal.Material.calc_optimal_thickness
+=================================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. automethod:: Material.calc_optimal_thickness

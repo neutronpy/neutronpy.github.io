@@ -1,0 +1,6 @@
+neutronpy.sample.Sample.Gstar
+=============================
+
+.. currentmodule:: neutronpy.sample
+
+.. autoattribute:: Sample.Gstar

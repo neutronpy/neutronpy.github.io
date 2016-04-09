@@ -1,6 +1,0 @@
-neutronpy.core.Fitter.niter
-===========================
-
-.. currentmodule:: neutronpy.core
-
-.. autoattribute:: Fitter.niter

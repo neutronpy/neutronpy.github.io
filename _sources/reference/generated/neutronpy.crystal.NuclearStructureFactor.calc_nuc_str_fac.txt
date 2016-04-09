@@ -1,0 +1,6 @@
+neutronpy.crystal.NuclearStructureFactor.calc_nuc_str_fac
+=========================================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. automethod:: NuclearStructureFactor.calc_nuc_str_fac

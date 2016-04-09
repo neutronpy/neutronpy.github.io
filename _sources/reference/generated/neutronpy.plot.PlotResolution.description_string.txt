@@ -1,0 +1,6 @@
+neutronpy.plot.PlotResolution.description_string
+================================================
+
+.. currentmodule:: neutronpy.plot
+
+.. automethod:: PlotResolution.description_string

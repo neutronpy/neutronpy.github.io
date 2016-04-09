@@ -1,0 +1,6 @@
+neutronpy.material.Material.gamma_rad
+=====================================
+
+.. currentmodule:: neutronpy.material
+
+.. autoattribute:: Material.gamma_rad

@@ -1,0 +1,6 @@
+neutronpy.crystal.SpaceGroup.symmetrize_position
+================================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. automethod:: SpaceGroup.symmetrize_position

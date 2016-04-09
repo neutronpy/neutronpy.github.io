@@ -1,0 +1,6 @@
+neutronpy.material.Material.reciprocal_volume
+=============================================
+
+.. currentmodule:: neutronpy.material
+
+.. autoattribute:: Material.reciprocal_volume

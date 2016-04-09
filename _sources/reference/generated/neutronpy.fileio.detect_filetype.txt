@@ -1,0 +1,6 @@
+neutronpy.fileio.detect_filetype
+================================
+
+.. currentmodule:: neutronpy.fileio
+
+.. autofunction:: detect_filetype

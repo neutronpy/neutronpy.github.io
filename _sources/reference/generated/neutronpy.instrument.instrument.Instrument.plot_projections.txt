@@ -1,0 +1,6 @@
+neutronpy.instrument.instrument.Instrument.plot_projections
+===========================================================
+
+.. currentmodule:: neutronpy.instrument.instrument
+
+.. automethod:: Instrument.plot_projections

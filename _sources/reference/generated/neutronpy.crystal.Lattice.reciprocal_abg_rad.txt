@@ -1,0 +1,6 @@
+neutronpy.crystal.Lattice.reciprocal_abg_rad
+============================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Lattice.reciprocal_abg_rad

@@ -1,0 +1,6 @@
+neutronpy.data.data.Data.detailed_balance_factor
+================================================
+
+.. currentmodule:: neutronpy.data.data
+
+.. autoattribute:: Data.detailed_balance_factor

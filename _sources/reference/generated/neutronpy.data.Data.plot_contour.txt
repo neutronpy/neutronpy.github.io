@@ -1,0 +1,6 @@
+neutronpy.data.Data.plot_contour
+================================
+
+.. currentmodule:: neutronpy.data
+
+.. automethod:: Data.plot_contour

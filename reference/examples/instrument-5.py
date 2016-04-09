@@ -1,4 +1,4 @@
-from neutronpy.resolution import Instrument
+from neutronpy import Instrument
 
 EXP = Instrument()
 EXP.arms = [1560, 600, 260, 300]

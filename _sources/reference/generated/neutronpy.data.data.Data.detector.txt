@@ -1,0 +1,6 @@
+neutronpy.data.data.Data.detector
+=================================
+
+.. currentmodule:: neutronpy.data.data
+
+.. autoattribute:: Data.detector

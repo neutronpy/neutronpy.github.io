@@ -1,6 +1,0 @@
-neutronpy.instrument.Instrument.beam
-====================================
-
-.. currentmodule:: neutronpy.instrument
-
-.. autoattribute:: Instrument.beam

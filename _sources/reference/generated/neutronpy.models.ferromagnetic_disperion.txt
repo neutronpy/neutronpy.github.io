@@ -1,0 +1,6 @@
+neutronpy.models.ferromagnetic_disperion
+========================================
+
+.. currentmodule:: neutronpy.models
+
+.. autofunction:: ferromagnetic_disperion

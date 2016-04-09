@@ -1,0 +1,6 @@
+neutronpy.instrument.instrument.Instrument.efixed
+=================================================
+
+.. currentmodule:: neutronpy.instrument.instrument
+
+.. autoattribute:: Instrument.efixed

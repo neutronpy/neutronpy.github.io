@@ -1,0 +1,6 @@
+neutronpy.symmetry.SpaceGroup.string_generators
+===============================================
+
+.. currentmodule:: neutronpy.symmetry
+
+.. autoattribute:: SpaceGroup.string_generators

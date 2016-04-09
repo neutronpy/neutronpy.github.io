@@ -1,0 +1,6 @@
+neutronpy.crystal.Lattice.c
+===========================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Lattice.c

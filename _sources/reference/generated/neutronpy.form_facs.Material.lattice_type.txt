@@ -1,6 +1,0 @@
-neutronpy.form_facs.Material.lattice_type
-=========================================
-
-.. currentmodule:: neutronpy.form_facs
-
-.. autoattribute:: Material.lattice_type

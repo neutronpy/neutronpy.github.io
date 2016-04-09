@@ -1,6 +1,0 @@
-neutronpy.form_facs.Material.gammastar_rad
-==========================================
-
-.. currentmodule:: neutronpy.form_facs
-
-.. autoattribute:: Material.gammastar_rad

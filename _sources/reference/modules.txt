@@ -6,10 +6,10 @@ neutronpy
 
    neutronpy
    neutronpy.constants
-   neutronpy.core
-   neutronpy.form_facs
+   neutronpy.crystal
    neutronpy.functions
-   neutronpy.lattice
+   neutronpy.gui
+   neutronpy.instrument
+   neutronpy.fileio
    neutronpy.models
-   neutronpy.resolution
    neutronpy.spurion

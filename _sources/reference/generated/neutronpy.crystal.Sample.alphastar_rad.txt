@@ -1,0 +1,6 @@
+neutronpy.crystal.Sample.alphastar_rad
+======================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Sample.alphastar_rad

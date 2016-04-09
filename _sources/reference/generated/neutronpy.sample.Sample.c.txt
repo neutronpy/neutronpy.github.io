@@ -1,0 +1,6 @@
+neutronpy.sample.Sample.c
+=========================
+
+.. currentmodule:: neutronpy.sample
+
+.. autoattribute:: Sample.c

@@ -1,0 +1,6 @@
+neutronpy.data.Data.plot_volume
+===============================
+
+.. currentmodule:: neutronpy.data
+
+.. automethod:: Data.plot_volume

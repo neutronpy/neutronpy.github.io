@@ -1,0 +1,6 @@
+neutronpy.material.Material.cstar
+=================================
+
+.. currentmodule:: neutronpy.material
+
+.. autoattribute:: Material.cstar

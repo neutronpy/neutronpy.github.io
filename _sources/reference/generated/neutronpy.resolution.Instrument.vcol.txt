@@ -1,6 +1,0 @@
-neutronpy.resolution.Instrument.vcol
-====================================
-
-.. currentmodule:: neutronpy.resolution
-
-.. autoattribute:: Instrument.vcol

@@ -1,6 +1,0 @@
-neutronpy.resolution.Instrument.infin
-=====================================
-
-.. currentmodule:: neutronpy.resolution
-
-.. autoattribute:: Instrument.infin

@@ -1,0 +1,6 @@
+neutronpy.instrument.instrument.Instrument.hcol
+===============================================
+
+.. currentmodule:: neutronpy.instrument.instrument
+
+.. autoattribute:: Instrument.hcol

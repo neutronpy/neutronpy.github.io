@@ -1,4 +1,4 @@
-from neutronpy.form_facs import Material
+from neutronpy import Material
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import cm
@@ -15,10 +15,10 @@ def_FeTe = {'name': 'Fe1.1Te',
             'lattice': {'abc': [3.81, 3.81, 6.25],
                         'abg': [90, 90, 90]}}
 FeTe = Material(def_FeTe)
-str_fac = 0.25 * (np.abs(FeTe.calc_str_fac((h, k, 0))) ** 2 +
-                  np.abs(FeTe.calc_str_fac((-h, k, 0))) ** 2 +
-                  np.abs(FeTe.calc_str_fac((h, -k, 0))) ** 2 +
-                  np.abs(FeTe.calc_str_fac((-h, -k, 0))) ** 2)
+str_fac = 0.25 * (np.abs(FeTe.calc_nuc_str_fac((h, k, 0))) ** 2 +
+                  np.abs(FeTe.calc_nuc_str_fac((-h, k, 0))) ** 2 +
+                  np.abs(FeTe.calc_nuc_str_fac((h, -k, 0))) ** 2 +
+                  np.abs(FeTe.calc_nuc_str_fac((-h, -k, 0))) ** 2)
 plt.pcolormesh(h, k, str_fac, cmap=cm.jet)
 plt.xlabel('h (r.l.u.)')
 plt.ylabel('k (r.l.u.)')

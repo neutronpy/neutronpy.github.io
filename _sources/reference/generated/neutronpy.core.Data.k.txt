@@ -1,6 +1,0 @@
-neutronpy.core.Data.k
-=====================
-
-.. currentmodule:: neutronpy.core
-
-.. autoattribute:: Data.k

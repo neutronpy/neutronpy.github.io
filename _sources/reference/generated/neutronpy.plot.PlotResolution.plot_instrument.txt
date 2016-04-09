@@ -1,0 +1,6 @@
+neutronpy.plot.PlotResolution.plot_instrument
+=============================================
+
+.. currentmodule:: neutronpy.plot
+
+.. automethod:: PlotResolution.plot_instrument

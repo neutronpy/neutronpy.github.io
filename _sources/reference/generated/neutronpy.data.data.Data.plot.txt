@@ -1,0 +1,6 @@
+neutronpy.data.data.Data.plot
+=============================
+
+.. currentmodule:: neutronpy.data.data
+
+.. automethod:: Data.plot

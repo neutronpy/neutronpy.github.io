@@ -1,6 +1,0 @@
-neutronpy.resolution.Instrument.mondir
-======================================
-
-.. currentmodule:: neutronpy.resolution
-
-.. autoattribute:: Instrument.mondir

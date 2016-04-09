@@ -1,6 +1,0 @@
-neutronpy.core.Fitter.xtol
-==========================
-
-.. currentmodule:: neutronpy.core
-
-.. autoattribute:: Fitter.xtol

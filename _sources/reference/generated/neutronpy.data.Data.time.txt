@@ -1,0 +1,6 @@
+neutronpy.data.Data.time
+========================
+
+.. currentmodule:: neutronpy.data
+
+.. autoattribute:: Data.time

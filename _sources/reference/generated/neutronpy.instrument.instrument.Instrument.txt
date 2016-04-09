@@ -1,0 +1,52 @@
+neutronpy.instrument.instrument.Instrument
+==========================================
+
+.. currentmodule:: neutronpy.instrument.instrument
+
+.. autoclass:: Instrument
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         Instrument.calc_projections
+         Instrument.calc_resolution
+         Instrument.calc_resolution_in_Q_coords
+         Instrument.description_string
+         Instrument.get_angles_and_Q
+         Instrument.get_lattice
+         Instrument.get_resolution_params
+         Instrument.plot_ellipsoid
+         Instrument.plot_instrument
+         Instrument.plot_projections
+         Instrument.plot_slice
+         Instrument.resolution_convolution
+         Instrument.resolution_convolution_SMA
+
+
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         Instrument.Smooth
+         Instrument.ana
+         Instrument.arms
+         Instrument.detector
+         Instrument.efixed
+         Instrument.guide
+         Instrument.hcol
+         Instrument.infin
+         Instrument.method
+         Instrument.moncor
+         Instrument.monitor
+         Instrument.mono
+         Instrument.orient1
+         Instrument.orient2
+         Instrument.sample
+         Instrument.vcol
+

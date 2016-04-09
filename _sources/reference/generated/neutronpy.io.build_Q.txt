@@ -1,0 +1,6 @@
+neutronpy.io.build_Q
+====================
+
+.. currentmodule:: neutronpy.io
+
+.. autofunction:: build_Q

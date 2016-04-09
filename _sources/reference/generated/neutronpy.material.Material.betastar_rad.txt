@@ -1,0 +1,6 @@
+neutronpy.material.Material.betastar_rad
+========================================
+
+.. currentmodule:: neutronpy.material
+
+.. autoattribute:: Material.betastar_rad

@@ -1,0 +1,6 @@
+neutronpy.data.data.Data.bin
+============================
+
+.. currentmodule:: neutronpy.data.data
+
+.. automethod:: Data.bin

@@ -1,0 +1,6 @@
+neutronpy.sample.Sample.volume
+==============================
+
+.. currentmodule:: neutronpy.sample
+
+.. autoattribute:: Sample.volume

@@ -1,6 +1,0 @@
-neutronpy.resolution.Instrument.plot_projections
-================================================
-
-.. currentmodule:: neutronpy.resolution
-
-.. automethod:: Instrument.plot_projections

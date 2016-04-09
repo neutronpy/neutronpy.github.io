@@ -1,0 +1,839 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Basic introduction to using NeutronPy &mdash; neutronpy 1.0.0b3 documentation</title>
+  
+
+  
+  
+
+  
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="neutronpy 1.0.0b3 documentation" href="../../index.html"/>
+        <link rel="up" title="Examples" href="../../examples.html"/>
+        <link rel="next" title="Data handling with the Data Class" href="data.html"/>
+        <link rel="prev" title="Examples" href="../../examples.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> neutronpy
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../reference.html">Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../index.html">Module Table of Contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../neutronpy.html">neutronpy package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../neutronpy.html#members">Members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../neutronpy.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../neutronpy.html#module-neutronpy">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html">neutronpy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../neutronpy.html">neutronpy package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../neutronpy.html#members">Members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../neutronpy.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../neutronpy.html#module-neutronpy">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../neutronpy.constants.html">neutronpy.constants module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.constants.magnetic_ion_j.html">neutronpy.constants.magnetic_ion_j</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.constants.periodic_table.html">neutronpy.constants.periodic_table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.constants.scattering_lengths.html">neutronpy.constants.scattering_lengths</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.constants.symmetry.html">neutronpy.constants.symmetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.constants.JOULES_TO_MEV.html">neutronpy.constants.JOULES_TO_MEV</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.constants.BOLTZMANN_IN_MEV_K.html">neutronpy.constants.BOLTZMANN_IN_MEV_K</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.constants.N_A.html">neutronpy.constants.N_A</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../neutronpy.crystal.html">neutronpy.crystal module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.html">neutronpy.crystal.Lattice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.MagneticFormFactor.html">neutronpy.crystal.MagneticFormFactor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.html">neutronpy.crystal.Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.NuclearStructureFactor.html">neutronpy.crystal.NuclearStructureFactor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.html">neutronpy.crystal.Sample</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.SpaceGroup.html">neutronpy.crystal.SpaceGroup</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../neutronpy.functions.html">neutronpy.functions module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.functions.gaussian.html">neutronpy.functions.gaussian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.functions.gaussian2d.html">neutronpy.functions.gaussian2d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.functions.lorentzian.html">neutronpy.functions.lorentzian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.functions.voigt.html">neutronpy.functions.voigt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.functions.resolution.html">neutronpy.functions.resolution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.functions.gaussian_ring.html">neutronpy.functions.gaussian_ring</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../neutronpy.gui.html">neutronpy.gui module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.gui.launch.html">neutronpy.gui.launch</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../neutronpy.instrument.html">neutronpy.instrument module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.html">neutronpy.instrument.Instrument</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.GetTau.html">neutronpy.instrument.GetTau</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Monochromator.html">neutronpy.instrument.Monochromator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Analyzer.html">neutronpy.instrument.Analyzer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../neutronpy.fileio.html">neutronpy.fileio module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.fileio.build_Q.html">neutronpy.fileio.build_Q</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.fileio.detect_filetype.html">neutronpy.fileio.detect_filetype</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.fileio.load_data.html">neutronpy.fileio.load_data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.fileio.load_instrument.html">neutronpy.fileio.load_instrument</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.fileio.save_data.html">neutronpy.fileio.save_data</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../neutronpy.models.html">neutronpy.models module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.models.simple_harmonic_oscillator.html">neutronpy.models.simple_harmonic_oscillator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.models.damped_harmonic_oscillator.html">neutronpy.models.damped_harmonic_oscillator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.models.acoustic_phonon_dispersion.html">neutronpy.models.acoustic_phonon_dispersion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.models.ferromagnetic_disperion.html">neutronpy.models.ferromagnetic_disperion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.models.antiferromagnetic_disperion.html">neutronpy.models.antiferromagnetic_disperion</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../neutronpy.spurion.html">neutronpy.spurion module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.spurion.aluminum.html">neutronpy.spurion.aluminum</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../neutronpy.html">neutronpy package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../neutronpy.html#members">Members</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.data.Data.html">neutronpy.data.data.Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.energy.Energy.html">neutronpy.energy.Energy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.kmpfit.Fitter.html">neutronpy.kmpfit.Fitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.html">neutronpy.instrument.instrument.Instrument</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.lattice.Lattice.html">neutronpy.crystal.lattice.Lattice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.material.Material.html">neutronpy.crystal.material.Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.sample.Sample.html">neutronpy.crystal.sample.Sample</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../neutronpy.html#submodules">Submodules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../neutronpy.constants.html">neutronpy.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../neutronpy.crystal.html">neutronpy.crystal module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../neutronpy.data.html">neutronpy.data module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../neutronpy.energy.html">neutronpy.energy module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../neutronpy.fileio.html">neutronpy.fileio module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../neutronpy.functions.html">neutronpy.functions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../neutronpy.gui.html">neutronpy.gui module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../neutronpy.instrument.html">neutronpy.instrument module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../neutronpy.models.html">neutronpy.models module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../neutronpy.spurion.html">neutronpy.spurion module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../neutronpy.html#module-neutronpy">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../neutronpy.constants.html">neutronpy.constants module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.constants.magnetic_ion_j.html">neutronpy.constants.magnetic_ion_j</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.constants.periodic_table.html">neutronpy.constants.periodic_table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.constants.scattering_lengths.html">neutronpy.constants.scattering_lengths</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.constants.symmetry.html">neutronpy.constants.symmetry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.constants.JOULES_TO_MEV.html">neutronpy.constants.JOULES_TO_MEV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.constants.BOLTZMANN_IN_MEV_K.html">neutronpy.constants.BOLTZMANN_IN_MEV_K</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.constants.N_A.html">neutronpy.constants.N_A</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../neutronpy.crystal.html">neutronpy.crystal module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.html">neutronpy.crystal.Lattice</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.a.html">neutronpy.crystal.Lattice.a</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.b.html">neutronpy.crystal.Lattice.b</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.c.html">neutronpy.crystal.Lattice.c</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.astar.html">neutronpy.crystal.Lattice.astar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.bstar.html">neutronpy.crystal.Lattice.bstar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.cstar.html">neutronpy.crystal.Lattice.cstar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.alpha.html">neutronpy.crystal.Lattice.alpha</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.beta.html">neutronpy.crystal.Lattice.beta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.gamma.html">neutronpy.crystal.Lattice.gamma</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.alpha_rad.html">neutronpy.crystal.Lattice.alpha_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.beta_rad.html">neutronpy.crystal.Lattice.beta_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.gamma_rad.html">neutronpy.crystal.Lattice.gamma_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.alphastar.html">neutronpy.crystal.Lattice.alphastar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.betastar.html">neutronpy.crystal.Lattice.betastar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.gammastar.html">neutronpy.crystal.Lattice.gammastar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.alphastar_rad.html">neutronpy.crystal.Lattice.alphastar_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.betastar_rad.html">neutronpy.crystal.Lattice.betastar_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.gammastar_rad.html">neutronpy.crystal.Lattice.gammastar_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.abg_rad.html">neutronpy.crystal.Lattice.abg_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.reciprocal_abc.html">neutronpy.crystal.Lattice.reciprocal_abc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.reciprocal_abg.html">neutronpy.crystal.Lattice.reciprocal_abg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.reciprocal_abg_rad.html">neutronpy.crystal.Lattice.reciprocal_abg_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.lattice_type.html">neutronpy.crystal.Lattice.lattice_type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.volume.html">neutronpy.crystal.Lattice.volume</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.reciprocal_volume.html">neutronpy.crystal.Lattice.reciprocal_volume</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.G.html">neutronpy.crystal.Lattice.G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.Gstar.html">neutronpy.crystal.Lattice.Gstar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.Bmatrix.html">neutronpy.crystal.Lattice.Bmatrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.get_d_spacing.html">neutronpy.crystal.Lattice.get_d_spacing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.get_q.html">neutronpy.crystal.Lattice.get_q</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.get_two_theta.html">neutronpy.crystal.Lattice.get_two_theta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Lattice.get_angle_between_planes.html">neutronpy.crystal.Lattice.get_angle_between_planes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.crystal.MagneticFormFactor.html">neutronpy.crystal.MagneticFormFactor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.MagneticFormFactor.calc_mag_form_fac.html">neutronpy.crystal.MagneticFormFactor.calc_mag_form_fac</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.crystal.Material.html">neutronpy.crystal.Material</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.volume.html">neutronpy.crystal.Material.volume</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.total_scattering_cross_section.html">neutronpy.crystal.Material.total_scattering_cross_section</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.a.html">neutronpy.crystal.Material.a</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.b.html">neutronpy.crystal.Material.b</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.c.html">neutronpy.crystal.Material.c</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.astar.html">neutronpy.crystal.Material.astar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.bstar.html">neutronpy.crystal.Material.bstar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.cstar.html">neutronpy.crystal.Material.cstar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.alpha.html">neutronpy.crystal.Material.alpha</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.beta.html">neutronpy.crystal.Material.beta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.gamma.html">neutronpy.crystal.Material.gamma</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.alpha_rad.html">neutronpy.crystal.Material.alpha_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.beta_rad.html">neutronpy.crystal.Material.beta_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.gamma_rad.html">neutronpy.crystal.Material.gamma_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.alphastar.html">neutronpy.crystal.Material.alphastar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.betastar.html">neutronpy.crystal.Material.betastar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.gammastar.html">neutronpy.crystal.Material.gammastar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.alphastar_rad.html">neutronpy.crystal.Material.alphastar_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.betastar_rad.html">neutronpy.crystal.Material.betastar_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.gammastar_rad.html">neutronpy.crystal.Material.gammastar_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.abg_rad.html">neutronpy.crystal.Material.abg_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.reciprocal_abc.html">neutronpy.crystal.Material.reciprocal_abc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.reciprocal_abg.html">neutronpy.crystal.Material.reciprocal_abg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.reciprocal_abg_rad.html">neutronpy.crystal.Material.reciprocal_abg_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.lattice_type.html">neutronpy.crystal.Material.lattice_type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.volume.html">neutronpy.crystal.Material.volume</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.reciprocal_volume.html">neutronpy.crystal.Material.reciprocal_volume</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.G.html">neutronpy.crystal.Material.G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.Gstar.html">neutronpy.crystal.Material.Gstar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.Bmatrix.html">neutronpy.crystal.Material.Bmatrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.u.html">neutronpy.crystal.Material.u</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.v.html">neutronpy.crystal.Material.v</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.calc_nuc_str_fac.html">neutronpy.crystal.Material.calc_nuc_str_fac</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.calc_mag_str_fac.html">neutronpy.crystal.Material.calc_mag_str_fac</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.calc_mag_int_vec.html">neutronpy.crystal.Material.calc_mag_int_vec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.calc_incoh_elas_xs.html">neutronpy.crystal.Material.calc_incoh_elas_xs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.calc_optimal_thickness.html">neutronpy.crystal.Material.calc_optimal_thickness</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.plot_unit_cell.html">neutronpy.crystal.Material.plot_unit_cell</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.get_angle_between_planes.html">neutronpy.crystal.Material.get_angle_between_planes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.get_d_spacing.html">neutronpy.crystal.Material.get_d_spacing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.get_q.html">neutronpy.crystal.Material.get_q</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.get_two_theta.html">neutronpy.crystal.Material.get_two_theta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Material.N_atoms.html">neutronpy.crystal.Material.N_atoms</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.crystal.NuclearStructureFactor.html">neutronpy.crystal.NuclearStructureFactor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.NuclearStructureFactor.calc_nuc_str_fac.html">neutronpy.crystal.NuclearStructureFactor.calc_nuc_str_fac</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.html">neutronpy.crystal.Sample</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.a.html">neutronpy.crystal.Sample.a</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.b.html">neutronpy.crystal.Sample.b</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.c.html">neutronpy.crystal.Sample.c</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.alpha.html">neutronpy.crystal.Sample.alpha</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.beta.html">neutronpy.crystal.Sample.beta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.gamma.html">neutronpy.crystal.Sample.gamma</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.u.html">neutronpy.crystal.Sample.u</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.v.html">neutronpy.crystal.Sample.v</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.astar.html">neutronpy.crystal.Sample.astar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.bstar.html">neutronpy.crystal.Sample.bstar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.cstar.html">neutronpy.crystal.Sample.cstar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.alpha_rad.html">neutronpy.crystal.Sample.alpha_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.beta_rad.html">neutronpy.crystal.Sample.beta_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.gamma_rad.html">neutronpy.crystal.Sample.gamma_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.alphastar.html">neutronpy.crystal.Sample.alphastar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.betastar.html">neutronpy.crystal.Sample.betastar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.gammastar.html">neutronpy.crystal.Sample.gammastar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.alphastar_rad.html">neutronpy.crystal.Sample.alphastar_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.betastar_rad.html">neutronpy.crystal.Sample.betastar_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.gammastar_rad.html">neutronpy.crystal.Sample.gammastar_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.abg_rad.html">neutronpy.crystal.Sample.abg_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.reciprocal_abc.html">neutronpy.crystal.Sample.reciprocal_abc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.reciprocal_abg.html">neutronpy.crystal.Sample.reciprocal_abg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.reciprocal_abg_rad.html">neutronpy.crystal.Sample.reciprocal_abg_rad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.lattice_type.html">neutronpy.crystal.Sample.lattice_type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.volume.html">neutronpy.crystal.Sample.volume</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.reciprocal_volume.html">neutronpy.crystal.Sample.reciprocal_volume</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.G.html">neutronpy.crystal.Sample.G</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.Gstar.html">neutronpy.crystal.Sample.Gstar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.Bmatrix.html">neutronpy.crystal.Sample.Bmatrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.get_d_spacing.html">neutronpy.crystal.Sample.get_d_spacing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.get_q.html">neutronpy.crystal.Sample.get_q</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.get_two_theta.html">neutronpy.crystal.Sample.get_two_theta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.Sample.get_angle_between_planes.html">neutronpy.crystal.Sample.get_angle_between_planes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.crystal.SpaceGroup.html">neutronpy.crystal.SpaceGroup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.SpaceGroup.generators.html">neutronpy.crystal.SpaceGroup.generators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.SpaceGroup.string_generators.html">neutronpy.crystal.SpaceGroup.string_generators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.SpaceGroup.symbol.html">neutronpy.crystal.SpaceGroup.symbol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.crystal.SpaceGroup.symmetrize_position.html">neutronpy.crystal.SpaceGroup.symmetrize_position</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../neutronpy.data.html">neutronpy.data module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.data.Data.html">neutronpy.data.Data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.h.html">neutronpy.data.Data.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.k.html">neutronpy.data.Data.k</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.l.html">neutronpy.data.Data.l</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.e.html">neutronpy.data.Data.e</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.temp.html">neutronpy.data.Data.temp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.intensity.html">neutronpy.data.Data.intensity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.error.html">neutronpy.data.Data.error</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.detailed_balance_factor.html">neutronpy.data.Data.detailed_balance_factor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.bin.html">neutronpy.data.Data.bin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.combine_data.html">neutronpy.data.Data.combine_data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.subtract_background.html">neutronpy.data.Data.subtract_background</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.integrate.html">neutronpy.data.Data.integrate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.position.html">neutronpy.data.Data.position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.width.html">neutronpy.data.Data.width</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.estimate_background.html">neutronpy.data.Data.estimate_background</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.subtract_background.html">neutronpy.data.Data.subtract_background</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.dynamic_susceptibility.html">neutronpy.data.Data.dynamic_susceptibility</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.scattering_function.html">neutronpy.data.Data.scattering_function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Data.plot.html">neutronpy.data.Data.plot</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.data.Analysis.html">neutronpy.data.Analysis</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Analysis.detailed_balance_factor.html">neutronpy.data.Analysis.detailed_balance_factor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Analysis.integrate.html">neutronpy.data.Analysis.integrate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Analysis.position.html">neutronpy.data.Analysis.position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Analysis.width.html">neutronpy.data.Analysis.width</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Analysis.scattering_function.html">neutronpy.data.Analysis.scattering_function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Analysis.dynamic_susceptibility.html">neutronpy.data.Analysis.dynamic_susceptibility</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Analysis.estimate_background.html">neutronpy.data.Analysis.estimate_background</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../neutronpy.energy.html">neutronpy.energy module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.energy.Energy.html">neutronpy.energy.Energy</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.energy.Energy.energy.html">neutronpy.energy.Energy.energy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.energy.Energy.wavelength.html">neutronpy.energy.Energy.wavelength</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.energy.Energy.wavevector.html">neutronpy.energy.Energy.wavevector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.energy.Energy.velocity.html">neutronpy.energy.Energy.velocity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.energy.Energy.temperature.html">neutronpy.energy.Energy.temperature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.energy.Energy.frequency.html">neutronpy.energy.Energy.frequency</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.energy.Energy.values.html">neutronpy.energy.Energy.values</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../neutronpy.fileio.html">neutronpy.fileio module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.fileio.build_Q.html">neutronpy.fileio.build_Q</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.fileio.detect_filetype.html">neutronpy.fileio.detect_filetype</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.fileio.load_data.html">neutronpy.fileio.load_data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.fileio.load_instrument.html">neutronpy.fileio.load_instrument</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.fileio.save_data.html">neutronpy.fileio.save_data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../neutronpy.functions.html">neutronpy.functions module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.functions.gaussian.html">neutronpy.functions.gaussian</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.functions.gaussian2d.html">neutronpy.functions.gaussian2d</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.functions.lorentzian.html">neutronpy.functions.lorentzian</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.functions.voigt.html">neutronpy.functions.voigt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.functions.resolution.html">neutronpy.functions.resolution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.functions.gaussian_ring.html">neutronpy.functions.gaussian_ring</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../neutronpy.gui.html">neutronpy.gui module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.gui.launch.html">neutronpy.gui.launch</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../neutronpy.instrument.html">neutronpy.instrument module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.html">neutronpy.instrument.Instrument</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.method.html">neutronpy.instrument.Instrument.method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.moncor.html">neutronpy.instrument.Instrument.moncor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.mono.html">neutronpy.instrument.Instrument.mono</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.ana.html">neutronpy.instrument.Instrument.ana</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.hcol.html">neutronpy.instrument.Instrument.hcol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.vcol.html">neutronpy.instrument.Instrument.vcol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.arms.html">neutronpy.instrument.Instrument.arms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.efixed.html">neutronpy.instrument.Instrument.efixed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.sample.html">neutronpy.instrument.Instrument.sample</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.orient1.html">neutronpy.instrument.Instrument.orient1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.orient2.html">neutronpy.instrument.Instrument.orient2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.infin.html">neutronpy.instrument.Instrument.infin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.detector.html">neutronpy.instrument.Instrument.detector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.monitor.html">neutronpy.instrument.Instrument.monitor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.Smooth.html">neutronpy.instrument.Instrument.Smooth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.guide.html">neutronpy.instrument.Instrument.guide</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.calc_resolution.html">neutronpy.instrument.Instrument.calc_resolution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.calc_resolution_in_Q_coords.html">neutronpy.instrument.Instrument.calc_resolution_in_Q_coords</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.calc_projections.html">neutronpy.instrument.Instrument.calc_projections</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.get_angles_and_Q.html">neutronpy.instrument.Instrument.get_angles_and_Q</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.get_lattice.html">neutronpy.instrument.Instrument.get_lattice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.get_resolution_params.html">neutronpy.instrument.Instrument.get_resolution_params</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.plot_projections.html">neutronpy.instrument.Instrument.plot_projections</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.plot_ellipsoid.html">neutronpy.instrument.Instrument.plot_ellipsoid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.plot_instrument.html">neutronpy.instrument.Instrument.plot_instrument</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.resolution_convolution.html">neutronpy.instrument.Instrument.resolution_convolution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.resolution_convolution_SMA.html">neutronpy.instrument.Instrument.resolution_convolution_SMA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.plot_slice.html">neutronpy.instrument.Instrument.plot_slice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.instrument.Instrument.description_string.html">neutronpy.instrument.Instrument.description_string</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.instrument.GetTau.html">neutronpy.instrument.GetTau</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.instrument.Monochromator.html">neutronpy.instrument.Monochromator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.instrument.Analyzer.html">neutronpy.instrument.Analyzer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../neutronpy.models.html">neutronpy.models module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.models.simple_harmonic_oscillator.html">neutronpy.models.simple_harmonic_oscillator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.models.damped_harmonic_oscillator.html">neutronpy.models.damped_harmonic_oscillator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.models.acoustic_phonon_dispersion.html">neutronpy.models.acoustic_phonon_dispersion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.models.ferromagnetic_disperion.html">neutronpy.models.ferromagnetic_disperion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.models.antiferromagnetic_disperion.html">neutronpy.models.antiferromagnetic_disperion</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../neutronpy.spurion.html">neutronpy.spurion module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.spurion.aluminum.html">neutronpy.spurion.aluminum</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../examples.html">Examples</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Basic introduction to using NeutronPy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#importing-and-using-neutronpy">Importing and using NeutronPy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#handling-data">Handling Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#converting-neutron-energy">Converting Neutron Energy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fitting-data">Fitting Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calculating-triple-axis-resolution">Calculating Triple-Axis Resolution</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#using-the-triple-axis-resolution-gui">Using the Triple-Axis Resolution GUI</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#performing-lattice-geometry-calculations">Performing Lattice Geometry Calculations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#performing-structure-factor-calculations">Performing Structure Factor Calculations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#finding-aluminum-spurion-positions">Finding Aluminum Spurion Positions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data.html">Data handling with the Data Class</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data.html#initialization-loading-data">Initialization: loading data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="data.html#load-from-file">Load from file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data.html#pass-pre-loaded-data">Pass pre-loaded data</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="data.html#data-properties"><code class="docutils literal"><span class="pre">Data</span></code> properties</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="data.html#intensity-and-error">Intensity and error</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data.html#monitor-normalization">Monitor normalization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data.html#time-normalization">Time normalization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data.html#the-q-vector">The <code class="docutils literal"><span class="pre">Q</span></code> vector</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="data.html#data-operations"><code class="docutils literal"><span class="pre">Data</span></code> operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data.html#quick-analysis">Quick analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data.html#binning-data">Binning data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data.html#visualizing-data">Visualizing data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="data.html#basic-plotting">Basic plotting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="data.html#options">Options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="fitting.html">Least-squares fitting with the Fitter Class</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="fitting.html#defining-the-problem">Defining the problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fitting.html#initializing">Initializing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fitting.html#initial-parameters-and-constraints">Initial parameters and Constraints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fitting.html#fitting">Fitting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fitting.html#results">Results</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gui.html">Using the Resolution Calculation Graphical User Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="instrument.html">Resolution calculation with Instrument Class</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="instrument.html#instrument-configuration">Instrument Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="instrument.html#sample-configuration">Sample Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="instrument.html#initializing-the-instrument">Initializing the Instrument</a></li>
+<li class="toctree-l3"><a class="reference internal" href="instrument.html#calculating-the-resolution">Calculating the resolution</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="instrument.html#resolution-parameters">Resolution parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="instrument.html#resolution-ellipses">Resolution ellipses</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="instrument.html#popovici-calculation">Popovici calculation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="instrument.html#simple-plotting-of-resolution-ellipses">Simple Plotting of Resolution Ellipses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="instrument.html#simple-plotting-of-the-3d-resolution-ellipsoid">Simple Plotting of the 3D Resolution Ellipsoid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="instrument.html#plotting-of-the-instrument-setup-for-a-given-q-w">Plotting of the Instrument setup for a given (Q,W)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="instrument.html#loading-an-instrument-and-sample-from-files">Loading an Instrument and Sample from files</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="material.html">Form Factor calculation with the Material Class</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="material.html#defining-the-material">Defining the Material</a></li>
+<li class="toctree-l3"><a class="reference internal" href="material.html#initializing-the-material-class">Initializing the Material class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="material.html#calculating-the-structure-factor">Calculating the structure factor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="material.html#using-space-group-to-properly-symmetrize">Using space group to properly symmetrize</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../installation.html#python-package-index-pip">Python Package Index - pip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../installation.html#installation-from-source">Installation from Source</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../roadmap.html">Roadmap</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../roadmap.html#milestones">Milestones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../roadmap.html#next-release">Next Release</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../roadmap.html#future-features">Future Features</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contact.html">Contact</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contact.html#bugs-ticket-tracker">Bugs/ticket tracker</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">neutronpy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+        <li><a href="../../examples.html">Examples</a> &raquo;</li>
+      
+    <li>Basic introduction to using NeutronPy</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="../../_sources/reference/examples/basic.txt" rel="nofollow"> View page source</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="basic-introduction-to-using-neutronpy">
+<h1>Basic introduction to using NeutronPy<a class="headerlink" href="#basic-introduction-to-using-neutronpy" title="Permalink to this headline">¶</a></h1>
+<p>In this tutorial the basic features and layout of NeutronPy are described, covering primarily their most typical usage. The more in-depth tutorials are linked within their respective sections. Installation is addressed <a class="reference external" href="http://neutronpy.github.com">on the main page</a> and will not be covered here. I am assuming the use of a python shell, like <code class="docutils literal"><span class="pre">ipython</span></code> or or <code class="docutils literal"><span class="pre">idle</span></code>.</p>
+<div class="section" id="importing-and-using-neutronpy">
+<h2>Importing and using NeutronPy<a class="headerlink" href="#importing-and-using-neutronpy" title="Permalink to this headline">¶</a></h2>
+<p>My recommendation, and personal use mode, is to <code class="docutils literal"><span class="pre">import</span> <span class="pre">neutronpy</span></code> under the namespace <code class="docutils literal"><span class="pre">npy</span></code>, <em class="xref py py-obj">i.e.</em></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">neutronpy</span> <span class="k">as</span> <span class="nn">npy</span>
+</pre></div>
+</div>
+<p>The modules and essential classes can then be accessed as follows</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">npy.Data</span></code> - <a class="reference internal" href="../generated/neutronpy.data.data.Data.html#neutronpy.data.data.Data" title="neutronpy.data.data.Data"><code class="xref py py-class docutils literal"><span class="pre">Data</span></code></a> class for handling neutron data</li>
+<li><code class="docutils literal"><span class="pre">npy.Energy</span></code> - <a class="reference internal" href="../generated/neutronpy.energy.Energy.html#neutronpy.energy.Energy" title="neutronpy.energy.Energy"><code class="xref py py-class docutils literal"><span class="pre">Energy</span></code></a> class for converting neutron energy to various units and vise versa</li>
+<li><code class="docutils literal"><span class="pre">npy.Fitter</span></code> - <a class="reference internal" href="../generated/neutronpy.kmpfit.Fitter.html#neutronpy.kmpfit.Fitter" title="neutronpy.kmpfit.Fitter"><code class="xref py py-class docutils literal"><span class="pre">Fitter</span></code></a> class for performing least-squares fits</li>
+<li><code class="docutils literal"><span class="pre">npy.Instrument</span></code> - <a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.html#neutronpy.instrument.instrument.Instrument" title="neutronpy.instrument.instrument.Instrument"><code class="xref py py-class docutils literal"><span class="pre">Instrument</span></code></a> class for calculating Triple-Axis resolution</li>
+<li><code class="docutils literal"><span class="pre">npy.Lattice</span></code> - <a class="reference internal" href="../generated/neutronpy.crystal.lattice.Lattice.html#neutronpy.crystal.lattice.Lattice" title="neutronpy.crystal.lattice.Lattice"><code class="xref py py-class docutils literal"><span class="pre">Lattice</span></code></a> class for performing geometry calculations</li>
+<li><code class="docutils literal"><span class="pre">npy.Material</span></code> - <a class="reference internal" href="../generated/neutronpy.crystal.Material.html#neutronpy.crystal.Material" title="neutronpy.crystal.Material"><code class="xref py py-class docutils literal"><span class="pre">Material</span></code></a> class for performing structure factor calculations</li>
+<li><code class="docutils literal"><span class="pre">npy.Sample</span></code> - <a class="reference internal" href="../generated/neutronpy.crystal.Sample.html#neutronpy.crystal.Sample" title="neutronpy.crystal.Sample"><code class="xref py py-class docutils literal"><span class="pre">Sample</span></code></a> class for use in the <a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.html#neutronpy.instrument.instrument.Instrument" title="neutronpy.instrument.instrument.Instrument"><code class="xref py py-class docutils literal"><span class="pre">Instrument</span></code></a> class</li>
+<li><code class="docutils literal"><span class="pre">npy.constants</span></code> - <code class="xref py py-mod docutils literal"><span class="pre">constants</span></code> module containing the constants used in NeutronPy</li>
+<li><code class="docutils literal"><span class="pre">npy.functions</span></code> - <code class="xref py py-mod docutils literal"><span class="pre">functions</span></code> module containing various commonly used functions</li>
+<li><code class="docutils literal"><span class="pre">npy.gui</span></code> - <code class="xref py py-mod docutils literal"><span class="pre">gui</span></code> module containing the GUI for resolution calculations <a class="reference internal" href="../generated/neutronpy.gui.launch.html#neutronpy.gui.launch" title="neutronpy.gui.launch"><code class="xref py py-func docutils literal"><span class="pre">gui.launch</span></code></a></li>
+<li><code class="docutils literal"><span class="pre">npy.io</span></code> - <a class="reference external" href="http://docs.python.org/dev/library/io.html#module-io" title="(in Python v3.6)"><code class="xref py py-mod docutils literal"><span class="pre">io</span></code></a> module containing file handling functions</li>
+<li><code class="docutils literal"><span class="pre">npy.models</span></code> - <code class="xref py py-mod docutils literal"><span class="pre">models</span></code> module containing commonly used dispersions</li>
+<li><code class="docutils literal"><span class="pre">npy.spurion</span></code> - <code class="xref py py-mod docutils literal"><span class="pre">spurion</span></code> module containing spurion calculator for common spurions</li>
+<li><code class="docutils literal"><span class="pre">npy.symmetry</span></code> - <code class="xref py py-mod docutils literal"><span class="pre">symmetry</span></code> module containing the <a class="reference internal" href="../generated/neutronpy.crystal.SpaceGroup.html#neutronpy.crystal.SpaceGroup" title="neutronpy.crystal.SpaceGroup"><code class="xref py py-class docutils literal"><span class="pre">SpaceGroup</span></code></a> class</li>
+</ul>
+<p>Other modules, classes, etc. are not imported into the <code class="docutils literal"><span class="pre">npy</span></code> namespace by default, since they are used only internally, but can be accessed <em class="xref py py-obj">e.g.</em></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">neutronpy</span> <span class="k">import</span> <span class="n">data</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="handling-data">
+<h2>Handling Data<a class="headerlink" href="#handling-data" title="Permalink to this headline">¶</a></h2>
+<p>To load a known filetype, like <code class="docutils literal"><span class="pre">SPICE</span></code>, <code class="docutils literal"><span class="pre">ICE</span></code> or <code class="docutils literal"><span class="pre">ICP</span></code></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">npy</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="s1">&#39;path_to_file&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Multiple files can be loaded simultaneously (data will be combined into a single object). Otherwise, if the filetype is unknown data must be loaded separately, e.g. if you have an <code class="docutils literal"><span class="pre">ascii</span></code> format file</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">h</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">e</span><span class="p">,</span> <span class="n">counts</span><span class="p">,</span> <span class="n">monitor</span><span class="p">,</span> <span class="n">temperature</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s1">&#39;path_to_file&#39;</span><span class="p">,</span> <span class="n">unpack</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and a <code class="docutils literal"><span class="pre">Data</span></code> object can be then created by</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">npy</span><span class="o">.</span><span class="n">Data</span><span class="p">(</span><span class="n">h</span><span class="o">=</span><span class="n">h</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="n">l</span><span class="p">,</span> <span class="n">e</span><span class="o">=</span><span class="n">e</span><span class="p">,</span> <span class="n">detector</span><span class="o">=</span><span class="n">counts</span><span class="p">,</span> <span class="n">monitor</span><span class="o">=</span><span class="n">monitor</span><span class="p">,</span> <span class="n">temp</span><span class="o">=</span><span class="n">temperature</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Data objects can be added together, quickly plotted, and basic analysis can be performed. For more details see <a class="reference internal" href="data.html"><span class="doc">Data handling with the Data Class</span></a> and <a class="reference internal" href="../generated/neutronpy.data.data.Data.html#neutronpy.data.data.Data" title="neutronpy.data.data.Data"><code class="xref py py-class docutils literal"><span class="pre">Data</span></code></a>.</p>
+</div>
+<div class="section" id="converting-neutron-energy">
+<h2>Converting Neutron Energy<a class="headerlink" href="#converting-neutron-energy" title="Permalink to this headline">¶</a></h2>
+<p>To easily convert neutron energy in e.g. meV to wavelength in Angstrom</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">wavelength</span> <span class="o">=</span> <span class="n">npy</span><span class="o">.</span><span class="n">Energy</span><span class="p">(</span><span class="n">energy</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">wavelength</span>
+</pre></div>
+</div>
+<p>To print all of the available conversions for one value</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">npy</span><span class="o">.</span><span class="n">Energy</span><span class="p">(</span><span class="n">energy</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For complete documentation see <a class="reference internal" href="../generated/neutronpy.energy.Energy.html#neutronpy.energy.Energy" title="neutronpy.energy.Energy"><code class="xref py py-class docutils literal"><span class="pre">Energy</span></code></a>.</p>
+</div>
+<div class="section" id="fitting-data">
+<h2>Fitting Data<a class="headerlink" href="#fitting-data" title="Permalink to this headline">¶</a></h2>
+<p>To perform least-square fitting you must construct a fitting function, and a residuals function, e.g.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">function</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">x</span>
+
+<span class="k">def</span> <span class="nf">residuals</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">err</span> <span class="o">=</span> <span class="n">data</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">function</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span> <span class="o">/</span> <span class="n">err</span>
+</pre></div>
+</div>
+<p>Note that the residuals return is automatically squared. You then construct the <code class="docutils literal"><span class="pre">Fitter</span></code> object, and perform a fit using initial parameters</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fit_obj</span> <span class="o">=</span> <span class="n">npy</span><span class="o">.</span><span class="n">Fitter</span><span class="p">(</span><span class="n">residuals</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">err</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fit_obj</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">params0</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>The fitted parameters can be accessed by the <a class="reference internal" href="../generated/neutronpy.kmpfit.Fitter.params.html#neutronpy.kmpfit.Fitter.params" title="neutronpy.kmpfit.Fitter.params"><code class="xref py py-attr docutils literal"><span class="pre">Fitter.params</span></code></a> attribute, i.e.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fitted_params</span> <span class="o">=</span> <span class="n">fit_obj</span><span class="o">.</span><span class="n">params</span>
+</pre></div>
+</div>
+<p>More details can be found in <a class="reference internal" href="fitting.html"><span class="doc">Least-squares fitting with the Fitter Class</span></a> and <a class="reference internal" href="../generated/neutronpy.kmpfit.Fitter.html#neutronpy.kmpfit.Fitter" title="neutronpy.kmpfit.Fitter"><code class="xref py py-class docutils literal"><span class="pre">Fitter</span></code></a>.</p>
+</div>
+<div class="section" id="calculating-triple-axis-resolution">
+<h2>Calculating Triple-Axis Resolution<a class="headerlink" href="#calculating-triple-axis-resolution" title="Permalink to this headline">¶</a></h2>
+<p>To calculate the resolution of a Triple-Axis instrument, you must create an instrument and a sample. A basic default instrument and sample and can be constructed by</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">instr</span> <span class="o">=</span> <span class="n">npy</span><span class="o">.</span><span class="n">Instrument</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Resolution ellipses can be calculated for a single or multiple positions in reciprocal space by</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">instr</span><span class="o">.</span><span class="n">plot_projections</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>More details can be found in <a class="reference internal" href="instrument.html"><span class="doc">Resolution calculation with Instrument Class</span></a> and <a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.html#neutronpy.instrument.instrument.Instrument" title="neutronpy.instrument.instrument.Instrument"><code class="xref py py-class docutils literal"><span class="pre">Instrument</span></code></a> and <a class="reference internal" href="../generated/neutronpy.crystal.Sample.html#neutronpy.crystal.Sample" title="neutronpy.crystal.Sample"><code class="xref py py-class docutils literal"><span class="pre">Sample</span></code></a>.</p>
+<div class="section" id="using-the-triple-axis-resolution-gui">
+<h3>Using the Triple-Axis Resolution GUI<a class="headerlink" href="#using-the-triple-axis-resolution-gui" title="Permalink to this headline">¶</a></h3>
+<p>To launch the gui using a python command line</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">neutronpy</span> <span class="k">as</span> <span class="nn">npy</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">npy</span><span class="o">.</span><span class="n">gui</span><span class="o">.</span><span class="n">launch</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Currently, to set new values, press TAB after entering value.</p>
+<p>More details are available in <a class="reference internal" href="gui.html"><span class="doc">Using the Resolution Calculation Graphical User Interface</span></a>.</p>
+</div>
+</div>
+<div class="section" id="performing-lattice-geometry-calculations">
+<h2>Performing Lattice Geometry Calculations<a class="headerlink" href="#performing-lattice-geometry-calculations" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to calculate several values for a given crystal lattice, defined e.g.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lattice</span> <span class="o">=</span> <span class="n">npy</span><span class="o">.</span><span class="n">Lattice</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>From this <code class="docutils literal"><span class="pre">Lattice</span></code> object the lattice type, volume, and reciprocal values can be found, e.g.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lattice</span><span class="o">.</span><span class="n">lattice_type</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lattice</span><span class="o">.</span><span class="n">volume</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lattice</span><span class="o">.</span><span class="n">reciprocal_abc</span>
+</pre></div>
+</div>
+<p>The d-spacing, q and 2theta values of a given reciprocal lattice point can be obtained by</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lattice</span><span class="o">.</span><span class="n">get_d_spacing</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lattice</span><span class="o">.</span><span class="n">get_q</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lattice</span><span class="o">.</span><span class="n">get_2theta</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Finally, you can obtain the angle between two planes defined by their normal vectors by</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lattice</span><span class="o">.</span><span class="n">get_angle_between_planes</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>More details are available in <a class="reference internal" href="../generated/neutronpy.crystal.lattice.Lattice.html#neutronpy.crystal.lattice.Lattice" title="neutronpy.crystal.lattice.Lattice"><code class="xref py py-class docutils literal"><span class="pre">Lattice</span></code></a>.</p>
+</div>
+<div class="section" id="performing-structure-factor-calculations">
+<h2>Performing Structure Factor Calculations<a class="headerlink" href="#performing-structure-factor-calculations" title="Permalink to this headline">¶</a></h2>
+<p>To perform structure factor calculations you must first construct a <a class="reference internal" href="../generated/neutronpy.crystal.Material.html#neutronpy.crystal.Material" title="neutronpy.crystal.Material"><code class="xref py py-class docutils literal"><span class="pre">Material</span></code></a> object. In this example we build a simple Aluminum crystal. We first define the crystal with a dictionary:</p>
+<p>... code-block:: python</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>def_Al = {&#8216;name&#8217;: &#8216;Al&#8217;,</dt>
+<dd>&#8216;composition&#8217;: [dict(ion=&#8217;Al&#8217;, pos=[0, 0, 0])],
+&#8216;lattice&#8217;: dict(abc=[4.0495, 4.0495, 4.0495], abg=[90, 90, 90]),
+&#8216;space_group&#8217;: &#8216;Fm-3m&#8217;}</dd>
+</dl>
+</div></blockquote>
+<p>Then we create the <code class="docutils literal"><span class="pre">Material</span></code> object
+&gt;&gt;&gt; Al = npy.Material(def_Al)</p>
+<p>We can then obtain the nuclear structure factor at a single point by</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Al</span><span class="o">.</span><span class="n">calc_nuc_str_fac</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For more information see <a class="reference internal" href="material.html"><span class="doc">Form Factor calculation with the Material Class</span></a> and <a class="reference internal" href="../generated/neutronpy.crystal.Material.html#neutronpy.crystal.Material" title="neutronpy.crystal.Material"><code class="xref py py-class docutils literal"><span class="pre">Material</span></code></a>.</p>
+</div>
+<div class="section" id="finding-aluminum-spurion-positions">
+<h2>Finding Aluminum Spurion Positions<a class="headerlink" href="#finding-aluminum-spurion-positions" title="Permalink to this headline">¶</a></h2>
+<p>One can easily find the positions in 2theta of spurious Aluminum peaks which have scattered from the holder or sample environment, given an incident energy by</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">energy</span> <span class="o">=</span> <span class="mf">14.7</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">npy</span><span class="o">.</span><span class="n">spurion</span><span class="o">.</span><span class="n">aluminum</span><span class="p">(</span><span class="n">energy</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>More details can be seen in <a class="reference internal" href="../generated/neutronpy.spurion.aluminum.html#neutronpy.spurion.aluminum" title="neutronpy.spurion.aluminum"><code class="xref py py-func docutils literal"><span class="pre">aluminum</span></code></a>.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="data.html" class="btn btn-neutral float-right" title="Data handling with the Data Class" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../../examples.html" class="btn btn-neutral" title="Examples" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, David M Fobes.
+      Last updated on May 10, 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.0.0b3',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-7542685-4', 'auto');
+  ga('require', 'displayfeatures');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+neutronpy.material.Material.generate_hkl_positions
+==================================================
+
+.. currentmodule:: neutronpy.material
+
+.. automethod:: Material.generate_hkl_positions

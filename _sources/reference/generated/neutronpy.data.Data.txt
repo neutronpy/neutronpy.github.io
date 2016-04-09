@@ -17,6 +17,9 @@ neutronpy.data.Data
          Data.estimate_background
          Data.integrate
          Data.plot
+         Data.plot_contour
+         Data.plot_line
+         Data.plot_volume
          Data.position
          Data.scattering_function
          Data.subtract_background
@@ -30,12 +33,18 @@ neutronpy.data.Data
       .. autosummary::
          :toctree:
       
+         Data.Q
+         Data.data
+         Data.data_columns
          Data.detailed_balance_factor
+         Data.detector
          Data.e
          Data.error
          Data.h
          Data.intensity
          Data.k
          Data.l
+         Data.monitor
          Data.temp
+         Data.time
 

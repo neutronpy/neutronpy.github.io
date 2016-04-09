@@ -1,6 +1,0 @@
-neutronpy.core.Fitter.confidence_band
-=====================================
-
-.. currentmodule:: neutronpy.core
-
-.. automethod:: Fitter.confidence_band

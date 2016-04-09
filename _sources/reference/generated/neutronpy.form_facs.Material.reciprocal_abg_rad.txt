@@ -1,6 +1,0 @@
-neutronpy.form_facs.Material.reciprocal_abg_rad
-===============================================
-
-.. currentmodule:: neutronpy.form_facs
-
-.. autoattribute:: Material.reciprocal_abg_rad

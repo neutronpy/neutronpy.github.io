@@ -1,6 +1,0 @@
-neutronpy.resolution.Instrument.get_lattice
-===========================================
-
-.. currentmodule:: neutronpy.resolution
-
-.. automethod:: Instrument.get_lattice

@@ -1,6 +1,0 @@
-neutronpy.form_facs.Material.get_d_spacing
-==========================================
-
-.. currentmodule:: neutronpy.form_facs
-
-.. automethod:: Material.get_d_spacing

@@ -1,0 +1,6 @@
+neutronpy.crystal.Sample.bstar
+==============================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Sample.bstar

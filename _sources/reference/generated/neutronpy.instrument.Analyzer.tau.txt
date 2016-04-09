@@ -1,0 +1,6 @@
+neutronpy.instrument.Analyzer.tau
+=================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. autoattribute:: Analyzer.tau

@@ -1,0 +1,6 @@
+neutronpy.plot.PlotResolution.plot_slice
+========================================
+
+.. currentmodule:: neutronpy.plot
+
+.. automethod:: PlotResolution.plot_slice

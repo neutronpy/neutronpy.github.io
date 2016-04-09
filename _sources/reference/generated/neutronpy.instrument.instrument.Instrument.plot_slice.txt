@@ -1,0 +1,6 @@
+neutronpy.instrument.instrument.Instrument.plot_slice
+=====================================================
+
+.. currentmodule:: neutronpy.instrument.instrument
+
+.. automethod:: Instrument.plot_slice

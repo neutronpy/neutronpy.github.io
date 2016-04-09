@@ -1,6 +1,0 @@
-neutronpy.resolution.Instrument.moncor
-======================================
-
-.. currentmodule:: neutronpy.resolution
-
-.. autoattribute:: Instrument.moncor

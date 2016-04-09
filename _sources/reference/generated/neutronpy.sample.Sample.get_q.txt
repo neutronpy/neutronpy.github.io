@@ -1,0 +1,6 @@
+neutronpy.sample.Sample.get_q
+=============================
+
+.. currentmodule:: neutronpy.sample
+
+.. automethod:: Sample.get_q
