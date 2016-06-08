@@ -1,0 +1,6 @@
+neutronpy.lsfit.Fitter.dof
+==========================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.dof

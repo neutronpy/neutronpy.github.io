@@ -1,0 +1,6 @@
+neutronpy.lsfit.Fitter.stepfactor
+=================================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.stepfactor

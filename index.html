@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>NeutronPy &mdash; neutronpy 1.0.0b3 documentation</title>
+  <title>NeutronPy &mdash; neutronpy 1.0.1beta documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="neutronpy 1.0.0b3 documentation" href="#"/>
+    <link rel="top" title="neutronpy 1.0.1beta documentation" href="#"/>
         <link rel="next" title="API Reference" href="reference.html"/> 
 
   
@@ -134,8 +134,11 @@
 <li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.instrument.Analyzer.html">neutronpy.instrument.Analyzer</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="reference/neutronpy.lsfit.html">neutronpy.lsfit module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.html">neutronpy.lsfit.Fitter</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="reference/neutronpy.fileio.html">neutronpy.fileio module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.fileio.build_Q.html">neutronpy.fileio.build_Q</a></li>
 <li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.fileio.detect_filetype.html">neutronpy.fileio.detect_filetype</a></li>
 <li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.fileio.load_data.html">neutronpy.fileio.load_data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.fileio.load_instrument.html">neutronpy.fileio.load_instrument</a></li>
@@ -160,7 +163,7 @@
 <li class="toctree-l3"><a class="reference internal" href="reference/neutronpy.html#members">Members</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.data.data.Data.html">neutronpy.data.data.Data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.energy.Energy.html">neutronpy.energy.Energy</a></li>
-<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.kmpfit.Fitter.html">neutronpy.kmpfit.Fitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.html">neutronpy.lsfit.Fitter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.instrument.instrument.Instrument.html">neutronpy.instrument.instrument.Instrument</a></li>
 <li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.crystal.lattice.Lattice.html">neutronpy.crystal.lattice.Lattice</a></li>
 <li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.crystal.material.Material.html">neutronpy.crystal.material.Material</a></li>
@@ -176,6 +179,7 @@
 <li class="toctree-l4"><a class="reference internal" href="reference/neutronpy.functions.html">neutronpy.functions module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="reference/neutronpy.gui.html">neutronpy.gui module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="reference/neutronpy.instrument.html">neutronpy.instrument module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/neutronpy.lsfit.html">neutronpy.lsfit module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="reference/neutronpy.models.html">neutronpy.models module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="reference/neutronpy.spurion.html">neutronpy.spurion module</a></li>
 </ul>
@@ -378,7 +382,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="reference/neutronpy.fileio.html">neutronpy.fileio module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="reference/generated/neutronpy.fileio.build_Q.html">neutronpy.fileio.build_Q</a></li>
 <li class="toctree-l3"><a class="reference internal" href="reference/generated/neutronpy.fileio.detect_filetype.html">neutronpy.fileio.detect_filetype</a></li>
 <li class="toctree-l3"><a class="reference internal" href="reference/generated/neutronpy.fileio.load_data.html">neutronpy.fileio.load_data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="reference/generated/neutronpy.fileio.load_instrument.html">neutronpy.fileio.load_instrument</a></li>
@@ -434,6 +437,41 @@
 <li class="toctree-l3"><a class="reference internal" href="reference/generated/neutronpy.instrument.GetTau.html">neutronpy.instrument.GetTau</a></li>
 <li class="toctree-l3"><a class="reference internal" href="reference/generated/neutronpy.instrument.Monochromator.html">neutronpy.instrument.Monochromator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="reference/generated/neutronpy.instrument.Analyzer.html">neutronpy.instrument.Analyzer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reference/neutronpy.lsfit.html">neutronpy.lsfit module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.html">neutronpy.lsfit.Fitter</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.parinfo.html">neutronpy.lsfit.Fitter.parinfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.params0.html">neutronpy.lsfit.Fitter.params0</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.data.html">neutronpy.lsfit.Fitter.data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.ftol.html">neutronpy.lsfit.Fitter.ftol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.xtol.html">neutronpy.lsfit.Fitter.xtol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.gtol.html">neutronpy.lsfit.Fitter.gtol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.epsfcn.html">neutronpy.lsfit.Fitter.epsfcn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.stepfactor.html">neutronpy.lsfit.Fitter.stepfactor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.covtol.html">neutronpy.lsfit.Fitter.covtol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.maxiter.html">neutronpy.lsfit.Fitter.maxiter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.maxfev.html">neutronpy.lsfit.Fitter.maxfev</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.params.html">neutronpy.lsfit.Fitter.params</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.xerror.html">neutronpy.lsfit.Fitter.xerror</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.covar.html">neutronpy.lsfit.Fitter.covar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.chi2_min.html">neutronpy.lsfit.Fitter.chi2_min</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.orignorm.html">neutronpy.lsfit.Fitter.orignorm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.rchi2_min.html">neutronpy.lsfit.Fitter.rchi2_min</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.stderr.html">neutronpy.lsfit.Fitter.stderr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.npar.html">neutronpy.lsfit.Fitter.npar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.nfree.html">neutronpy.lsfit.Fitter.nfree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.npegged.html">neutronpy.lsfit.Fitter.npegged</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.dof.html">neutronpy.lsfit.Fitter.dof</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.resid.html">neutronpy.lsfit.Fitter.resid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.niter.html">neutronpy.lsfit.Fitter.niter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.nfev.html">neutronpy.lsfit.Fitter.nfev</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.status.html">neutronpy.lsfit.Fitter.status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.message.html">neutronpy.lsfit.Fitter.message</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.nofinitecheck.html">neutronpy.lsfit.Fitter.nofinitecheck</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.lsfit.Fitter.fit.html">neutronpy.lsfit.Fitter.fit</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="reference/neutronpy.models.html">neutronpy.models module</a><ul>
@@ -524,12 +562,33 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#anaconda-cloud-conda-recommended">Anaconda Cloud - conda &#8211; <strong>Recommended</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="installation.html#python-package-index-pip">Python Package Index - pip</a></li>
 <li class="toctree-l2"><a class="reference internal" href="installation.html#installation-from-source">Installation from Source</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development.html#requirements">Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="development.html#write-for-python-3">Write for Python 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="development.html#pep8-formatting">PEP8 Formatting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="development.html#documentation">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="development.html#unit-tests">Unit tests</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="development.html#development-workflow">Development Workflow</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="development.html#fork-and-clone">Fork and clone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="development.html#create-a-branch">Create a branch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="development.html#commit-changes">Commit changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="development.html#rebase-on-neutronpy-master">Rebase on neutronpy <code class="docutils literal"><span class="pre">master</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="development.html#create-pull-request">Create pull request</a></li>
+<li class="toctree-l3"><a class="reference internal" href="development.html#cleanup">Cleanup</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="development.html#development-environment">Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development.html#versions">Versions</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="roadmap.html">Roadmap</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="roadmap.html#milestones">Milestones</a></li>
 <li class="toctree-l2"><a class="reference internal" href="roadmap.html#next-release">Next Release</a></li>
@@ -593,11 +652,13 @@
 <p class="first admonition-title">Warning</p>
 <p class="last">New releases may not be backwards compatibile. This software is in a fluid state and undergoes rapid changes. Bug fix and maintanence releases will generally be  backwards compatibile updates. Major number releases (x.0) could potentially break backwards compatibility, but users will be notified in the changelog.</p>
 </div>
-<p><strong>master</strong> <a class="reference external" href="https://travis-ci.org/neutronpy/neutronpy"><img alt="master" src="https://travis-ci.org/neutronpy/neutronpy.svg?branch=master" /></a> :: <strong>develop</strong> <a class="reference external" href="https://travis-ci.org/neutronpy/neutronpy"><img alt="develop" src="https://travis-ci.org/neutronpy/neutronpy.svg?branch=develop" /></a> :: <strong>coverage</strong> <a class="reference external" href="https://codecov.io/github/neutronpy/neutronpy?branch=develop"><img alt="coverage" src="https://codecov.io/github/neutronpy/neutronpy/coverage.svg?branch=develop" /></a> :: <strong>code analysis</strong> <a class="reference external" href="https://codeclimate.com/github/neutronpy/neutronpy"><img alt="Code Climate" src="https://codeclimate.com/github/neutronpy/neutronpy/badges/gpa.svg" /></a></p>
-<p>NeutronPy is a python library with commonly used tools for neutron scattering measurements, primarily for Triple Axis Spectrometer data, but easily applied to other types of data, including Time of Flight.</p>
-<ul>
+<p><strong>TravisCI</strong> <a class="reference external" href="https://travis-ci.org/neutronpy/neutronpy"><img alt="mastertravis" src="https://travis-ci.org/neutronpy/neutronpy.svg?branch=master" /></a> :: <strong>Appveyor</strong> <a class="reference external" href="https://ci.appveyor.com/project/pseudocubic/neutronpy"><img alt="masterappveyor" src="https://ci.appveyor.com/api/projects/status/github/neutronpy/neutronpy?branch=master&amp;svg=true" /></a></p>
+<p><strong>Code Climate</strong> <a class="reference external" href="https://codeclimate.com/github/neutronpy/neutronpy"><img alt="Code Climate" src="https://codeclimate.com/github/neutronpy/neutronpy/badges/gpa.svg" /></a> :: <strong>Codecov</strong> <a class="reference external" href="https://codecov.io/gh/neutronpy/neutronpy"><img alt="coverage" src="https://codecov.io/gh/neutronpy/neutronpy/branch/master/graph/badge.svg" /></a></p>
+<p>NeutronPy is a python library with commonly used tools for neutron scattering measurements, primarily for Triple Axis Spectrometer data, but easily applied to other types of data, including some <em>reduced</em> Time of Flight data. Below is a non-exhaustive list of Neutronpy&#8217;s features:</p>
+<blockquote>
+<div><ul>
 <li><dl class="first docutils">
-<dt>Triple Axis Spectrometer resolution function calculation (Translated from ResLib), including:</dt>
+<dt>Triple Axis Spectrometer resolution function calculation (Translated from ResLib), including</dt>
 <dd><ul class="first last simple">
 <li>Resolution ellipses</li>
 <li>Instrument visualization</li>
@@ -606,7 +667,7 @@
 </dl>
 </li>
 <li><dl class="first docutils">
-<dt>Form factor calculation, including:</dt>
+<dt>Structure factor calculation, including</dt>
 <dd><ul class="first last">
 <li><dl class="first docutils">
 <dt>Structure factors with support for</dt>
@@ -624,46 +685,59 @@
 </dd>
 </dl>
 </li>
-<li><p class="first">Least-Squares fitting (KMPFIT, based on the C-implementation of MPFIT, from the Kapteyn package)</p>
+<li><p class="first">Least-Squares fitting (custom interface for scipy.optimize.leastsq using lmfit features)</p>
 </li>
 <li><dl class="first docutils">
 <dt>Basic data operations</dt>
 <dd><ul class="first last simple">
 <li>Binning</li>
-<li>Monitor Normalization</li>
+<li>Normalization (time/monitor)</li>
 <li>Calculated peak integrated intensity, position, and width</li>
-<li>Loading from known filetypes</li>
 <li>Plotting</li>
 <li>Slicing</li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><p class="first">And More...</p>
+<li><dl class="first docutils">
+<dt>Loading from common TAS file types, including</dt>
+<dd><ul class="first last simple">
+<li>SPICE</li>
+<li>ICE</li>
+<li>ICP</li>
+<li>MAD</li>
+</ul>
+</dd>
+</dl>
 </li>
 </ul>
-<p>See <a class="reference external" href="https://github.com/neutronpy/neutronpy/wiki/Roadmap">Roadmap</a> for future features</p>
-<p>NeutronPy was originally developed by David M Fobes in the <a class="reference external" href="http://neutrons.phy.bnl.gov/">Neutron Scattering Group</a>, part of the Condensed Matter Physics &amp; Materials Science Department (CMPMSD) at <a class="reference external" href="http://www.bnl.gov/">Brookhaven National Laboratory</a>. It is currently being developed in the <a class="reference external" href="http://www.lanl.gov/org/padste/adeps/materials-physics-applications/condensed-matter-magnet-science/index.php">MPA-CMMS</a> department of <a class="reference external" href="http://www.lanl.gov/">Los Alamos National Laboratory</a>. Both are <a class="reference external" href="http://science.energy.gov/bes/">US Department of Energy, Office of Basic Energy Sciences</a> funded laboratories.</p>
-<p>NeutronPy is a work-in-progress (see the roadmap in the wiki for indications of new upcoming features) and as such, still has many bugs, so use at your own risk. See the Disclaimer below. To report bugs or suggest features see the Contributions section below.</p>
+</div></blockquote>
+<p>See <a class="reference external" href="https://github.com/neutronpy/neutronpy/wiki/Roadmap">Roadmap</a> for panned future features.</p>
+<p>NeutronPy began to be developed by David M Fobes in the <a class="reference external" href="http://neutrons.phy.bnl.gov/">Neutron Scattering Group</a>, part of the Condensed Matter Physics &amp; Materials Science Department (CMPMSD) at <a class="reference external" href="http://www.bnl.gov/">Brookhaven National Laboratory</a>. It is currently being developed in the <a class="reference external" href="http://www.lanl.gov/org/padste/adeps/materials-physics-applications/condensed-matter-magnet-science/index.php">MPA-CMMS</a> division of <a class="reference external" href="http://www.lanl.gov/">Los Alamos National Laboratory</a>. Both are <a class="reference external" href="http://science.energy.gov/bes/">US Department of Energy, Office of Basic Energy Sciences</a> funded laboratories.</p>
+<p>NeutronPy is a work-in-progress (see the <a class="reference external" href="https://github.com/neutronpy/neutronpy/wiki/Roadmap">Roadmap</a> in the wiki for indications of new upcoming features) and as such, still has many bugs, so use at your own risk. See the Disclaimer below. To report bugs or suggest features see the Contributions section below.</p>
 <div class="section" id="requirements">
 <h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
 <p>The following packages are required to install this library:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">Python</span> <span class="pre">&gt;=</span> <span class="pre">2.6</span> <span class="pre">(incl.</span> <span class="pre">python</span> <span class="pre">3)</span></code></li>
+<li><code class="docutils literal"><span class="pre">Python</span> <span class="pre">&gt;=</span> <span class="pre">2.6</span> <span class="pre">(incl.</span> <span class="pre">Python</span> <span class="pre">3.3-3.5)</span></code></li>
 <li><code class="docutils literal"><span class="pre">numpy</span> <span class="pre">&gt;=</span> <span class="pre">1.8.0</span></code></li>
 <li><code class="docutils literal"><span class="pre">scipy</span> <span class="pre">&gt;=</span> <span class="pre">0.13.0</span></code></li>
-<li><code class="docutils literal"><span class="pre">Cython</span> <span class="pre">&gt;=</span> <span class="pre">0.20</span></code></li>
+<li><code class="docutils literal"><span class="pre">lmfit</span> <span class="pre">&gt;=</span> <span class="pre">0.9.1</span></code> (<code class="docutils literal"><span class="pre">==0.9.1</span></code> for Python 2.6)</li>
+<li><code class="docutils literal"><span class="pre">h5py</span></code> (optional, file IO)</li>
 <li><code class="docutils literal"><span class="pre">matplotlib</span> <span class="pre">&gt;=</span> <span class="pre">1.3.0</span></code> (optional, plotting)</li>
 <li><code class="docutils literal"><span class="pre">nose</span> <span class="pre">&gt;=</span> <span class="pre">1.3.0</span></code> (optional, tests)</li>
-<li><code class="docutils literal"><span class="pre">h5py</span></code> (optional, file IO)</li>
 </ul>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>It is recommended that you use <code class="docutils literal"><span class="pre">pip</span></code> to install NeutronPy:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">neutronpy</span>
+<p>It is recommended that you use <a href="#id4"><span class="problematic" id="id5">`anaconda &lt;&gt;`_</span></a> and <code class="docutils literal"><span class="pre">pip</span></code> to install NeutronPy:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">add</span> <span class="n">channels</span> <span class="n">mmcauliffe</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="n">python</span> <span class="n">nomkl</span> <span class="n">numpy</span> <span class="n">scipy</span> <span class="n">h5py</span> <span class="n">matplotlib</span> <span class="n">pyqt5</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">neutronpy</span>
 </pre></div>
 </div>
+<p>Note: the added channel is for pyqt5.</p>
+<p>The resolution calculator gui can be used after installation by executing <code class="docutils literal"><span class="pre">neutronpy</span></code> from the command-line.</p>
 </div>
 <div class="section" id="documentation">
 <h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
@@ -672,13 +746,12 @@
 </div>
 <div class="section" id="contributions">
 <h2>Contributions<a class="headerlink" href="#contributions" title="Permalink to this headline">¶</a></h2>
-<p>Contributions may be made by submitting a pull-request for review using the fork-and-pull method on GitHub. Feature requests and bug reports can be made using the GitHub issues interface.</p>
+<p>Contributions may be made by submitting a pull-request for review using the fork-and-pull method on GitHub. Feature requests and bug reports can be made using the GitHub issues interface. Please read the <a class="reference external" href="https://neutronpy.github.io/development.html">development guide</a> for details on how to best contribute.</p>
 <p>To discuss development you may <a class="reference external" href="http://goo.gl/forms/odTeCYQQEc">request access</a> to the <a class="reference external" href="http://neutronpy.slack.com">Neutronpy Slack Team</a>.</p>
 </div>
 <div class="section" id="copyright-licensing">
 <h2>Copyright &amp; Licensing<a class="headerlink" href="#copyright-licensing" title="Permalink to this headline">¶</a></h2>
 <p>Copyright (c) 2014-2016, David M. Fobes, Released under terms in LICENSE.</p>
-<p>KMPFIT and MPFIT are currently used in part from the <a class="reference external" href="https://www.astro.rug.nl/software/kapteyn/">Kapteyn</a> package and a custom implementation of the <a class="reference external" href="http://www.physics.wisc.edu/~craigm/idl/cmpfit.html">MINPACK-1</a> Least Squares Fitting Library in C, released under the terms in LICENSE.KAPTEYN and LICENSE.MPFIT, respectively.</p>
 <p>The source for the Triple Axis Spectrometer resolution calculations was translated in part from the <a class="reference external" href="http://www.neutron.ethz.ch/research/resources/reslib">ResLib</a> 3.4c (2009) library released under the terms in LICENSE.RESLIB, originally developed by Andrey Zheludev at Brookhaven National Laboratory, Oak Ridge National Laboratory and ETH Zuerich. email: <a class="reference external" href="mailto:zhelud&#37;&#52;&#48;ethz&#46;ch">zhelud<span>&#64;</span>ethz<span>&#46;</span>ch</a>.</p>
 </div>
 <div class="section" id="disclaimer">
@@ -711,7 +784,7 @@ SOFTWARE.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, David M Fobes.
-      Last updated on May 10, 2016.
+      Last updated on Jun 22, 2016.
 
     </p>
   </div>
@@ -733,7 +806,7 @@ SOFTWARE.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'1.0.0b3',
+            VERSION:'1.0.1beta',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

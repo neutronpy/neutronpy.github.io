@@ -1,0 +1,6 @@
+neutronpy.lsfit.Fitter.resid
+============================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.resid

@@ -1,0 +1,6 @@
+neutronpy.lsfit.Fitter.gtol
+===========================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.gtol

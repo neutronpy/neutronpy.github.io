@@ -1,0 +1,6 @@
+neutronpy.lsfit.Fitter.xtol
+===========================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.xtol

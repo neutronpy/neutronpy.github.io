@@ -1,0 +1,6 @@
+neutronpy.lsfit.Fitter.status
+=============================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.status

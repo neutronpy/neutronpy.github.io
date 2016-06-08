@@ -1,0 +1,6 @@
+neutronpy.lsfit.Fitter.fit
+==========================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. automethod:: Fitter.fit

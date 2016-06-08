@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>neutronpy.crystal.Material.calc_optimal_thickness &mdash; neutronpy 1.0.0b3 documentation</title>
+  <title>neutronpy.crystal.Material.calc_optimal_thickness &mdash; neutronpy 1.0.1beta documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="neutronpy 1.0.0b3 documentation" href="../../index.html"/>
+    <link rel="top" title="neutronpy 1.0.1beta documentation" href="../../index.html"/>
         <link rel="up" title="neutronpy.crystal.Material" href="neutronpy.crystal.Material.html"/>
         <link rel="next" title="neutronpy.crystal.Material.plot_unit_cell" href="neutronpy.crystal.Material.plot_unit_cell.html"/>
         <link rel="prev" title="neutronpy.crystal.Material.calc_incoh_elas_xs" href="neutronpy.crystal.Material.calc_incoh_elas_xs.html"/> 
@@ -136,8 +136,11 @@
 <li class="toctree-l4"><a class="reference internal" href="neutronpy.instrument.Analyzer.html">neutronpy.instrument.Analyzer</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../neutronpy.lsfit.html">neutronpy.lsfit module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.html">neutronpy.lsfit.Fitter</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../neutronpy.fileio.html">neutronpy.fileio module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="neutronpy.fileio.build_Q.html">neutronpy.fileio.build_Q</a></li>
 <li class="toctree-l4"><a class="reference internal" href="neutronpy.fileio.detect_filetype.html">neutronpy.fileio.detect_filetype</a></li>
 <li class="toctree-l4"><a class="reference internal" href="neutronpy.fileio.load_data.html">neutronpy.fileio.load_data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="neutronpy.fileio.load_instrument.html">neutronpy.fileio.load_instrument</a></li>
@@ -162,7 +165,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../neutronpy.html#members">Members</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="neutronpy.data.data.Data.html">neutronpy.data.data.Data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="neutronpy.energy.Energy.html">neutronpy.energy.Energy</a></li>
-<li class="toctree-l4"><a class="reference internal" href="neutronpy.kmpfit.Fitter.html">neutronpy.kmpfit.Fitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.html">neutronpy.lsfit.Fitter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="neutronpy.instrument.instrument.Instrument.html">neutronpy.instrument.instrument.Instrument</a></li>
 <li class="toctree-l4"><a class="reference internal" href="neutronpy.crystal.lattice.Lattice.html">neutronpy.crystal.lattice.Lattice</a></li>
 <li class="toctree-l4"><a class="reference internal" href="neutronpy.crystal.material.Material.html">neutronpy.crystal.material.Material</a></li>
@@ -178,6 +181,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../neutronpy.functions.html">neutronpy.functions module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../neutronpy.gui.html">neutronpy.gui module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../neutronpy.instrument.html">neutronpy.instrument module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../neutronpy.lsfit.html">neutronpy.lsfit module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../neutronpy.models.html">neutronpy.models module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../neutronpy.spurion.html">neutronpy.spurion module</a></li>
 </ul>
@@ -380,7 +384,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../neutronpy.fileio.html">neutronpy.fileio module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="neutronpy.fileio.build_Q.html">neutronpy.fileio.build_Q</a></li>
 <li class="toctree-l3"><a class="reference internal" href="neutronpy.fileio.detect_filetype.html">neutronpy.fileio.detect_filetype</a></li>
 <li class="toctree-l3"><a class="reference internal" href="neutronpy.fileio.load_data.html">neutronpy.fileio.load_data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="neutronpy.fileio.load_instrument.html">neutronpy.fileio.load_instrument</a></li>
@@ -436,6 +439,41 @@
 <li class="toctree-l3"><a class="reference internal" href="neutronpy.instrument.GetTau.html">neutronpy.instrument.GetTau</a></li>
 <li class="toctree-l3"><a class="reference internal" href="neutronpy.instrument.Monochromator.html">neutronpy.instrument.Monochromator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="neutronpy.instrument.Analyzer.html">neutronpy.instrument.Analyzer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../neutronpy.lsfit.html">neutronpy.lsfit module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="neutronpy.lsfit.Fitter.html">neutronpy.lsfit.Fitter</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.parinfo.html">neutronpy.lsfit.Fitter.parinfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.params0.html">neutronpy.lsfit.Fitter.params0</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.data.html">neutronpy.lsfit.Fitter.data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.ftol.html">neutronpy.lsfit.Fitter.ftol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.xtol.html">neutronpy.lsfit.Fitter.xtol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.gtol.html">neutronpy.lsfit.Fitter.gtol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.epsfcn.html">neutronpy.lsfit.Fitter.epsfcn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.stepfactor.html">neutronpy.lsfit.Fitter.stepfactor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.covtol.html">neutronpy.lsfit.Fitter.covtol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.maxiter.html">neutronpy.lsfit.Fitter.maxiter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.maxfev.html">neutronpy.lsfit.Fitter.maxfev</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.params.html">neutronpy.lsfit.Fitter.params</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.xerror.html">neutronpy.lsfit.Fitter.xerror</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.covar.html">neutronpy.lsfit.Fitter.covar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.chi2_min.html">neutronpy.lsfit.Fitter.chi2_min</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.orignorm.html">neutronpy.lsfit.Fitter.orignorm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.rchi2_min.html">neutronpy.lsfit.Fitter.rchi2_min</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.stderr.html">neutronpy.lsfit.Fitter.stderr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.npar.html">neutronpy.lsfit.Fitter.npar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.nfree.html">neutronpy.lsfit.Fitter.nfree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.npegged.html">neutronpy.lsfit.Fitter.npegged</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.dof.html">neutronpy.lsfit.Fitter.dof</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.resid.html">neutronpy.lsfit.Fitter.resid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.niter.html">neutronpy.lsfit.Fitter.niter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.nfev.html">neutronpy.lsfit.Fitter.nfev</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.status.html">neutronpy.lsfit.Fitter.status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.message.html">neutronpy.lsfit.Fitter.message</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.nofinitecheck.html">neutronpy.lsfit.Fitter.nofinitecheck</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.Fitter.fit.html">neutronpy.lsfit.Fitter.fit</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../neutronpy.models.html">neutronpy.models module</a><ul>
@@ -531,7 +569,27 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../development.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development.html">Development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#requirements">Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../development.html#write-for-python-3">Write for Python 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../development.html#pep8-formatting">PEP8 Formatting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../development.html#documentation">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../development.html#unit-tests">Unit tests</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#development-workflow">Development Workflow</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../development.html#fork-and-clone">Fork and clone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../development.html#create-a-branch">Create a branch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../development.html#commit-changes">Commit changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../development.html#rebase-on-neutronpy-master">Rebase on neutronpy <code class="docutils literal"><span class="pre">master</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../development.html#create-pull-request">Create pull request</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../development.html#cleanup">Cleanup</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#development-environment">Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../development.html#versions">Versions</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../roadmap.html">Roadmap</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../roadmap.html#milestones">Milestones</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../roadmap.html#next-release">Next Release</a></li>
@@ -601,7 +659,7 @@
 <h1>neutronpy.crystal.Material.calc_optimal_thickness<a class="headerlink" href="#neutronpy-crystal-material-calc-optimal-thickness" title="Permalink to this headline">¶</a></h1>
 <dl class="method">
 <dt id="neutronpy.crystal.Material.calc_optimal_thickness">
-<code class="descclassname">Material.</code><code class="descname">calc_optimal_thickness</code><span class="sig-paren">(</span><em>energy=25.3</em>, <em>transmission=0.36787944117144233</em><span class="sig-paren">)</span><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.0.0b3/neutronpy/crystal/material.py#L275"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.crystal.Material.calc_optimal_thickness" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">Material.</code><code class="descname">calc_optimal_thickness</code><span class="sig-paren">(</span><em>energy=25.3</em>, <em>transmission=0.36787944117144233</em><span class="sig-paren">)</span><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.0.1beta/neutronpy/crystal/material.py#L275"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.crystal.Material.calc_optimal_thickness" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculates the optimal sample thickess to avoid problems with
 extinction, multiple coherent scattering and absorption.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -630,20 +688,20 @@ extinction, multiple coherent scattering and absorption.</p>
 <p class="rubric">Notes</p>
 <p>The total transmission of neutrons through a material is defined as</p>
 <div class="math">
-<p><img src="../../_images/math/1050d574fa4aae86e28107cadb47d1c04a4732a6.png" alt="T = \frac{I}{I_0} = e^{-\Sigma_T d},"/></p>
+<p><img src="../../_images/math/0c1287b03f8b8639700f0b6b5baecf2e0ccf73e0.png" alt="T = \frac{I}{I_0} = e^{-\Sigma_T d},"/></p>
 </div><p>where <img class="math" src="../../_images/math/04f02456ea4a206fb5a8a2c42740b59e0c989651.png" alt="\Sigma_T"/> is the total scattering cross-section, <em>i.e.</em></p>
 <div class="math">
-<p><img src="../../_images/math/4a6f64ab6c400b7d71e414e2790fa4ed594d753b.png" alt="\Sigma_T = \Sigma_{coh} + \Sigma_{inc} + \Sigma_{abs},"/></p>
+<p><img src="../../_images/math/c20a93afeaa686eb137016d3ee8df44f072c1be9.png" alt="\Sigma_T = \Sigma_{coh} + \Sigma_{inc} + \Sigma_{abs},"/></p>
 </div><p>and <img class="math" src="../../_images/math/b9d10b54744d07746b97f53c55eb98046fd76c8c.png" alt="d"/> is the thickness in cm.</p>
 <p>Scattered intensity is thus defined to be</p>
 <div class="math">
-<p><img src="../../_images/math/b49a88f5f5dd58d8cacf98cfd3fe570c72d40553.png" alt="I_s \propto dT\left(\frac{d\Sigma_{coh}}{d\Omega}\right) \propto d e^{-\Sigma_T d}."/></p>
+<p><img src="../../_images/math/6fd89f2bb10781f0c784bd95f0f47eaa42ae352e.png" alt="I_s \propto dT\left(\frac{d\Sigma_{coh}}{d\Omega}\right) \propto d e^{-\Sigma_T d}."/></p>
 </div><p><img class="math" src="../../_images/math/09b1fb6455c4ae741a6fe2d2903043fcad1b7da5.png" alt="I_s"/> is therefore a maximum when <img class="math" src="../../_images/math/0f8e5e316def425c68cca6668c0d78c9c45d2e78.png" alt="d=1/\Sigma_T"/>, resulting
 a transmission of approximately <img class="math" src="../../_images/math/dbee1ab23f9ccfa27374f012bfa002e713446198.png" alt="T=37\%"/>. This is valid when the
 coherent cross-section is much less than the total cross-section,
 <em>i.e.</em></p>
 <div class="math">
-<p><img src="../../_images/math/62218a52726f9e909eeeb7c9a1ed7a0e2f00f829.png" alt="\Sigma_{coh} \ll \Sigma_T \approx \Sigma_{inc} + \Sigma{abs}."/></p>
+<p><img src="../../_images/math/a4476b53e56b85b5024e0045a798c311b16afee2.png" alt="\Sigma_{coh} \ll \Sigma_T \approx \Sigma_{inc} + \Sigma{abs}."/></p>
 </div><p>However, if the coherent cross-section of the material is the dominant
 part of the total scattering cross-section, <em>i.e.</em>
 <img class="math" src="../../_images/math/f6b7a577496a347f29ad9ec1b0d50b6caf742479.png" alt="\Sigma_T \approx \Sigma_{coh}"/>, then <img class="math" src="../../_images/math/1e77f12bfc485593d89260cd294fe6ff87ff69d9.png" alt="d = 1/\Sigma_T"/> is
@@ -673,7 +731,7 @@ Therefore a transmission of <img class="math" src="../../_images/math/b2460008e0
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, David M Fobes.
-      Last updated on May 10, 2016.
+      Last updated on Jun 13, 2016.
 
     </p>
   </div>
@@ -695,7 +753,7 @@ Therefore a transmission of <img class="math" src="../../_images/math/b2460008e0
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.0.0b3',
+            VERSION:'1.0.1beta',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

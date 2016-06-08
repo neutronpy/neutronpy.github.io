@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>neutronpy.constants module &mdash; neutronpy 1.0.0b3 documentation</title>
+  <title>neutronpy.constants module &mdash; neutronpy 1.0.1beta documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="top" title="neutronpy 1.0.0b3 documentation" href="../index.html"/>
+    <link rel="top" title="neutronpy 1.0.1beta documentation" href="../index.html"/>
         <link rel="up" title="neutronpy package" href="neutronpy.html"/>
         <link rel="next" title="neutronpy.constants.magnetic_ion_j" href="generated/neutronpy.constants.magnetic_ion_j.html"/>
         <link rel="prev" title="neutronpy.crystal.sample.Sample.get_angle_between_planes" href="generated/neutronpy.crystal.sample.Sample.get_angle_between_planes.html"/> 
@@ -136,8 +136,11 @@
 <li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.instrument.Analyzer.html">neutronpy.instrument.Analyzer</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="neutronpy.lsfit.html">neutronpy.lsfit module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.html">neutronpy.lsfit.Fitter</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="neutronpy.fileio.html">neutronpy.fileio module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.fileio.build_Q.html">neutronpy.fileio.build_Q</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.fileio.detect_filetype.html">neutronpy.fileio.detect_filetype</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.fileio.load_data.html">neutronpy.fileio.load_data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.fileio.load_instrument.html">neutronpy.fileio.load_instrument</a></li>
@@ -162,7 +165,7 @@
 <li class="toctree-l3"><a class="reference internal" href="neutronpy.html#members">Members</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.data.data.Data.html">neutronpy.data.data.Data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.energy.Energy.html">neutronpy.energy.Energy</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.kmpfit.Fitter.html">neutronpy.kmpfit.Fitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.html">neutronpy.lsfit.Fitter</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.instrument.instrument.Instrument.html">neutronpy.instrument.instrument.Instrument</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.crystal.lattice.Lattice.html">neutronpy.crystal.lattice.Lattice</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.crystal.material.Material.html">neutronpy.crystal.material.Material</a></li>
@@ -178,6 +181,7 @@
 <li class="toctree-l4"><a class="reference internal" href="neutronpy.functions.html">neutronpy.functions module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="neutronpy.gui.html">neutronpy.gui module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="neutronpy.instrument.html">neutronpy.instrument module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.lsfit.html">neutronpy.lsfit module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="neutronpy.models.html">neutronpy.models module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="neutronpy.spurion.html">neutronpy.spurion module</a></li>
 </ul>
@@ -380,7 +384,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="neutronpy.fileio.html">neutronpy.fileio module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="generated/neutronpy.fileio.build_Q.html">neutronpy.fileio.build_Q</a></li>
 <li class="toctree-l3"><a class="reference internal" href="generated/neutronpy.fileio.detect_filetype.html">neutronpy.fileio.detect_filetype</a></li>
 <li class="toctree-l3"><a class="reference internal" href="generated/neutronpy.fileio.load_data.html">neutronpy.fileio.load_data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="generated/neutronpy.fileio.load_instrument.html">neutronpy.fileio.load_instrument</a></li>
@@ -436,6 +439,41 @@
 <li class="toctree-l3"><a class="reference internal" href="generated/neutronpy.instrument.GetTau.html">neutronpy.instrument.GetTau</a></li>
 <li class="toctree-l3"><a class="reference internal" href="generated/neutronpy.instrument.Monochromator.html">neutronpy.instrument.Monochromator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="generated/neutronpy.instrument.Analyzer.html">neutronpy.instrument.Analyzer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="neutronpy.lsfit.html">neutronpy.lsfit module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.html">neutronpy.lsfit.Fitter</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.parinfo.html">neutronpy.lsfit.Fitter.parinfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.params0.html">neutronpy.lsfit.Fitter.params0</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.data.html">neutronpy.lsfit.Fitter.data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.ftol.html">neutronpy.lsfit.Fitter.ftol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.xtol.html">neutronpy.lsfit.Fitter.xtol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.gtol.html">neutronpy.lsfit.Fitter.gtol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.epsfcn.html">neutronpy.lsfit.Fitter.epsfcn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.stepfactor.html">neutronpy.lsfit.Fitter.stepfactor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.covtol.html">neutronpy.lsfit.Fitter.covtol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.maxiter.html">neutronpy.lsfit.Fitter.maxiter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.maxfev.html">neutronpy.lsfit.Fitter.maxfev</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.params.html">neutronpy.lsfit.Fitter.params</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.xerror.html">neutronpy.lsfit.Fitter.xerror</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.covar.html">neutronpy.lsfit.Fitter.covar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.chi2_min.html">neutronpy.lsfit.Fitter.chi2_min</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.orignorm.html">neutronpy.lsfit.Fitter.orignorm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.rchi2_min.html">neutronpy.lsfit.Fitter.rchi2_min</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.stderr.html">neutronpy.lsfit.Fitter.stderr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.npar.html">neutronpy.lsfit.Fitter.npar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.nfree.html">neutronpy.lsfit.Fitter.nfree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.npegged.html">neutronpy.lsfit.Fitter.npegged</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.dof.html">neutronpy.lsfit.Fitter.dof</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.resid.html">neutronpy.lsfit.Fitter.resid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.niter.html">neutronpy.lsfit.Fitter.niter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.nfev.html">neutronpy.lsfit.Fitter.nfev</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.status.html">neutronpy.lsfit.Fitter.status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.message.html">neutronpy.lsfit.Fitter.message</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.nofinitecheck.html">neutronpy.lsfit.Fitter.nofinitecheck</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/neutronpy.lsfit.Fitter.fit.html">neutronpy.lsfit.Fitter.fit</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="neutronpy.models.html">neutronpy.models module</a><ul>
@@ -531,7 +569,27 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../development.html#requirements">Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../development.html#write-for-python-3">Write for Python 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../development.html#pep8-formatting">PEP8 Formatting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../development.html#documentation">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../development.html#unit-tests">Unit tests</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../development.html#development-workflow">Development Workflow</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../development.html#fork-and-clone">Fork and clone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../development.html#create-a-branch">Create a branch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../development.html#commit-changes">Commit changes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../development.html#rebase-on-neutronpy-master">Rebase on neutronpy <code class="docutils literal"><span class="pre">master</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../development.html#create-pull-request">Create pull request</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../development.html#cleanup">Cleanup</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../development.html#development-environment">Development Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../development.html#versions">Versions</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../roadmap.html">Roadmap</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../roadmap.html#milestones">Milestones</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../roadmap.html#next-release">Next Release</a></li>
@@ -646,7 +704,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, David M Fobes.
-      Last updated on May 10, 2016.
+      Last updated on Jun 13, 2016.
 
     </p>
   </div>
@@ -668,7 +726,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'1.0.0b3',
+            VERSION:'1.0.1beta',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

@@ -1,0 +1,6 @@
+neutronpy.lsfit.Fitter.covtol
+=============================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.covtol

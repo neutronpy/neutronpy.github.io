@@ -1,0 +1,6 @@
+neutronpy.lsfit.Fitter.nofinitecheck
+====================================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.nofinitecheck
