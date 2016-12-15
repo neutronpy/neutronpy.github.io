@@ -1,0 +1,6 @@
+neutronpy.data.Scans.update
+===========================
+
+.. currentmodule:: neutronpy.data
+
+.. automethod:: Scans.update

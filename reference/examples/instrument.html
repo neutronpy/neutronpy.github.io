@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Resolution calculation with Instrument Class &mdash; neutronpy 1.0.1beta documentation</title>
+  <title>Resolution calculation with Instrument Class &mdash; neutronpy 1.0.2 documentation</title>
   
 
   
@@ -32,7 +32,10 @@
   
 
   
-    <link rel="top" title="neutronpy 1.0.1beta documentation" href="../../index.html"/>
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="neutronpy 1.0.2 documentation" href="../../index.html"/>
         <link rel="up" title="Examples" href="../../examples.html"/>
         <link rel="next" title="Form Factor calculation with the Material Class" href="material.html"/>
         <link rel="prev" title="Using the Resolution Calculation Graphical User Interface" href="gui.html"/> 
@@ -366,6 +369,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Analysis.scattering_function.html">neutronpy.data.Analysis.scattering_function</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Analysis.dynamic_susceptibility.html">neutronpy.data.Analysis.dynamic_susceptibility</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Analysis.estimate_background.html">neutronpy.data.Analysis.estimate_background</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.data.Scans.html">neutronpy.data.Scans</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Scans.waterfall.html">neutronpy.data.Scans.waterfall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Scans.pcolor.html">neutronpy.data.Scans.pcolor</a></li>
 </ul>
 </li>
 </ul>
@@ -710,7 +718,7 @@
 </div>
 <div class="section" id="resolution-parameters">
 <h3>Resolution parameters<a class="headerlink" href="#resolution-parameters" title="Permalink to this headline">¶</a></h3>
-<p>To calculate the resolution parameters, without needing projections or plots, one may use <a class="reference internal" href="../generated/neutronpy.instrument.Instrument.calc_resolution.html#neutronpy.instrument.Instrument.calc_resolution" title="neutronpy.instrument.Instrument.calc_resolution"><code class="xref py py-meth docutils literal"><span class="pre">calc_resolution</span></code></a>:</p>
+<p>To calculate the resolution parameters, without needing projections or plots, one may use <a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.calc_resolution.html#neutronpy.instrument.instrument.Instrument.calc_resolution" title="neutronpy.instrument.instrument.Instrument.calc_resolution"><code class="xref py py-meth docutils literal"><span class="pre">calc_resolution</span></code></a>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">EXP</span><span class="o">.</span><span class="n">calc_resolution</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -738,7 +746,7 @@
 </div>
 <div class="section" id="popovici-calculation">
 <h2>Popovici calculation<a class="headerlink" href="#popovici-calculation" title="Permalink to this headline">¶</a></h2>
-<p>All of the previous sections are still relevant and are necessary for the Popovici method of resolution calculation, but more details about the instrument are required, and the Popovici method must be enabled. The most essential properties that need to be defined are the distances between each major element of the instrument, namely, guide-to-monochromator, monochromator-to-sample, sample-to-analyzer, and analyzer-to-detector. These distances are assigned to the <a class="reference internal" href="../generated/neutronpy.instrument.Instrument.arms.html#neutronpy.instrument.Instrument.arms" title="neutronpy.instrument.Instrument.arms"><code class="xref py py-attr docutils literal"><span class="pre">arms</span></code></a> property in the above order:</p>
+<p>All of the previous sections are still relevant and are necessary for the Popovici method of resolution calculation, but more details about the instrument are required, and the Popovici method must be enabled. The most essential properties that need to be defined are the distances between each major element of the instrument, namely, guide-to-monochromator, monochromator-to-sample, sample-to-analyzer, and analyzer-to-detector. These distances are assigned to the <a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.arms.html#neutronpy.instrument.instrument.Instrument.arms" title="neutronpy.instrument.instrument.Instrument.arms"><code class="xref py py-attr docutils literal"><span class="pre">arms</span></code></a> property in the above order:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">EXP</span><span class="o">.</span><span class="n">arms</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1560</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="mi">260</span><span class="p">,</span> <span class="mi">300</span><span class="p">]</span>
 </pre></div>
 </div>
@@ -781,7 +789,7 @@
 </div>
 <div class="section" id="plotting-of-the-instrument-setup-for-a-given-q-w">
 <h2>Plotting of the Instrument setup for a given (Q,W)<a class="headerlink" href="#plotting-of-the-instrument-setup-for-a-given-q-w" title="Permalink to this headline">¶</a></h2>
-<p>To see a plot of the instrument setup using the angles required for a given <img class="math" src="../../_images/math/8ed726c0f869b12657b2d8766b1224df9bff6df0.png" alt="(Q, W)"/> the <a class="reference internal" href="../generated/neutronpy.instrument.Instrument.plot_instrument.html#neutronpy.instrument.Instrument.plot_instrument" title="neutronpy.instrument.Instrument.plot_instrument"><code class="xref py py-meth docutils literal"><span class="pre">plot_instrument</span></code></a> method can be used.</p>
+<p>To see a plot of the instrument setup using the angles required for a given <img class="math" src="../../_images/math/8ed726c0f869b12657b2d8766b1224df9bff6df0.png" alt="(Q, W)"/> the <a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.plot_instrument.html#neutronpy.instrument.instrument.Instrument.plot_instrument" title="neutronpy.instrument.instrument.Instrument.plot_instrument"><code class="xref py py-meth docutils literal"><span class="pre">plot_instrument</span></code></a> method can be used.</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">EXP</span> <span class="o">=</span> <span class="n">Instrument</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">EXP</span><span class="o">.</span><span class="n">plot_instrument</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
@@ -821,7 +829,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, David M Fobes.
-      Last updated on Jun 22, 2016.
+      Last updated on Dec 15, 2016.
 
     </p>
   </div>
@@ -843,7 +851,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.0.1beta',
+            VERSION:'1.0.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

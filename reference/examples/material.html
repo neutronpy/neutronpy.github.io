@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Form Factor calculation with the Material Class &mdash; neutronpy 1.0.1beta documentation</title>
+  <title>Form Factor calculation with the Material Class &mdash; neutronpy 1.0.2 documentation</title>
   
 
   
@@ -32,7 +32,10 @@
   
 
   
-    <link rel="top" title="neutronpy 1.0.1beta documentation" href="../../index.html"/>
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="neutronpy 1.0.2 documentation" href="../../index.html"/>
         <link rel="up" title="Examples" href="../../examples.html"/>
         <link rel="next" title="FAQs" href="../../faq.html"/>
         <link rel="prev" title="Resolution calculation with Instrument Class" href="instrument.html"/> 
@@ -368,6 +371,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Analysis.estimate_background.html">neutronpy.data.Analysis.estimate_background</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.data.Scans.html">neutronpy.data.Scans</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Scans.waterfall.html">neutronpy.data.Scans.waterfall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Scans.pcolor.html">neutronpy.data.Scans.pcolor</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../neutronpy.energy.html">neutronpy.energy module</a><ul>
@@ -564,6 +572,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../installation.html#anaconda-cloud-conda-recommended">Anaconda Cloud - conda &#8211; <strong>Recommended</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../installation.html#python-package-index-pip">Python Package Index - pip</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../installation.html#installation-from-source">Installation from Source</a></li>
 </ul>
@@ -650,7 +659,7 @@
   <div class="section" id="form-factor-calculation-with-the-material-class">
 <h1>Form Factor calculation with the Material Class<a class="headerlink" href="#form-factor-calculation-with-the-material-class" title="Permalink to this headline">¶</a></h1>
 <p><em>Note: This module is still a work-in-progress and the usage of these classes and/or functions may change in the future.</em></p>
-<p>The following are examples on the usage of the <a class="reference internal" href="../generated/neutronpy.crystal.Material.html#neutronpy.crystal.Material" title="neutronpy.crystal.Material"><code class="xref py py-class docutils literal"><span class="pre">Material</span></code></a> class, used to define a material and calculate the structural form factor in reciprocal lattice units for a given <img class="math" src="../../_images/math/620a3ce6403ec82f1347af9985bc03f7a9382f4a.png" alt="q"/>. This tutorial will cover the utilization of this class and its methods.</p>
+<p>The following are examples on the usage of the <a class="reference internal" href="../generated/neutronpy.crystal.material.Material.html#neutronpy.crystal.material.Material" title="neutronpy.crystal.material.Material"><code class="xref py py-class docutils literal"><span class="pre">Material</span></code></a> class, used to define a material and calculate the structural form factor in reciprocal lattice units for a given <img class="math" src="../../_images/math/620a3ce6403ec82f1347af9985bc03f7a9382f4a.png" alt="q"/>. This tutorial will cover the utilization of this class and its methods.</p>
 <div class="section" id="defining-the-material">
 <h2>Defining the Material<a class="headerlink" href="#defining-the-material" title="Permalink to this headline">¶</a></h2>
 <p>For this example we will use Fe<sub>1.1</sub>Te, a high-temperature tetragonal <img class="math" src="../../_images/math/c139019f43ffcfe23fa7173f1bc78f4102406463.png" alt="P4/nmm"/> structure with Fe in the 2a positions, Te in the 2c positions, and excess Fe in the interstitial 2c positions. First we build the dictionary defining the material to pass it to the class:</p>
@@ -679,8 +688,8 @@
 </div>
 <div class="section" id="calculating-the-structure-factor">
 <h2>Calculating the structure factor<a class="headerlink" href="#calculating-the-structure-factor" title="Permalink to this headline">¶</a></h2>
-<p><strong>Note</strong>: The structure factor calculation method <a class="reference internal" href="../generated/neutronpy.crystal.NuclearStructureFactor.calc_nuc_str_fac.html#neutronpy.crystal.NuclearStructureFactor.calc_nuc_str_fac" title="neutronpy.crystal.NuclearStructureFactor.calc_nuc_str_fac"><code class="xref py py-meth docutils literal"><span class="pre">calc_nuc_str_fac</span></code></a> returns the full structure factor term <img class="math" src="../../_images/math/7b3ff3221a8a0ecbc7166b5c807f9d15c636360a.png" alt="F(q)"/>, including any imaginary parts, and not <img class="math" src="../../_images/math/591ff4826ffc7ec87cbd2b8fe81c55724fd7c23c.png" alt="\left|F(q)\right|^2"/> which is typically used in other calculations.</p>
-<p>Now that our material is defined, we can calculate the structural form factor with <a class="reference internal" href="../generated/neutronpy.crystal.NuclearStructureFactor.calc_nuc_str_fac.html#neutronpy.crystal.NuclearStructureFactor.calc_nuc_str_fac" title="neutronpy.crystal.NuclearStructureFactor.calc_nuc_str_fac"><code class="xref py py-meth docutils literal"><span class="pre">calc_nuc_str_fac</span></code></a>. First, we will calculate it at a single point <img class="math" src="../../_images/math/620a3ce6403ec82f1347af9985bc03f7a9382f4a.png" alt="q"/>:</p>
+<p><strong>Note</strong>: The structure factor calculation method <a class="reference internal" href="../generated/neutronpy.crystal.Material.calc_nuc_str_fac.html#neutronpy.crystal.Material.calc_nuc_str_fac" title="neutronpy.crystal.Material.calc_nuc_str_fac"><code class="xref py py-meth docutils literal"><span class="pre">calc_nuc_str_fac</span></code></a> returns the full structure factor term <img class="math" src="../../_images/math/7b3ff3221a8a0ecbc7166b5c807f9d15c636360a.png" alt="F(q)"/>, including any imaginary parts, and not <img class="math" src="../../_images/math/591ff4826ffc7ec87cbd2b8fe81c55724fd7c23c.png" alt="\left|F(q)\right|^2"/> which is typically used in other calculations.</p>
+<p>Now that our material is defined, we can calculate the structural form factor with <a class="reference internal" href="../generated/neutronpy.crystal.Material.calc_nuc_str_fac.html#neutronpy.crystal.Material.calc_nuc_str_fac" title="neutronpy.crystal.Material.calc_nuc_str_fac"><code class="xref py py-meth docutils literal"><span class="pre">calc_nuc_str_fac</span></code></a>. First, we will calculate it at a single point <img class="math" src="../../_images/math/620a3ce6403ec82f1347af9985bc03f7a9382f4a.png" alt="q"/>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">str_fac</span> <span class="o">=</span> <span class="n">FeTe</span><span class="o">.</span><span class="n">calc_nuc_str_fac</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -738,7 +747,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, David M Fobes.
-      Last updated on Jun 13, 2016.
+      Last updated on Dec 15, 2016.
 
     </p>
   </div>
@@ -760,7 +769,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.0.1beta',
+            VERSION:'1.0.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

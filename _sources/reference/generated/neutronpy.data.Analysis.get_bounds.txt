@@ -1,0 +1,6 @@
+neutronpy.data.Analysis.get_bounds
+==================================
+
+.. currentmodule:: neutronpy.data
+
+.. automethod:: Analysis.get_bounds

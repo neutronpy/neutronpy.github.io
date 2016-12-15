@@ -13,6 +13,8 @@ neutronpy.data.Analysis
       
          Analysis.dynamic_susceptibility
          Analysis.estimate_background
+         Analysis.get_bounds
+         Analysis.get_keys
          Analysis.integrate
          Analysis.position
          Analysis.scattering_function

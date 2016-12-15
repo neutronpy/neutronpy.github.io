@@ -34,6 +34,7 @@ neutronpy.lsfit.Fitter
          Fitter.maxfev
          Fitter.maxiter
          Fitter.message
+         Fitter.nan_policy
          Fitter.nfev
          Fitter.nfree
          Fitter.niter

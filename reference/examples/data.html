@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data handling with the Data Class &mdash; neutronpy 1.0.1beta documentation</title>
+  <title>Data handling with the Data Class &mdash; neutronpy 1.0.2 documentation</title>
   
 
   
@@ -32,7 +32,10 @@
   
 
   
-    <link rel="top" title="neutronpy 1.0.1beta documentation" href="../../index.html"/>
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="neutronpy 1.0.2 documentation" href="../../index.html"/>
         <link rel="up" title="Examples" href="../../examples.html"/>
         <link rel="next" title="Least-squares fitting with the Fitter Class" href="fitting.html"/>
         <link rel="prev" title="Basic introduction to using NeutronPy" href="basic.html"/> 
@@ -368,6 +371,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Analysis.estimate_background.html">neutronpy.data.Analysis.estimate_background</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.data.Scans.html">neutronpy.data.Scans</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Scans.waterfall.html">neutronpy.data.Scans.waterfall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Scans.pcolor.html">neutronpy.data.Scans.pcolor</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../neutronpy.energy.html">neutronpy.energy module</a><ul>
@@ -564,6 +572,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../installation.html#anaconda-cloud-conda-recommended">Anaconda Cloud - conda &#8211; <strong>Recommended</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../installation.html#python-package-index-pip">Python Package Index - pip</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../installation.html#installation-from-source">Installation from Source</a></li>
 </ul>
@@ -650,10 +659,10 @@
   <div class="section" id="data-handling-with-the-data-class">
 <h1>Data handling with the Data Class<a class="headerlink" href="#data-handling-with-the-data-class" title="Permalink to this headline">¶</a></h1>
 <p><em>Note: This module is still a work-in-progress and the usage of these classes and/or functions may change in the future.</em></p>
-<p>The following contains examples of how to use the various features in the <a class="reference internal" href="../generated/neutronpy.data.data.Data.html#neutronpy.data.data.Data" title="neutronpy.data.data.Data"><code class="xref py py-class docutils literal"><span class="pre">Data</span></code></a>, whose purpose is to simplify the handling of neutron scattering data and provide basic analysis and visualization functions.</p>
+<p>The following contains examples of how to use the various features in the <a class="reference internal" href="../generated/neutronpy.data.Data.html#neutronpy.data.Data" title="neutronpy.data.Data"><code class="xref py py-class docutils literal"><span class="pre">Data</span></code></a>, whose purpose is to simplify the handling of neutron scattering data and provide basic analysis and visualization functions.</p>
 <div class="section" id="initialization-loading-data">
 <h2>Initialization: loading data<a class="headerlink" href="#initialization-loading-data" title="Permalink to this headline">¶</a></h2>
-<p>There are a couple of options to initialize the <a class="reference internal" href="../generated/neutronpy.data.data.Data.html#neutronpy.data.data.Data" title="neutronpy.data.data.Data"><code class="xref py py-class docutils literal"><span class="pre">Data</span></code></a> object. If your data is in SPICE (HFIR, ORNL), ICE or ICP (NCNR) formats then you can use <code class="xref py py-meth docutils literal"><span class="pre">load</span></code>, otherwise you will need to load the data and pass it to <a class="reference internal" href="../generated/neutronpy.data.data.Data.html#neutronpy.data.data.Data" title="neutronpy.data.data.Data"><code class="xref py py-class docutils literal"><span class="pre">Data</span></code></a> manually.</p>
+<p>There are a couple of options to initialize the <a class="reference internal" href="../generated/neutronpy.data.Data.html#neutronpy.data.Data" title="neutronpy.data.Data"><code class="xref py py-class docutils literal"><span class="pre">Data</span></code></a> object. If your data is in SPICE (HFIR, ORNL), ICE or ICP (NCNR) formats then you can use <code class="xref py py-meth docutils literal"><span class="pre">load</span></code>, otherwise you will need to load the data and pass it to <a class="reference internal" href="../generated/neutronpy.data.Data.html#neutronpy.data.Data" title="neutronpy.data.Data"><code class="xref py py-class docutils literal"><span class="pre">Data</span></code></a> manually.</p>
 <div class="section" id="load-from-file">
 <h3>Load from file<a class="headerlink" href="#load-from-file" title="Permalink to this headline">¶</a></h3>
 <p>First, let&#8217;s assume that you have a data file, <code class="docutils literal"><span class="pre">'scan.dat'</span></code> from a HFIR instrument (SPICE format):</p>
@@ -691,7 +700,7 @@
 </div>
 <div class="section" id="pass-pre-loaded-data">
 <h3>Pass pre-loaded data<a class="headerlink" href="#pass-pre-loaded-data" title="Permalink to this headline">¶</a></h3>
-<p>Assuming that your data is in a format that is not supported by <code class="xref py py-meth docutils literal"><span class="pre">Data.load_file</span></code> you will need to load the data yourself and pass it to the <a class="reference internal" href="../generated/neutronpy.data.data.Data.html#neutronpy.data.data.Data" title="neutronpy.data.data.Data"><code class="xref py py-class docutils literal"><span class="pre">Data</span></code></a> class and build <code class="docutils literal"><span class="pre">Data.Q</span></code> using <code class="xref py py-meth docutils literal"><span class="pre">Data.build_Q</span></code>. To build <code class="docutils literal"><span class="pre">Data.Q</span></code> you must have defined <code class="docutils literal"><span class="pre">h</span></code>, <code class="docutils literal"><span class="pre">k</span></code>, <code class="docutils literal"><span class="pre">l</span></code>, <code class="docutils literal"><span class="pre">e</span></code>, and <code class="docutils literal"><span class="pre">temp</span></code>.</p>
+<p>Assuming that your data is in a format that is not supported by <code class="xref py py-meth docutils literal"><span class="pre">Data.load_file</span></code> you will need to load the data yourself and pass it to the <a class="reference internal" href="../generated/neutronpy.data.Data.html#neutronpy.data.Data" title="neutronpy.data.Data"><code class="xref py py-class docutils literal"><span class="pre">Data</span></code></a> class and build <code class="docutils literal"><span class="pre">Data.Q</span></code> using <code class="xref py py-meth docutils literal"><span class="pre">Data.build_Q</span></code>. To build <code class="docutils literal"><span class="pre">Data.Q</span></code> you must have defined <code class="docutils literal"><span class="pre">h</span></code>, <code class="docutils literal"><span class="pre">k</span></code>, <code class="docutils literal"><span class="pre">l</span></code>, <code class="docutils literal"><span class="pre">e</span></code>, and <code class="docutils literal"><span class="pre">temp</span></code>.</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">Data</span><span class="p">(</span><span class="n">h</span><span class="o">=</span><span class="n">h</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="n">l</span><span class="p">,</span> <span class="n">e</span><span class="o">=</span><span class="n">e</span><span class="p">,</span> <span class="n">temp</span><span class="o">=</span><span class="n">temp</span><span class="p">,</span> <span class="n">detector</span><span class="o">=</span><span class="n">detector</span><span class="p">,</span>
 <span class="go">                monitor=monitor, time=time)</span>
 </pre></div>
@@ -700,7 +709,7 @@
 </div>
 <div class="section" id="data-properties">
 <h2><code class="docutils literal"><span class="pre">Data</span></code> properties<a class="headerlink" href="#data-properties" title="Permalink to this headline">¶</a></h2>
-<p>Below I outline some of the most common properties that you will want of the <a class="reference internal" href="../generated/neutronpy.data.data.Data.html#neutronpy.data.data.Data" title="neutronpy.data.data.Data"><code class="xref py py-class docutils literal"><span class="pre">Data</span></code></a> class.</p>
+<p>Below I outline some of the most common properties that you will want of the <a class="reference internal" href="../generated/neutronpy.data.Data.html#neutronpy.data.Data" title="neutronpy.data.Data"><code class="xref py py-class docutils literal"><span class="pre">Data</span></code></a> class.</p>
 <div class="section" id="intensity-and-error">
 <h3>Intensity and error<a class="headerlink" href="#intensity-and-error" title="Permalink to this headline">¶</a></h3>
 <p>Intensity, <em>i.e.</em> <code class="docutils literal"><span class="pre">detector</span> <span class="pre">/</span> <span class="pre">monitor</span> <span class="pre">*</span> <span class="pre">m0</span></code> and square-root error are respectively obtained by</p>
@@ -752,7 +761,7 @@
 </div>
 <div class="section" id="quick-analysis">
 <h2>Quick analysis<a class="headerlink" href="#quick-analysis" title="Permalink to this headline">¶</a></h2>
-<p>Often you will want to know the integrated intensity, peak position, and mean-squared width for some part of your data, without relying on fitting. This is easily accomplished with <a class="reference internal" href="../generated/neutronpy.data.Data.integrate.html#neutronpy.data.Data.integrate" title="neutronpy.data.Data.integrate"><code class="xref py py-meth docutils literal"><span class="pre">Data.integrate</span></code></a>, <a class="reference internal" href="../generated/neutronpy.data.data.Data.position.html#neutronpy.data.data.Data.position" title="neutronpy.data.data.Data.position"><code class="xref py py-meth docutils literal"><span class="pre">Data.position</span></code></a>, and <a class="reference internal" href="../generated/neutronpy.data.Data.width.html#neutronpy.data.Data.width" title="neutronpy.data.Data.width"><code class="xref py py-meth docutils literal"><span class="pre">Data.width</span></code></a>.</p>
+<p>Often you will want to know the integrated intensity, peak position, and mean-squared width for some part of your data, without relying on fitting. This is easily accomplished with <a class="reference internal" href="../generated/neutronpy.data.Data.integrate.html#neutronpy.data.Data.integrate" title="neutronpy.data.Data.integrate"><code class="xref py py-meth docutils literal"><span class="pre">Data.integrate</span></code></a>, <a class="reference internal" href="../generated/neutronpy.data.Data.position.html#neutronpy.data.Data.position" title="neutronpy.data.Data.position"><code class="xref py py-meth docutils literal"><span class="pre">Data.position</span></code></a>, and <a class="reference internal" href="../generated/neutronpy.data.Data.width.html#neutronpy.data.Data.width" title="neutronpy.data.Data.width"><code class="xref py py-meth docutils literal"><span class="pre">Data.width</span></code></a>.</p>
 <p>It is possible to specify the bounds inside which you want to perform these analyses by forming a boolean expression. For example, below is the definition of the bounds of a 1x1 square around (100) at 4 meV:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">bounds</span> <span class="o">=</span> <span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">h</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mf">0.5</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">k</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mf">0.5</span><span class="p">)</span> <span class="o">&amp;</span>
 <span class="go">              (np.abs(data.e - 4) &lt;= 0.25))</span>
@@ -768,12 +777,12 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="n">binned_data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">bin</span><span class="p">(</span><span class="n">to_bin</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The output is a new <a class="reference internal" href="../generated/neutronpy.data.data.Data.html#neutronpy.data.data.Data" title="neutronpy.data.data.Data"><code class="xref py py-class docutils literal"><span class="pre">Data</span></code></a> object, so that your original data is still maintained in the original <em class="xref py py-obj">data</em> object variable.</p>
+<p>The output is a new <a class="reference internal" href="../generated/neutronpy.data.Data.html#neutronpy.data.Data" title="neutronpy.data.Data"><code class="xref py py-class docutils literal"><span class="pre">Data</span></code></a> object, so that your original data is still maintained in the original <em class="xref py py-obj">data</em> object variable.</p>
 </div>
 <div class="section" id="visualizing-data">
 <h2>Visualizing data<a class="headerlink" href="#visualizing-data" title="Permalink to this headline">¶</a></h2>
-<p><strong>Note 1</strong>: <a class="reference internal" href="../generated/neutronpy.data.Data.plot.html#neutronpy.data.Data.plot" title="neutronpy.data.Data.plot"><code class="xref py py-meth docutils literal"><span class="pre">Data.plot</span></code></a> is still relatively experimental. 1-D data plotting and fitting works as intended in its current form, but higher dimensional plotting is still very much a work in progress.</p>
-<p><strong>Note 2</strong>: For publication quality figures, even for 1-D data, it is not recommended to use <a class="reference internal" href="../generated/neutronpy.data.Data.plot.html#neutronpy.data.Data.plot" title="neutronpy.data.Data.plot"><code class="xref py py-meth docutils literal"><span class="pre">Data.plot</span></code></a>, since some more advanced plot configuration options from matplotlib are not easily available to the user. Instead, <a class="reference internal" href="../generated/neutronpy.data.Data.plot.html#neutronpy.data.Data.plot" title="neutronpy.data.Data.plot"><code class="xref py py-meth docutils literal"><span class="pre">Data.plot</span></code></a> is currently intended to be used for quickly plotting data for easy visualization.</p>
+<p><strong>Note 1</strong>: <a class="reference internal" href="../generated/neutronpy.data.data.Data.plot.html#neutronpy.data.data.Data.plot" title="neutronpy.data.data.Data.plot"><code class="xref py py-meth docutils literal"><span class="pre">Data.plot</span></code></a> is still relatively experimental. 1-D data plotting and fitting works as intended in its current form, but higher dimensional plotting is still very much a work in progress.</p>
+<p><strong>Note 2</strong>: For publication quality figures, even for 1-D data, it is not recommended to use <a class="reference internal" href="../generated/neutronpy.data.data.Data.plot.html#neutronpy.data.data.Data.plot" title="neutronpy.data.data.Data.plot"><code class="xref py py-meth docutils literal"><span class="pre">Data.plot</span></code></a>, since some more advanced plot configuration options from matplotlib are not easily available to the user. Instead, <a class="reference internal" href="../generated/neutronpy.data.data.Data.plot.html#neutronpy.data.data.Data.plot" title="neutronpy.data.data.Data.plot"><code class="xref py py-meth docutils literal"><span class="pre">Data.plot</span></code></a> is currently intended to be used for quickly plotting data for easy visualization.</p>
 <div class="section" id="basic-plotting">
 <h3>Basic plotting<a class="headerlink" href="#basic-plotting" title="Permalink to this headline">¶</a></h3>
 <p>Plotting requires at least two parameters to be defined, <code class="docutils literal"><span class="pre">x</span></code> and <code class="docutils literal"><span class="pre">y</span></code> for a line scan plot. By defining <code class="docutils literal"><span class="pre">z</span></code> and <code class="docutils literal"><span class="pre">w</span></code> (or not) you control what type of plot is generated. <code class="docutils literal"><span class="pre">x</span></code>, <code class="docutils literal"><span class="pre">y</span></code>, <code class="docutils literal"><span class="pre">z</span></code>, and <code class="docutils literal"><span class="pre">w</span></code> are defined by assigning one of the following strings: <code class="docutils literal"><span class="pre">'h'</span></code>, <code class="docutils literal"><span class="pre">'k'</span></code>, <code class="docutils literal"><span class="pre">'l'</span></code>, <code class="docutils literal"><span class="pre">'temp'</span></code>, <code class="docutils literal"><span class="pre">'e'</span></code>, or <code class="docutils literal"><span class="pre">'intensity'</span></code>. For example, for a scatter plot with error bars of a line scan, a contour plot of a slice, and a scatter plot of a volume you can do the following, respectively,</p>
@@ -814,7 +823,7 @@
 </div>
 <div class="section" id="plot-options">
 <h4>Plot options<a class="headerlink" href="#plot-options" title="Permalink to this headline">¶</a></h4>
-<p>Matplotlib plot options may be passed as a dictionary <code class="docutils literal"><span class="pre">plot_options</span></code> to <a class="reference internal" href="../generated/neutronpy.data.Data.plot.html#neutronpy.data.Data.plot" title="neutronpy.data.Data.plot"><code class="xref py py-meth docutils literal"><span class="pre">Data.plot</span></code></a> for the appropriate plot type:</p>
+<p>Matplotlib plot options may be passed as a dictionary <code class="docutils literal"><span class="pre">plot_options</span></code> to <a class="reference internal" href="../generated/neutronpy.data.data.Data.plot.html#neutronpy.data.data.Data.plot" title="neutronpy.data.data.Data.plot"><code class="xref py py-meth docutils literal"><span class="pre">Data.plot</span></code></a> for the appropriate plot type:</p>
 <ul class="simple">
 <li>Line scan : <a class="reference external" href="http://matplotlib.org/api/pyplot_api.html?highlight=errorbar#matplotlib.pyplot.errorbar">errorbar</a></li>
 <li>Slice : <a class="reference external" href="http://matplotlib.org/api/pyplot_api.html?highlight=pcolormesh#matplotlib.pyplot.pcolormesh">pcolormesh</a></li>
@@ -824,7 +833,7 @@
 <div class="section" id="miscellaneous">
 <h4>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">show_plot</span></code> : If False, <code class="docutils literal"><span class="pre">plt.show()</span></code> will not be executed inside the <a class="reference internal" href="../generated/neutronpy.data.Data.plot.html#neutronpy.data.Data.plot" title="neutronpy.data.Data.plot"><code class="xref py py-meth docutils literal"><span class="pre">Data.plot</span></code></a> method, and will have to be executed separately. Useful if overplotting.</li>
+<li><code class="docutils literal"><span class="pre">show_plot</span></code> : If False, <code class="docutils literal"><span class="pre">plt.show()</span></code> will not be executed inside the <a class="reference internal" href="../generated/neutronpy.data.data.Data.plot.html#neutronpy.data.data.Data.plot" title="neutronpy.data.data.Data.plot"><code class="xref py py-meth docutils literal"><span class="pre">Data.plot</span></code></a> method, and will have to be executed separately. Useful if overplotting.</li>
 <li><code class="docutils literal"><span class="pre">output_file</span></code> : If defined, a file with the plot will be saved, in the format specified by the file extension. File type must be supported by the active <a class="reference external" href="http://matplotlib.org/faq/usage_faq.html#what-is-a-backend">matplotlib backend</a></li>
 <li><code class="docutils literal"><span class="pre">show_err</span></code> : If False, will not plot error bars on the scan line plot.</li>
 </ul>
@@ -853,7 +862,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, David M Fobes.
-      Last updated on Jun 13, 2016.
+      Last updated on Dec 15, 2016.
 
     </p>
   </div>
@@ -875,7 +884,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.0.1beta',
+            VERSION:'1.0.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

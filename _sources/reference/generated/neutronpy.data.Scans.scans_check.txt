@@ -1,0 +1,6 @@
+neutronpy.data.Scans.scans_check
+================================
+
+.. currentmodule:: neutronpy.data
+
+.. automethod:: Scans.scans_check

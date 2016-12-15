@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>NeutronPy &mdash; neutronpy 1.0.1beta documentation</title>
+  <title>NeutronPy &mdash; neutronpy 1.0.2 documentation</title>
   
 
   
@@ -32,7 +32,10 @@
   
 
   
-    <link rel="top" title="neutronpy 1.0.1beta documentation" href="#"/>
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="neutronpy 1.0.2 documentation" href="#"/>
         <link rel="next" title="API Reference" href="reference.html"/> 
 
   
@@ -366,6 +369,11 @@
 <li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.data.Analysis.estimate_background.html">neutronpy.data.Analysis.estimate_background</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="reference/generated/neutronpy.data.Scans.html">neutronpy.data.Scans</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.data.Scans.waterfall.html">neutronpy.data.Scans.waterfall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="reference/generated/neutronpy.data.Scans.pcolor.html">neutronpy.data.Scans.pcolor</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="reference/neutronpy.energy.html">neutronpy.energy module</a><ul>
@@ -652,6 +660,10 @@
 <p class="first admonition-title">Warning</p>
 <p class="last">New releases may not be backwards compatibile. This software is in a fluid state and undergoes rapid changes. Bug fix and maintanence releases will generally be  backwards compatibile updates. Major number releases (x.0) could potentially break backwards compatibility, but users will be notified in the changelog.</p>
 </div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Official support for Python 2.6 and Python 3.3 has been discontinued. NeutronPy may continue to work with these versions, but automatic testing for these versions is no longer performed, therefore compatibility cannot be guaranteed.</p>
+</div>
 <p><strong>TravisCI</strong> <a class="reference external" href="https://travis-ci.org/neutronpy/neutronpy"><img alt="mastertravis" src="https://travis-ci.org/neutronpy/neutronpy.svg?branch=master" /></a> :: <strong>Appveyor</strong> <a class="reference external" href="https://ci.appveyor.com/project/pseudocubic/neutronpy"><img alt="masterappveyor" src="https://ci.appveyor.com/api/projects/status/github/neutronpy/neutronpy?branch=master&amp;svg=true" /></a></p>
 <p><strong>Code Climate</strong> <a class="reference external" href="https://codeclimate.com/github/neutronpy/neutronpy"><img alt="Code Climate" src="https://codeclimate.com/github/neutronpy/neutronpy/badges/gpa.svg" /></a> :: <strong>Codecov</strong> <a class="reference external" href="https://codecov.io/gh/neutronpy/neutronpy"><img alt="coverage" src="https://codecov.io/gh/neutronpy/neutronpy/branch/master/graph/badge.svg" /></a></p>
 <p>NeutronPy is a python library with commonly used tools for neutron scattering measurements, primarily for Triple Axis Spectrometer data, but easily applied to other types of data, including some <em>reduced</em> Time of Flight data. Below is a non-exhaustive list of Neutronpy&#8217;s features:</p>
@@ -719,25 +731,27 @@
 <h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
 <p>The following packages are required to install this library:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">Python</span> <span class="pre">&gt;=</span> <span class="pre">2.6</span> <span class="pre">(incl.</span> <span class="pre">Python</span> <span class="pre">3.3-3.5)</span></code></li>
+<li><code class="docutils literal"><span class="pre">Python</span> <span class="pre">&gt;=</span> <span class="pre">2.7</span> <span class="pre">(incl.</span> <span class="pre">Python</span> <span class="pre">3.4-3.5)</span></code></li>
 <li><code class="docutils literal"><span class="pre">numpy</span> <span class="pre">&gt;=</span> <span class="pre">1.8.0</span></code></li>
 <li><code class="docutils literal"><span class="pre">scipy</span> <span class="pre">&gt;=</span> <span class="pre">0.13.0</span></code></li>
-<li><code class="docutils literal"><span class="pre">lmfit</span> <span class="pre">&gt;=</span> <span class="pre">0.9.1</span></code> (<code class="docutils literal"><span class="pre">==0.9.1</span></code> for Python 2.6)</li>
-<li><code class="docutils literal"><span class="pre">h5py</span></code> (optional, file IO)</li>
+<li><code class="docutils literal"><span class="pre">lmfit</span> <span class="pre">&gt;=</span> <span class="pre">0.9.4</span></code> (<code class="docutils literal"><span class="pre">==0.9.4</span></code> for Python 2.6)</li>
 <li><code class="docutils literal"><span class="pre">matplotlib</span> <span class="pre">&gt;=</span> <span class="pre">1.3.0</span></code> (optional, plotting)</li>
-<li><code class="docutils literal"><span class="pre">nose</span> <span class="pre">&gt;=</span> <span class="pre">1.3.0</span></code> (optional, tests)</li>
+<li><code class="docutils literal"><span class="pre">h5py</span></code> (optional, file IO)</li>
+<li><code class="docutils literal"><span class="pre">pyqt5</span> <span class="pre">&gt;=</span> <span class="pre">5.4.1</span></code> (optional, gui)</li>
+<li><code class="docutils literal"><span class="pre">pytest</span> <span class="pre">&gt;=</span> <span class="pre">3</span></code> (optional, tests)</li>
 </ul>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>It is recommended that you use <a href="#id4"><span class="problematic" id="id5">`anaconda &lt;&gt;`_</span></a> and <code class="docutils literal"><span class="pre">pip</span></code> to install NeutronPy:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">add</span> <span class="n">channels</span> <span class="n">mmcauliffe</span>
-<span class="n">conda</span> <span class="n">install</span> <span class="n">python</span> <span class="n">nomkl</span> <span class="n">numpy</span> <span class="n">scipy</span> <span class="n">h5py</span> <span class="n">matplotlib</span> <span class="n">pyqt5</span>
-<span class="n">pip</span> <span class="n">install</span> <span class="n">neutronpy</span>
+<p>It is recommended that you use <a href="#id4"><span class="problematic" id="id5">`anaconda &lt;&gt;`_</span></a> or <code class="docutils literal"><span class="pre">pip</span></code> to install NeutronPy:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">neutronpy</span> <span class="n">neutronpy</span>
 </pre></div>
 </div>
-<p>Note: the added channel is for pyqt5.</p>
-<p>The resolution calculator gui can be used after installation by executing <code class="docutils literal"><span class="pre">neutronpy</span></code> from the command-line.</p>
+<p>or:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">neutronpy</span>
+</pre></div>
+</div>
+<p>Note: the channel <code class="docutils literal"><span class="pre">mmcauliffe</span></code> is required for pyqt5, so that the resolution calculator gui can be used after installation by executing <code class="docutils literal"><span class="pre">neutronpy</span></code> from the command-line. See Installation for more detailed instructions.</p>
 </div>
 <div class="section" id="documentation">
 <h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
@@ -784,7 +798,7 @@ SOFTWARE.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, David M Fobes.
-      Last updated on Jun 22, 2016.
+      Last updated on Dec 15, 2016.
 
     </p>
   </div>
@@ -806,7 +820,7 @@ SOFTWARE.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'1.0.1beta',
+            VERSION:'1.0.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

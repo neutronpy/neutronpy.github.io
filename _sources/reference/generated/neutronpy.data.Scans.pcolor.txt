@@ -1,0 +1,6 @@
+neutronpy.data.Scans.pcolor
+===========================
+
+.. currentmodule:: neutronpy.data
+
+.. automethod:: Scans.pcolor

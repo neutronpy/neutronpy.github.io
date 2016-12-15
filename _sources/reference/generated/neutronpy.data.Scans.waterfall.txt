@@ -1,0 +1,6 @@
+neutronpy.data.Scans.waterfall
+==============================
+
+.. currentmodule:: neutronpy.data
+
+.. automethod:: Scans.waterfall
