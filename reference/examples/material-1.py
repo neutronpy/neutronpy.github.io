@@ -11,7 +11,7 @@ def_FeTe = {'name': 'Fe1.1Te',
                             {'ion': 'Fe', 'pos': [0.25, 0.25, 0.721], 'occupancy': 0.1},
                             {'ion': 'Fe', 'pos': [0.75, 0.75, -0.721], 'occupancy': 0.1}],
             'debye-waller': False,
-            'massNorm': True,
+            'massNorm': False,
             'lattice': {'abc': [3.81, 3.81, 6.25],
                         'abg': [90, 90, 90]}}
 FeTe = Material(def_FeTe)

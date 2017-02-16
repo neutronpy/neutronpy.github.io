@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Resolution calculation with Instrument Class &mdash; neutronpy 1.0.2 documentation</title>
+  <title>Resolution calculation with Instrument Class &mdash; neutronpy 1.0.2-5-g01ec23d documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="neutronpy 1.0.2 documentation" href="../../index.html"/>
+    <link rel="top" title="neutronpy 1.0.2-5-g01ec23d documentation" href="../../index.html"/>
         <link rel="up" title="Examples" href="../../examples.html"/>
         <link rel="next" title="Form Factor calculation with the Material Class" href="material.html"/>
         <link rel="prev" title="Using the Resolution Calculation Graphical User Interface" href="gui.html"/> 
@@ -662,7 +662,7 @@
 <p class="first admonition-title">Warning</p>
 <p class="last">This module is still a work-in-progress and the usage of these classes and/or functions will likely change in the near future.</p>
 </div>
-<p>The following are examples on the usage of the <a class="reference internal" href="../generated/neutronpy.instrument.Instrument.html#neutronpy.instrument.Instrument" title="neutronpy.instrument.Instrument"><code class="xref py py-class docutils literal"><span class="pre">Instrument</span></code></a> class, used to define a triple-axis spectrometer instrument configuration and calculate the resolution in reciprocal lattice units for a given sample at a given wave-vector <img class="math" src="../../_images/math/620a3ce6403ec82f1347af9985bc03f7a9382f4a.png" alt="q"/>. This tutorial will cover the utilization of both Cooper-Nathans and Popovici calculation methods.</p>
+<p>The following are examples on the usage of the <a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.html#neutronpy.instrument.instrument.Instrument" title="neutronpy.instrument.instrument.Instrument"><code class="xref py py-class docutils literal"><span class="pre">Instrument</span></code></a> class, used to define a triple-axis spectrometer instrument configuration and calculate the resolution in reciprocal lattice units for a given sample at a given wave-vector <img class="math" src="../../_images/math/620a3ce6403ec82f1347af9985bc03f7a9382f4a.png" alt="q"/>. This tutorial will cover the utilization of both Cooper-Nathans and Popovici calculation methods.</p>
 <div class="section" id="instrument-configuration">
 <h2>Instrument Configuration<a class="headerlink" href="#instrument-configuration" title="Permalink to this headline">¶</a></h2>
 <p>First, we will begin by defining an generic triple-axis spectrometer instrument configuration that we will use for this example.</p>
@@ -685,7 +685,7 @@
 </div>
 <div class="section" id="sample-configuration">
 <h2>Sample Configuration<a class="headerlink" href="#sample-configuration" title="Permalink to this headline">¶</a></h2>
-<p>Defining the sample using the <a class="reference internal" href="../generated/neutronpy.crystal.sample.Sample.html#neutronpy.crystal.sample.Sample" title="neutronpy.crystal.sample.Sample"><code class="xref py py-class docutils literal"><span class="pre">Sample</span></code></a> class is simple. In this example we define an arbitrary sample with no given sample mosaic.</p>
+<p>Defining the sample using the <a class="reference internal" href="../generated/neutronpy.crystal.Sample.html#neutronpy.crystal.Sample" title="neutronpy.crystal.Sample"><code class="xref py py-class docutils literal"><span class="pre">Sample</span></code></a> class is simple. In this example we define an arbitrary sample with no given sample mosaic.</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">neutronpy</span> <span class="k">import</span> <span class="n">Sample</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">sample</span> <span class="o">=</span> <span class="n">Sample</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="n">u</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">v</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 </pre></div>
@@ -694,12 +694,12 @@
 </div>
 <div class="section" id="initializing-the-instrument">
 <h2>Initializing the Instrument<a class="headerlink" href="#initializing-the-instrument" title="Permalink to this headline">¶</a></h2>
-<p>Once the sample is defined and information about the instrument collected we can formally define the instrument using <a class="reference internal" href="../generated/neutronpy.instrument.Instrument.html#neutronpy.instrument.Instrument" title="neutronpy.instrument.Instrument"><code class="xref py py-class docutils literal"><span class="pre">Instrument</span></code></a> and the variables that we have already assigned above.</p>
+<p>Once the sample is defined and information about the instrument collected we can formally define the instrument using <a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.html#neutronpy.instrument.instrument.Instrument" title="neutronpy.instrument.instrument.Instrument"><code class="xref py py-class docutils literal"><span class="pre">Instrument</span></code></a> and the variables that we have already assigned above.</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">neutronpy</span> <span class="k">import</span> <span class="n">Instrument</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">EXP</span> <span class="o">=</span> <span class="n">Instrument</span><span class="p">(</span><span class="n">efixed</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">hcol</span><span class="p">,</span> <span class="n">ana</span><span class="o">=</span><span class="n">ana</span><span class="p">,</span> <span class="n">mono</span><span class="o">=</span><span class="n">mono</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>There are a great deal more settings available than are used here; see <a class="reference internal" href="../generated/neutronpy.instrument.Instrument.html#neutronpy.instrument.Instrument" title="neutronpy.instrument.Instrument"><code class="xref py py-class docutils literal"><span class="pre">Instrument</span></code></a> documentation.</p>
+<p>There are a great deal more settings available than are used here; see <a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.html#neutronpy.instrument.instrument.Instrument" title="neutronpy.instrument.instrument.Instrument"><code class="xref py py-class docutils literal"><span class="pre">Instrument</span></code></a> documentation.</p>
 </div>
 <div class="section" id="calculating-the-resolution">
 <h2>Calculating the resolution<a class="headerlink" href="#calculating-the-resolution" title="Permalink to this headline">¶</a></h2>
@@ -718,7 +718,7 @@
 </div>
 <div class="section" id="resolution-parameters">
 <h3>Resolution parameters<a class="headerlink" href="#resolution-parameters" title="Permalink to this headline">¶</a></h3>
-<p>To calculate the resolution parameters, without needing projections or plots, one may use <a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.calc_resolution.html#neutronpy.instrument.instrument.Instrument.calc_resolution" title="neutronpy.instrument.instrument.Instrument.calc_resolution"><code class="xref py py-meth docutils literal"><span class="pre">calc_resolution</span></code></a>:</p>
+<p>To calculate the resolution parameters, without needing projections or plots, one may use <a class="reference internal" href="../generated/neutronpy.instrument.Instrument.calc_resolution.html#neutronpy.instrument.Instrument.calc_resolution" title="neutronpy.instrument.Instrument.calc_resolution"><code class="xref py py-meth docutils literal"><span class="pre">calc_resolution</span></code></a>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">EXP</span><span class="o">.</span><span class="n">calc_resolution</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -727,8 +727,8 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="n">R0</span> <span class="o">=</span> <span class="n">EXP</span><span class="o">.</span><span class="n">R0</span>
 </pre></div>
 </div>
-<p>The resolution matrix here is the full matrix, over four dimensional space N (4 <img class="math" src="../../_images/math/214eb8a4d9a622d1d31f06cad9f5264e29242b63.png" alt="\times"/> 4) matrices, with shape (4, 4, N) (N=3 in our case). Alternatively, it is possible to extract more immediately useful parameters, i.e. projections or slices in the plane of interest using <a class="reference internal" href="../generated/neutronpy.instrument.Instrument.get_resolution_params.html#neutronpy.instrument.Instrument.get_resolution_params" title="neutronpy.instrument.Instrument.get_resolution_params"><code class="xref py py-meth docutils literal"><span class="pre">get_resolution_params</span></code></a>.</p>
-<p>We can get projections or slices in the <em>x-y</em>, <em>x-e</em> or <em>y-e</em> planes (see <a class="reference internal" href="../generated/neutronpy.instrument.Instrument.get_resolution_params.html#neutronpy.instrument.Instrument.get_resolution_params" title="neutronpy.instrument.Instrument.get_resolution_params"><code class="xref py py-meth docutils literal"><span class="pre">get_resolution_params</span></code></a> documentation for all possible keywords); the z-plane is not accessible due to the nature of the sample orientation and is integrated out. In this case we will extract the resolution parameters for the projection into the <img class="math" src="../../_images/math/1223e645612199ee95cac9c0d94c69eeeef30d42.png" alt="Q_x Q_y"/> plane for the first <code class="docutils literal"><span class="pre">q</span></code>, <em>i.e.</em> <code class="docutils literal"><span class="pre">[1,0,0,0]</span></code>:</p>
+<p>The resolution matrix here is the full matrix, over four dimensional space N (4 <img class="math" src="../../_images/math/214eb8a4d9a622d1d31f06cad9f5264e29242b63.png" alt="\times"/> 4) matrices, with shape (4, 4, N) (N=3 in our case). Alternatively, it is possible to extract more immediately useful parameters, i.e. projections or slices in the plane of interest using <a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.get_resolution_params.html#neutronpy.instrument.instrument.Instrument.get_resolution_params" title="neutronpy.instrument.instrument.Instrument.get_resolution_params"><code class="xref py py-meth docutils literal"><span class="pre">get_resolution_params</span></code></a>.</p>
+<p>We can get projections or slices in the <em>x-y</em>, <em>x-e</em> or <em>y-e</em> planes (see <a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.get_resolution_params.html#neutronpy.instrument.instrument.Instrument.get_resolution_params" title="neutronpy.instrument.instrument.Instrument.get_resolution_params"><code class="xref py py-meth docutils literal"><span class="pre">get_resolution_params</span></code></a> documentation for all possible keywords); the z-plane is not accessible due to the nature of the sample orientation and is integrated out. In this case we will extract the resolution parameters for the projection into the <img class="math" src="../../_images/math/1223e645612199ee95cac9c0d94c69eeeef30d42.png" alt="Q_x Q_y"/> plane for the first <code class="docutils literal"><span class="pre">q</span></code>, <em>i.e.</em> <code class="docutils literal"><span class="pre">[1,0,0,0]</span></code>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">R0</span><span class="p">,</span> <span class="n">RMxx</span><span class="p">,</span> <span class="n">RMyy</span><span class="p">,</span> <span class="n">RMxy</span> <span class="o">=</span> <span class="n">EXP</span><span class="o">.</span><span class="n">get_resolution_params</span><span class="p">(</span><span class="n">q</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;QxQy&#39;</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;project&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -767,7 +767,7 @@
 </div>
 <div class="section" id="simple-plotting-of-resolution-ellipses">
 <h2>Simple Plotting of Resolution Ellipses<a class="headerlink" href="#simple-plotting-of-resolution-ellipses" title="Permalink to this headline">¶</a></h2>
-<p>To see a simple plot of the resolution ellipses in the <img class="math" src="../../_images/math/1223e645612199ee95cac9c0d94c69eeeef30d42.png" alt="Q_x Q_y"/>, <img class="math" src="../../_images/math/b66c53f97f45bc8d124c12ff397ee71634410f93.png" alt="Q_x W"/> and <img class="math" src="../../_images/math/8f55abd77b82500901bae9f0ea4c93e99c303bd2.png" alt="Q_y W"/> zones the <a class="reference internal" href="../generated/neutronpy.instrument.Instrument.plot_projections.html#neutronpy.instrument.Instrument.plot_projections" title="neutronpy.instrument.Instrument.plot_projections"><code class="xref py py-meth docutils literal"><span class="pre">plot_projections</span></code></a> method may be used. This will also display instrument setup parameters and other useful information such as Bragg widths.</p>
+<p>To see a simple plot of the resolution ellipses in the <img class="math" src="../../_images/math/1223e645612199ee95cac9c0d94c69eeeef30d42.png" alt="Q_x Q_y"/>, <img class="math" src="../../_images/math/b66c53f97f45bc8d124c12ff397ee71634410f93.png" alt="Q_x W"/> and <img class="math" src="../../_images/math/8f55abd77b82500901bae9f0ea4c93e99c303bd2.png" alt="Q_y W"/> zones the <a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.plot_projections.html#neutronpy.instrument.instrument.Instrument.plot_projections" title="neutronpy.instrument.instrument.Instrument.plot_projections"><code class="xref py py-meth docutils literal"><span class="pre">plot_projections</span></code></a> method may be used. This will also display instrument setup parameters and other useful information such as Bragg widths.</p>
 <p>A very simple plot for the default instrument, containing resolution ellipses for several different energies at may be obtained with these commands</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">linspace</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">EXP</span> <span class="o">=</span> <span class="n">Instrument</span><span class="p">()</span>
@@ -829,7 +829,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, David M Fobes.
-      Last updated on Dec 15, 2016.
+      Last updated on Feb 16, 2017.
 
     </p>
   </div>
@@ -851,7 +851,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.0.2',
+            VERSION:'1.0.2-5-g01ec23d',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

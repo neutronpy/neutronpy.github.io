@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Form Factor calculation with the Material Class &mdash; neutronpy 1.0.2 documentation</title>
+  <title>Form Factor calculation with the Material Class &mdash; neutronpy 1.0.2-5-g01ec23d documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="neutronpy 1.0.2 documentation" href="../../index.html"/>
+    <link rel="top" title="neutronpy 1.0.2-5-g01ec23d documentation" href="../../index.html"/>
         <link rel="up" title="Examples" href="../../examples.html"/>
         <link rel="next" title="FAQs" href="../../faq.html"/>
         <link rel="prev" title="Resolution calculation with Instrument Class" href="instrument.html"/> 
@@ -659,7 +659,7 @@
   <div class="section" id="form-factor-calculation-with-the-material-class">
 <h1>Form Factor calculation with the Material Class<a class="headerlink" href="#form-factor-calculation-with-the-material-class" title="Permalink to this headline">¶</a></h1>
 <p><em>Note: This module is still a work-in-progress and the usage of these classes and/or functions may change in the future.</em></p>
-<p>The following are examples on the usage of the <a class="reference internal" href="../generated/neutronpy.crystal.material.Material.html#neutronpy.crystal.material.Material" title="neutronpy.crystal.material.Material"><code class="xref py py-class docutils literal"><span class="pre">Material</span></code></a> class, used to define a material and calculate the structural form factor in reciprocal lattice units for a given <img class="math" src="../../_images/math/620a3ce6403ec82f1347af9985bc03f7a9382f4a.png" alt="q"/>. This tutorial will cover the utilization of this class and its methods.</p>
+<p>The following are examples on the usage of the <a class="reference internal" href="../generated/neutronpy.crystal.Material.html#neutronpy.crystal.Material" title="neutronpy.crystal.Material"><code class="xref py py-class docutils literal"><span class="pre">Material</span></code></a> class, used to define a material and calculate the structural form factor in reciprocal lattice units for a given <img class="math" src="../../_images/math/620a3ce6403ec82f1347af9985bc03f7a9382f4a.png" alt="q"/>. This tutorial will cover the utilization of this class and its methods.</p>
 <div class="section" id="defining-the-material">
 <h2>Defining the Material<a class="headerlink" href="#defining-the-material" title="Permalink to this headline">¶</a></h2>
 <p>For this example we will use Fe<sub>1.1</sub>Te, a high-temperature tetragonal <img class="math" src="../../_images/math/c139019f43ffcfe23fa7173f1bc78f4102406463.png" alt="P4/nmm"/> structure with Fe in the 2a positions, Te in the 2c positions, and excess Fe in the interstitial 2c positions. First we build the dictionary defining the material to pass it to the class:</p>
@@ -671,11 +671,15 @@
                             <span class="p">{</span><span class="s1">&#39;ion&#39;</span><span class="p">:</span> <span class="s1">&#39;Fe&#39;</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.721</span><span class="p">],</span> <span class="s1">&#39;occupancy&#39;</span><span class="p">:</span> <span class="mf">0.1</span><span class="p">},</span>
                             <span class="p">{</span><span class="s1">&#39;ion&#39;</span><span class="p">:</span> <span class="s1">&#39;Fe&#39;</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.721</span><span class="p">],</span> <span class="s1">&#39;occupancy&#39;</span><span class="p">:</span> <span class="mf">0.1</span><span class="p">}],</span>
             <span class="s1">&#39;debye-waller&#39;</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span>
-            <span class="s1">&#39;massNorm&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
+            <span class="s1">&#39;massNorm&#39;</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span>
             <span class="s1">&#39;lattice&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;abc&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">3.81</span><span class="p">,</span> <span class="mf">3.81</span><span class="p">,</span> <span class="mf">6.25</span><span class="p">],</span>
                         <span class="s1">&#39;abg&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">90</span><span class="p">]},</span>
            <span class="p">}</span>
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <code class="docutils literal"><span class="pre">'massNorm'</span></code> key should be set to <code class="docutils literal"><span class="pre">False</span></code> to return the structure factor in units of <code class="docutils literal"><span class="pre">barns</span></code>. <code class="docutils literal"><span class="pre">'massNorm'</span></code> is used for calculation of the coherent one-phonon inelastic cross-section, which depends on a calculation of nuclear structure factor in which the coherent scattering lengths are normalized by the square-root of the atomic mass <em>i.e.</em> <img class="math" src="../../_images/math/185d879950029e8e5df516b609110446abd89943.png" alt="\bar{b}_d/\sqrt{M_d}"/> (see Eq. 4.88 in &#8220;Theory of neutron scattering from condensed matter, Volume 1&#8221; by Stephen W. Lovesey.</p>
 </div>
 </div>
 <div class="section" id="initializing-the-material-class">
@@ -688,8 +692,11 @@
 </div>
 <div class="section" id="calculating-the-structure-factor">
 <h2>Calculating the structure factor<a class="headerlink" href="#calculating-the-structure-factor" title="Permalink to this headline">¶</a></h2>
-<p><strong>Note</strong>: The structure factor calculation method <a class="reference internal" href="../generated/neutronpy.crystal.Material.calc_nuc_str_fac.html#neutronpy.crystal.Material.calc_nuc_str_fac" title="neutronpy.crystal.Material.calc_nuc_str_fac"><code class="xref py py-meth docutils literal"><span class="pre">calc_nuc_str_fac</span></code></a> returns the full structure factor term <img class="math" src="../../_images/math/7b3ff3221a8a0ecbc7166b5c807f9d15c636360a.png" alt="F(q)"/>, including any imaginary parts, and not <img class="math" src="../../_images/math/591ff4826ffc7ec87cbd2b8fe81c55724fd7c23c.png" alt="\left|F(q)\right|^2"/> which is typically used in other calculations.</p>
-<p>Now that our material is defined, we can calculate the structural form factor with <a class="reference internal" href="../generated/neutronpy.crystal.Material.calc_nuc_str_fac.html#neutronpy.crystal.Material.calc_nuc_str_fac" title="neutronpy.crystal.Material.calc_nuc_str_fac"><code class="xref py py-meth docutils literal"><span class="pre">calc_nuc_str_fac</span></code></a>. First, we will calculate it at a single point <img class="math" src="../../_images/math/620a3ce6403ec82f1347af9985bc03f7a9382f4a.png" alt="q"/>:</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The structure factor calculation method <a class="reference internal" href="../generated/neutronpy.crystal.material.Material.calc_nuc_str_fac.html#neutronpy.crystal.material.Material.calc_nuc_str_fac" title="neutronpy.crystal.material.Material.calc_nuc_str_fac"><code class="xref py py-meth docutils literal"><span class="pre">calc_nuc_str_fac</span></code></a> returns the full structure factor term <img class="math" src="../../_images/math/7b3ff3221a8a0ecbc7166b5c807f9d15c636360a.png" alt="F(q)"/>, including any imaginary parts, and not <img class="math" src="../../_images/math/591ff4826ffc7ec87cbd2b8fe81c55724fd7c23c.png" alt="\left|F(q)\right|^2"/> which is typically used in other calculations.</p>
+</div>
+<p>Now that our material is defined, we can calculate the structural form factor with <a class="reference internal" href="../generated/neutronpy.crystal.material.Material.calc_nuc_str_fac.html#neutronpy.crystal.material.Material.calc_nuc_str_fac" title="neutronpy.crystal.material.Material.calc_nuc_str_fac"><code class="xref py py-meth docutils literal"><span class="pre">calc_nuc_str_fac</span></code></a>. First, we will calculate it at a single point <img class="math" src="../../_images/math/620a3ce6403ec82f1347af9985bc03f7a9382f4a.png" alt="q"/>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">str_fac</span> <span class="o">=</span> <span class="n">FeTe</span><span class="o">.</span><span class="n">calc_nuc_str_fac</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -704,7 +711,10 @@
 <div class="figure">
 <img alt="../../_images/material-1.png" src="../../_images/material-1.png" />
 </div>
-<p><strong>Note</strong>: The above picture will only be reproducible if the structure factor is partially symmetrized, <em>i.e.</em> in this case the calculation would be:</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The above picture will only be reproducible if the structure factor is partially symmetrized, <em>i.e.</em> in this case the calculation would be:</p>
+</div>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">str_fac</span> <span class="o">=</span> <span class="mf">0.25</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">FeTe</span><span class="o">.</span><span class="n">calc_nuc_str_fac</span><span class="p">((</span><span class="n">h</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="mi">0</span><span class="p">)))</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span>
                   <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">FeTe</span><span class="o">.</span><span class="n">calc_nuc_str_fac</span><span class="p">((</span><span class="o">-</span><span class="n">h</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="mi">0</span><span class="p">)))</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span>
                   <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">FeTe</span><span class="o">.</span><span class="n">calc_nuc_str_fac</span><span class="p">((</span><span class="n">h</span><span class="p">,</span> <span class="o">-</span><span class="n">k</span><span class="p">,</span> <span class="mi">0</span><span class="p">)))</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span>
@@ -723,6 +733,10 @@
 <p>(<a class="reference external" href="../../reference/examples/material-2.py">Source code</a>, <a class="reference external" href="../../reference/examples/material-2.png">png</a>, <a class="reference external" href="../../reference/examples/material-2.hires.png">hires.png</a>, <a class="reference external" href="../../reference/examples/material-2.pdf">pdf</a>)</p>
 <div class="figure">
 <img alt="../../_images/material-2.png" src="../../_images/material-2.png" />
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This feature is currently broken in the sense the absolute values are incorrect due to a bug in the symmetrization routine.</p>
 </div>
 </div>
 </div>
@@ -747,7 +761,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, David M Fobes.
-      Last updated on Dec 15, 2016.
+      Last updated on Feb 16, 2017.
 
     </p>
   </div>
@@ -769,7 +783,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.0.2',
+            VERSION:'1.0.2-5-g01ec23d',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

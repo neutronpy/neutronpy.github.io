@@ -42,6 +42,7 @@ neutronpy.crystal.Sample
          Sample.bstar
          Sample.c
          Sample.cstar
+         Sample.direct
          Sample.gamma
          Sample.gamma_rad
          Sample.gammastar

@@ -49,6 +49,7 @@ neutronpy.crystal.Material
          Material.bstar
          Material.c
          Material.cstar
+         Material.direct
          Material.gamma
          Material.gamma_rad
          Material.gammastar
