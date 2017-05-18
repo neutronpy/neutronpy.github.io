@@ -1,0 +1,6 @@
+neutronpy\.constants\.symmetry
+==============================
+
+.. currentmodule:: neutronpy.constants
+
+.. autofunction:: symmetry

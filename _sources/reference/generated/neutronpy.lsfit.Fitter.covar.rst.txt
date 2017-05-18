@@ -1,0 +1,6 @@
+neutronpy\.lsfit\.Fitter\.covar
+===============================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.covar

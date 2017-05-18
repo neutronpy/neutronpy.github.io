@@ -1,0 +1,6 @@
+neutronpy\.constants\.periodic\_table
+=====================================
+
+.. currentmodule:: neutronpy.constants
+
+.. autofunction:: periodic_table

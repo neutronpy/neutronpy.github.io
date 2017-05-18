@@ -1,0 +1,6 @@
+neutronpy\.models\.damped\_harmonic\_oscillator
+===============================================
+
+.. currentmodule:: neutronpy.models
+
+.. autofunction:: damped_harmonic_oscillator

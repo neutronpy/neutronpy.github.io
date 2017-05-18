@@ -1,0 +1,6 @@
+neutronpy\.energy\.Energy\.velocity
+===================================
+
+.. currentmodule:: neutronpy.energy
+
+.. autoattribute:: Energy.velocity

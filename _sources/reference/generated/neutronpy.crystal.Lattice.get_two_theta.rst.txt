@@ -1,0 +1,6 @@
+neutronpy\.crystal\.Lattice\.get\_two\_theta
+============================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. automethod:: Lattice.get_two_theta

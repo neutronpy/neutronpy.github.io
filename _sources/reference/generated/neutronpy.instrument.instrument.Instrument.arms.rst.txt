@@ -1,0 +1,6 @@
+neutronpy\.instrument\.instrument\.Instrument\.arms
+===================================================
+
+.. currentmodule:: neutronpy.instrument.instrument
+
+.. autoattribute:: Instrument.arms

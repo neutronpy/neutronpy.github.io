@@ -1,0 +1,6 @@
+neutronpy\.instrument\.Instrument\.plot\_ellipsoid
+==================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: Instrument.plot_ellipsoid

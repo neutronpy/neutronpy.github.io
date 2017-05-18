@@ -1,0 +1,6 @@
+neutronpy\.data\.Data\.monitor
+==============================
+
+.. currentmodule:: neutronpy.data
+
+.. autoattribute:: Data.monitor

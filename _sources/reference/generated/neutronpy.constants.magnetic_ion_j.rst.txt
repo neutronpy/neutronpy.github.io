@@ -1,0 +1,6 @@
+neutronpy\.constants\.magnetic\_ion\_j
+======================================
+
+.. currentmodule:: neutronpy.constants
+
+.. autofunction:: magnetic_ion_j

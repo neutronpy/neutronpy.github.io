@@ -1,0 +1,6 @@
+neutronpy\.data\.data\.Data\.Q
+==============================
+
+.. currentmodule:: neutronpy.data.data
+
+.. autoattribute:: Data.Q

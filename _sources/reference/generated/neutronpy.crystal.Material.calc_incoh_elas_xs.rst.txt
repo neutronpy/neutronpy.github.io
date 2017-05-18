@@ -1,0 +1,6 @@
+neutronpy\.crystal\.Material\.calc\_incoh\_elas\_xs
+===================================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. automethod:: Material.calc_incoh_elas_xs

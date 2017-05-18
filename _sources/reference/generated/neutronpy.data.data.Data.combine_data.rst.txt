@@ -1,0 +1,6 @@
+neutronpy\.data\.data\.Data\.combine\_data
+==========================================
+
+.. currentmodule:: neutronpy.data.data
+
+.. automethod:: Data.combine_data

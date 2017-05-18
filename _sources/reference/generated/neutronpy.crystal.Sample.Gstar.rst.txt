@@ -1,0 +1,6 @@
+neutronpy\.crystal\.Sample\.Gstar
+=================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Sample.Gstar

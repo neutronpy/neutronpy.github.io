@@ -1,0 +1,6 @@
+neutronpy\.data\.Scans\.func\_col
+=================================
+
+.. currentmodule:: neutronpy.data
+
+.. automethod:: Scans.func_col

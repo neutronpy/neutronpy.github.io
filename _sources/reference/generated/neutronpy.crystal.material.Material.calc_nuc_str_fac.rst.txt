@@ -1,0 +1,6 @@
+neutronpy\.crystal\.material\.Material\.calc\_nuc\_str\_fac
+===========================================================
+
+.. currentmodule:: neutronpy.crystal.material
+
+.. automethod:: Material.calc_nuc_str_fac

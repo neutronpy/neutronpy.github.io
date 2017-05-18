@@ -1,0 +1,6 @@
+neutronpy\.models\.simple\_harmonic\_oscillator
+===============================================
+
+.. currentmodule:: neutronpy.models
+
+.. autofunction:: simple_harmonic_oscillator

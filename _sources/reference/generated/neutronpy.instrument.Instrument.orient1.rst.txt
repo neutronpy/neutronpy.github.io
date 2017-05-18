@@ -1,0 +1,6 @@
+neutronpy\.instrument\.Instrument\.orient1
+==========================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. autoattribute:: Instrument.orient1

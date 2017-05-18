@@ -1,0 +1,6 @@
+neutronpy\.crystal\.Sample\.get\_q
+==================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. automethod:: Sample.get_q

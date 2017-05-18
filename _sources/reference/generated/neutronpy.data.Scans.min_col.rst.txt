@@ -1,0 +1,6 @@
+neutronpy\.data\.Scans\.min\_col
+================================
+
+.. currentmodule:: neutronpy.data
+
+.. automethod:: Scans.min_col

@@ -1,0 +1,6 @@
+neutronpy\.crystal\.Lattice\.Bmatrix
+====================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Lattice.Bmatrix

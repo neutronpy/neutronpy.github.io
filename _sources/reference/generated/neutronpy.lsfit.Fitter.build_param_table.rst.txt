@@ -1,0 +1,6 @@
+neutronpy\.lsfit\.Fitter\.build\_param\_table
+=============================================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. automethod:: Fitter.build_param_table

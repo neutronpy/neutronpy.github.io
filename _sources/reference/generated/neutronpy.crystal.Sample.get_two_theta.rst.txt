@@ -1,0 +1,6 @@
+neutronpy\.crystal\.Sample\.get\_two\_theta
+===========================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. automethod:: Sample.get_two_theta

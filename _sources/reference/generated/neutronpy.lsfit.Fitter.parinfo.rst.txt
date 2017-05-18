@@ -1,0 +1,6 @@
+neutronpy\.lsfit\.Fitter\.parinfo
+=================================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.parinfo

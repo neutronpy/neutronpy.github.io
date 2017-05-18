@@ -1,0 +1,6 @@
+neutronpy\.data\.Data\.position
+===============================
+
+.. currentmodule:: neutronpy.data
+
+.. automethod:: Data.position

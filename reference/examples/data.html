@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data handling with the Data Class &mdash; neutronpy 1.0.2-5-g01ec23d documentation</title>
+  <title>Data handling with the Data Class &mdash; neutronpy 1.0.4.dev5 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="neutronpy 1.0.2-5-g01ec23d documentation" href="../../index.html"/>
+    <link rel="top" title="neutronpy 1.0.4.dev5 documentation" href="../../index.html"/>
         <link rel="up" title="Examples" href="../../examples.html"/>
         <link rel="next" title="Least-squares fitting with the Fitter Class" href="fitting.html"/>
         <link rel="prev" title="Basic introduction to using NeutronPy" href="basic.html"/> 
@@ -374,6 +374,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.data.Scans.html">neutronpy.data.Scans</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Scans.waterfall.html">neutronpy.data.Scans.waterfall</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Scans.pcolor.html">neutronpy.data.Scans.pcolor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Scans.func_col.html">neutronpy.data.Scans.func_col</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Scans.min_col.html">neutronpy.data.Scans.min_col</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Scans.max_col.html">neutronpy.data.Scans.max_col</a></li>
 </ul>
 </li>
 </ul>
@@ -570,6 +573,11 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../notebooks.html">Notebooks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/neutronpy_resolution_convolution_4D_example.html">Resolution Convolution (4D) Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/neutronpy_resolution_convolution_SMA_example.html">Resolution Convolution (SMA) Example</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../installation.html#anaconda-cloud-conda-recommended">Anaconda Cloud - conda &#8211; <strong>Recommended</strong></a></li>
@@ -646,7 +654,7 @@
     <li class="wy-breadcrumbs-aside">
       
         
-          <a href="../../_sources/reference/examples/data.txt" rel="nofollow"> View page source</a>
+          <a href="../../_sources/reference/examples/data.rst.txt" rel="nofollow"> View page source</a>
         
       
     </li>
@@ -721,7 +729,7 @@
 <div class="section" id="monitor-normalization">
 <h3>Monitor normalization<a class="headerlink" href="#monitor-normalization" title="Permalink to this headline">¶</a></h3>
 <p>If you want to normalize to a particular monitor <code class="docutils literal"><span class="pre">m0</span></code> then you will need to define it, <em>e.g.</em></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span><span class="o">.</span><span class="n">m0</span> <span class="o">=</span> <span class="mi">1</span><span class="n">e5</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span><span class="o">.</span><span class="n">m0</span> <span class="o">=</span> <span class="mf">1e5</span>
 </pre></div>
 </div>
 <p>If you do not choose a <code class="docutils literal"><span class="pre">m0</span></code>, when you call <code class="xref py py-meth docutils literal"><span class="pre">Data.intensity</span></code> one will be defined for you based on the <code class="docutils literal"><span class="pre">monitor</span></code> already defined in <code class="docutils literal"><span class="pre">data</span></code>.</p>
@@ -761,7 +769,7 @@
 </div>
 <div class="section" id="quick-analysis">
 <h2>Quick analysis<a class="headerlink" href="#quick-analysis" title="Permalink to this headline">¶</a></h2>
-<p>Often you will want to know the integrated intensity, peak position, and mean-squared width for some part of your data, without relying on fitting. This is easily accomplished with <a class="reference internal" href="../generated/neutronpy.data.Data.integrate.html#neutronpy.data.Data.integrate" title="neutronpy.data.Data.integrate"><code class="xref py py-meth docutils literal"><span class="pre">Data.integrate</span></code></a>, <a class="reference internal" href="../generated/neutronpy.data.data.Data.position.html#neutronpy.data.data.Data.position" title="neutronpy.data.data.Data.position"><code class="xref py py-meth docutils literal"><span class="pre">Data.position</span></code></a>, and <a class="reference internal" href="../generated/neutronpy.data.Data.width.html#neutronpy.data.Data.width" title="neutronpy.data.Data.width"><code class="xref py py-meth docutils literal"><span class="pre">Data.width</span></code></a>.</p>
+<p>Often you will want to know the integrated intensity, peak position, and mean-squared width for some part of your data, without relying on fitting. This is easily accomplished with <a class="reference internal" href="../generated/neutronpy.data.data.Data.integrate.html#neutronpy.data.data.Data.integrate" title="neutronpy.data.data.Data.integrate"><code class="xref py py-meth docutils literal"><span class="pre">Data.integrate</span></code></a>, <a class="reference internal" href="../generated/neutronpy.data.data.Data.position.html#neutronpy.data.data.Data.position" title="neutronpy.data.data.Data.position"><code class="xref py py-meth docutils literal"><span class="pre">Data.position</span></code></a>, and <a class="reference internal" href="../generated/neutronpy.data.data.Data.width.html#neutronpy.data.data.Data.width" title="neutronpy.data.data.Data.width"><code class="xref py py-meth docutils literal"><span class="pre">Data.width</span></code></a>.</p>
 <p>It is possible to specify the bounds inside which you want to perform these analyses by forming a boolean expression. For example, below is the definition of the bounds of a 1x1 square around (100) at 4 meV:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">bounds</span> <span class="o">=</span> <span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">h</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mf">0.5</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">k</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mf">0.5</span><span class="p">)</span> <span class="o">&amp;</span>
 <span class="go">              (np.abs(data.e - 4) &lt;= 0.25))</span>
@@ -862,7 +870,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, David M Fobes.
-      Last updated on Feb 16, 2017.
+      Last updated on May 18, 2017.
 
     </p>
   </div>
@@ -884,7 +892,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.0.2-5-g01ec23d',
+            VERSION:'1.0.4.dev5',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

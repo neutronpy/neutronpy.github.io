@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Basic introduction to using NeutronPy &mdash; neutronpy 1.0.2-5-g01ec23d documentation</title>
+  <title>Basic introduction to using NeutronPy &mdash; neutronpy 1.0.4.dev5 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="neutronpy 1.0.2-5-g01ec23d documentation" href="../../index.html"/>
+    <link rel="top" title="neutronpy 1.0.4.dev5 documentation" href="../../index.html"/>
         <link rel="up" title="Examples" href="../../examples.html"/>
         <link rel="next" title="Data handling with the Data Class" href="data.html"/>
         <link rel="prev" title="Examples" href="../../examples.html"/> 
@@ -374,6 +374,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../generated/neutronpy.data.Scans.html">neutronpy.data.Scans</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Scans.waterfall.html">neutronpy.data.Scans.waterfall</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Scans.pcolor.html">neutronpy.data.Scans.pcolor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Scans.func_col.html">neutronpy.data.Scans.func_col</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Scans.min_col.html">neutronpy.data.Scans.min_col</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/neutronpy.data.Scans.max_col.html">neutronpy.data.Scans.max_col</a></li>
 </ul>
 </li>
 </ul>
@@ -570,6 +573,11 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../notebooks.html">Notebooks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/neutronpy_resolution_convolution_4D_example.html">Resolution Convolution (4D) Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/neutronpy_resolution_convolution_SMA_example.html">Resolution Convolution (SMA) Example</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../installation.html#anaconda-cloud-conda-recommended">Anaconda Cloud - conda &#8211; <strong>Recommended</strong></a></li>
@@ -646,7 +654,7 @@
     <li class="wy-breadcrumbs-aside">
       
         
-          <a href="../../_sources/reference/examples/basic.txt" rel="nofollow"> View page source</a>
+          <a href="../../_sources/reference/examples/basic.rst.txt" rel="nofollow"> View page source</a>
         
       
     </li>
@@ -673,7 +681,7 @@
 <li><code class="docutils literal"><span class="pre">npy.Instrument</span></code> - <a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.html#neutronpy.instrument.instrument.Instrument" title="neutronpy.instrument.instrument.Instrument"><code class="xref py py-class docutils literal"><span class="pre">Instrument</span></code></a> class for calculating Triple-Axis resolution</li>
 <li><code class="docutils literal"><span class="pre">npy.Lattice</span></code> - <a class="reference internal" href="../generated/neutronpy.crystal.Lattice.html#neutronpy.crystal.Lattice" title="neutronpy.crystal.Lattice"><code class="xref py py-class docutils literal"><span class="pre">Lattice</span></code></a> class for performing geometry calculations</li>
 <li><code class="docutils literal"><span class="pre">npy.Material</span></code> - <a class="reference internal" href="../generated/neutronpy.crystal.Material.html#neutronpy.crystal.Material" title="neutronpy.crystal.Material"><code class="xref py py-class docutils literal"><span class="pre">Material</span></code></a> class for performing structure factor calculations</li>
-<li><code class="docutils literal"><span class="pre">npy.Sample</span></code> - <a class="reference internal" href="../generated/neutronpy.crystal.Sample.html#neutronpy.crystal.Sample" title="neutronpy.crystal.Sample"><code class="xref py py-class docutils literal"><span class="pre">Sample</span></code></a> class for use in the <a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.html#neutronpy.instrument.instrument.Instrument" title="neutronpy.instrument.instrument.Instrument"><code class="xref py py-class docutils literal"><span class="pre">Instrument</span></code></a> class</li>
+<li><code class="docutils literal"><span class="pre">npy.Sample</span></code> - <a class="reference internal" href="../generated/neutronpy.crystal.sample.Sample.html#neutronpy.crystal.sample.Sample" title="neutronpy.crystal.sample.Sample"><code class="xref py py-class docutils literal"><span class="pre">Sample</span></code></a> class for use in the <a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.html#neutronpy.instrument.instrument.Instrument" title="neutronpy.instrument.instrument.Instrument"><code class="xref py py-class docutils literal"><span class="pre">Instrument</span></code></a> class</li>
 <li><code class="docutils literal"><span class="pre">npy.constants</span></code> - <code class="xref py py-mod docutils literal"><span class="pre">constants</span></code> module containing the constants used in NeutronPy</li>
 <li><code class="docutils literal"><span class="pre">npy.functions</span></code> - <code class="xref py py-mod docutils literal"><span class="pre">functions</span></code> module containing various commonly used functions</li>
 <li><code class="docutils literal"><span class="pre">npy.gui</span></code> - <code class="xref py py-mod docutils literal"><span class="pre">gui</span></code> module containing the GUI for resolution calculations <a class="reference internal" href="../generated/neutronpy.gui.launch.html#neutronpy.gui.launch" title="neutronpy.gui.launch"><code class="xref py py-func docutils literal"><span class="pre">gui.launch</span></code></a></li>
@@ -749,7 +757,7 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="n">instr</span><span class="o">.</span><span class="n">plot_projections</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>More details can be found in <a class="reference internal" href="instrument.html"><span class="doc">Resolution calculation with Instrument Class</span></a> and <a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.html#neutronpy.instrument.instrument.Instrument" title="neutronpy.instrument.instrument.Instrument"><code class="xref py py-class docutils literal"><span class="pre">Instrument</span></code></a> and <a class="reference internal" href="../generated/neutronpy.crystal.Sample.html#neutronpy.crystal.Sample" title="neutronpy.crystal.Sample"><code class="xref py py-class docutils literal"><span class="pre">Sample</span></code></a>.</p>
+<p>More details can be found in <a class="reference internal" href="instrument.html"><span class="doc">Resolution calculation with Instrument Class</span></a> and <a class="reference internal" href="../generated/neutronpy.instrument.instrument.Instrument.html#neutronpy.instrument.instrument.Instrument" title="neutronpy.instrument.instrument.Instrument"><code class="xref py py-class docutils literal"><span class="pre">Instrument</span></code></a> and <a class="reference internal" href="../generated/neutronpy.crystal.sample.Sample.html#neutronpy.crystal.sample.Sample" title="neutronpy.crystal.sample.Sample"><code class="xref py py-class docutils literal"><span class="pre">Sample</span></code></a>.</p>
 <div class="section" id="using-the-triple-axis-resolution-gui">
 <h3>Using the Triple-Axis Resolution GUI<a class="headerlink" href="#using-the-triple-axis-resolution-gui" title="Permalink to this headline">¶</a></h3>
 <p>To launch the gui using a python command line</p>
@@ -840,7 +848,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, David M Fobes.
-      Last updated on Feb 16, 2017.
+      Last updated on May 18, 2017.
 
     </p>
   </div>
@@ -862,7 +870,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.0.2-5-g01ec23d',
+            VERSION:'1.0.4.dev5',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

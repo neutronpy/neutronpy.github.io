@@ -1,0 +1,6 @@
+neutronpy\.lsfit\.Fitter\.maxfev
+================================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.maxfev

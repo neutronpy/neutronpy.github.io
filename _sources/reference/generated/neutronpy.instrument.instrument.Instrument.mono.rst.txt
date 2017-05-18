@@ -1,0 +1,6 @@
+neutronpy\.instrument\.instrument\.Instrument\.mono
+===================================================
+
+.. currentmodule:: neutronpy.instrument.instrument
+
+.. autoattribute:: Instrument.mono

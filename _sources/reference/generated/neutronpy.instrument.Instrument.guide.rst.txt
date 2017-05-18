@@ -1,0 +1,6 @@
+neutronpy\.instrument\.Instrument\.guide
+========================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. autoattribute:: Instrument.guide

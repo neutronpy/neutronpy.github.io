@@ -1,0 +1,6 @@
+neutronpy\.lsfit\.Fitter\.deriv
+===============================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.deriv

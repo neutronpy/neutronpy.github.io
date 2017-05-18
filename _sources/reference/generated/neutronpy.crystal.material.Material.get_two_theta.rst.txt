@@ -1,0 +1,6 @@
+neutronpy\.crystal\.material\.Material\.get\_two\_theta
+=======================================================
+
+.. currentmodule:: neutronpy.crystal.material
+
+.. automethod:: Material.get_two_theta

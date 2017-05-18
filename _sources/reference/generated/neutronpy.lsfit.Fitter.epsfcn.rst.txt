@@ -1,0 +1,6 @@
+neutronpy\.lsfit\.Fitter\.epsfcn
+================================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.epsfcn

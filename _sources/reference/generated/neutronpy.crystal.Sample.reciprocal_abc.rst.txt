@@ -1,0 +1,6 @@
+neutronpy\.crystal\.Sample\.reciprocal\_abc
+===========================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Sample.reciprocal_abc

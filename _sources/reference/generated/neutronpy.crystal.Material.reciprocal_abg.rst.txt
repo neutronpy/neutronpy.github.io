@@ -1,0 +1,6 @@
+neutronpy\.crystal\.Material\.reciprocal\_abg
+=============================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Material.reciprocal_abg

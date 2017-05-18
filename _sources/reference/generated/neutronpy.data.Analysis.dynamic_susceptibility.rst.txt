@@ -1,0 +1,6 @@
+neutronpy\.data\.Analysis\.dynamic\_susceptibility
+==================================================
+
+.. currentmodule:: neutronpy.data
+
+.. automethod:: Analysis.dynamic_susceptibility

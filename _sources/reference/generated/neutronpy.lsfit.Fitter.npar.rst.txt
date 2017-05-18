@@ -1,0 +1,6 @@
+neutronpy\.lsfit\.Fitter\.npar
+==============================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.npar

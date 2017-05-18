@@ -1,0 +1,6 @@
+neutronpy\.crystal\.lattice\.Lattice\.get\_q
+============================================
+
+.. currentmodule:: neutronpy.crystal.lattice
+
+.. automethod:: Lattice.get_q

@@ -1,0 +1,6 @@
+neutronpy\.crystal\.Material\.reciprocal\_abc
+=============================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Material.reciprocal_abc

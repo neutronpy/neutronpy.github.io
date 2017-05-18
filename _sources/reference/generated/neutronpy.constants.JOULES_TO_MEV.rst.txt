@@ -1,0 +1,6 @@
+neutronpy\.constants\.JOULES\_TO\_MEV
+=====================================
+
+.. currentmodule:: neutronpy.constants
+
+.. autodata:: JOULES_TO_MEV

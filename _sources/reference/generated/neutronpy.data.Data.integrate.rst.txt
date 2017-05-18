@@ -1,0 +1,6 @@
+neutronpy\.data\.Data\.integrate
+================================
+
+.. currentmodule:: neutronpy.data
+
+.. automethod:: Data.integrate

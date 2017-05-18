@@ -1,0 +1,6 @@
+neutronpy\.lsfit\.Fitter\.npegged
+=================================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.npegged

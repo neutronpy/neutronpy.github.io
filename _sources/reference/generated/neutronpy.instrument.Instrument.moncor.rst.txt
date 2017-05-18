@@ -1,0 +1,6 @@
+neutronpy\.instrument\.Instrument\.moncor
+=========================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. autoattribute:: Instrument.moncor

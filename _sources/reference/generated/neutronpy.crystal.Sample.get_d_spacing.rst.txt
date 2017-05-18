@@ -1,0 +1,6 @@
+neutronpy\.crystal\.Sample\.get\_d\_spacing
+===========================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. automethod:: Sample.get_d_spacing

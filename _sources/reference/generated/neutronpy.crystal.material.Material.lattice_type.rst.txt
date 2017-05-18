@@ -1,0 +1,6 @@
+neutronpy\.crystal\.material\.Material\.lattice\_type
+=====================================================
+
+.. currentmodule:: neutronpy.crystal.material
+
+.. autoattribute:: Material.lattice_type

@@ -1,0 +1,6 @@
+neutronpy\.models\.acoustic\_phonon\_dispersion
+===============================================
+
+.. currentmodule:: neutronpy.models
+
+.. autofunction:: acoustic_phonon_dispersion

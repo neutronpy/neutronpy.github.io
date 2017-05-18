@@ -1,0 +1,6 @@
+neutronpy\.crystal\.Material\.reciprocal\_volume
+================================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Material.reciprocal_volume

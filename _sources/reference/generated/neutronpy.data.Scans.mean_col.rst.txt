@@ -1,0 +1,6 @@
+neutronpy\.data\.Scans\.mean\_col
+=================================
+
+.. currentmodule:: neutronpy.data
+
+.. automethod:: Scans.mean_col

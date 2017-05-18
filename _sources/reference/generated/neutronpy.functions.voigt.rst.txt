@@ -1,0 +1,6 @@
+neutronpy\.functions\.voigt
+===========================
+
+.. currentmodule:: neutronpy.functions
+
+.. autofunction:: voigt

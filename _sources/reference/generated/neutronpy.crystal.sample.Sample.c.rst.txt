@@ -1,0 +1,6 @@
+neutronpy\.crystal\.sample\.Sample\.c
+=====================================
+
+.. currentmodule:: neutronpy.crystal.sample
+
+.. autoattribute:: Sample.c

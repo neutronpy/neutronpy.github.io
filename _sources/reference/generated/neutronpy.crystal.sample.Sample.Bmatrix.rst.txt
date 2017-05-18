@@ -1,0 +1,6 @@
+neutronpy\.crystal\.sample\.Sample\.Bmatrix
+===========================================
+
+.. currentmodule:: neutronpy.crystal.sample
+
+.. autoattribute:: Sample.Bmatrix

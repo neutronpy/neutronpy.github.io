@@ -1,0 +1,6 @@
+neutronpy\.crystal\.Lattice\.cstar
+==================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Lattice.cstar

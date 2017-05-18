@@ -1,0 +1,6 @@
+neutronpy\.crystal\.sample\.Sample\.gamma\_rad
+==============================================
+
+.. currentmodule:: neutronpy.crystal.sample
+
+.. autoattribute:: Sample.gamma_rad

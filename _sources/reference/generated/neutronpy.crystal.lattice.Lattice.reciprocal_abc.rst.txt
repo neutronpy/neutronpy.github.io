@@ -1,0 +1,6 @@
+neutronpy\.crystal\.lattice\.Lattice\.reciprocal\_abc
+=====================================================
+
+.. currentmodule:: neutronpy.crystal.lattice
+
+.. autoattribute:: Lattice.reciprocal_abc

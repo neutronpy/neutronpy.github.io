@@ -1,0 +1,6 @@
+neutronpy\.crystal\.material\.Material\.gammastar\_rad
+======================================================
+
+.. currentmodule:: neutronpy.crystal.material
+
+.. autoattribute:: Material.gammastar_rad

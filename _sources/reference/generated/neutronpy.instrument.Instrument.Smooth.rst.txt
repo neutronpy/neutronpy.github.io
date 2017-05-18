@@ -1,0 +1,6 @@
+neutronpy\.instrument\.Instrument\.Smooth
+=========================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. autoattribute:: Instrument.Smooth

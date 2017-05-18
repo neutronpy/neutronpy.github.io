@@ -1,0 +1,6 @@
+neutronpy\.instrument\.instrument\.Instrument\.detector
+=======================================================
+
+.. currentmodule:: neutronpy.instrument.instrument
+
+.. autoattribute:: Instrument.detector

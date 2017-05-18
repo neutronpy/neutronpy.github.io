@@ -1,0 +1,52 @@
+neutronpy\.data\.Data
+=====================
+
+.. currentmodule:: neutronpy.data
+
+.. autoclass:: Data
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         Data.bin
+         Data.combine_data
+         Data.dynamic_susceptibility
+         Data.estimate_background
+         Data.get_bounds
+         Data.get_keys
+         Data.integrate
+         Data.plot
+         Data.plot_contour
+         Data.plot_line
+         Data.plot_volume
+         Data.position
+         Data.scattering_function
+         Data.subtract_background
+         Data.width
+
+
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         Data.Q
+         Data.data
+         Data.data_columns
+         Data.detailed_balance_factor
+         Data.detector
+         Data.e
+         Data.error
+         Data.h
+         Data.intensity
+         Data.k
+         Data.l
+         Data.monitor
+         Data.temp
+         Data.time
+

@@ -1,0 +1,6 @@
+neutronpy\.lsfit\.Fitter\.data
+==============================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.data

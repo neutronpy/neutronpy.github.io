@@ -1,0 +1,6 @@
+neutronpy\.crystal\.material\.Material\.plot\_unit\_cell
+========================================================
+
+.. currentmodule:: neutronpy.crystal.material
+
+.. automethod:: Material.plot_unit_cell

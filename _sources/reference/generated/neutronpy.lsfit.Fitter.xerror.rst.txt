@@ -1,0 +1,6 @@
+neutronpy\.lsfit\.Fitter\.xerror
+================================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.xerror

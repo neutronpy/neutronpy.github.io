@@ -1,0 +1,6 @@
+neutronpy\.crystal\.MagneticFormFactor\.calc\_mag\_form\_fac
+============================================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. automethod:: MagneticFormFactor.calc_mag_form_fac

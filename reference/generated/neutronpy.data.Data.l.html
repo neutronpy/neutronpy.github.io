@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>neutronpy.data.Data.l &mdash; neutronpy 1.0.2-5-g01ec23d documentation</title>
+  <title>neutronpy.data.Data.l &mdash; neutronpy 1.0.4.dev5 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="neutronpy 1.0.2-5-g01ec23d documentation" href="../../index.html"/>
+    <link rel="top" title="neutronpy 1.0.4.dev5 documentation" href="../../index.html"/>
         <link rel="up" title="neutronpy.data.Data" href="neutronpy.data.Data.html"/>
         <link rel="next" title="neutronpy.data.Data.e" href="neutronpy.data.Data.e.html"/>
         <link rel="prev" title="neutronpy.data.Data.k" href="neutronpy.data.Data.k.html"/> 
@@ -374,6 +374,9 @@
 <li class="toctree-l3"><a class="reference internal" href="neutronpy.data.Scans.html">neutronpy.data.Scans</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="neutronpy.data.Scans.waterfall.html">neutronpy.data.Scans.waterfall</a></li>
 <li class="toctree-l4"><a class="reference internal" href="neutronpy.data.Scans.pcolor.html">neutronpy.data.Scans.pcolor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.data.Scans.func_col.html">neutronpy.data.Scans.func_col</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.data.Scans.min_col.html">neutronpy.data.Scans.min_col</a></li>
+<li class="toctree-l4"><a class="reference internal" href="neutronpy.data.Scans.max_col.html">neutronpy.data.Scans.max_col</a></li>
 </ul>
 </li>
 </ul>
@@ -498,76 +501,81 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../examples/basic.html">Basic introduction to using NeutronPy</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../examples/basic.html#importing-and-using-neutronpy">Importing and using NeutronPy</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/basic.html#handling-data">Handling Data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/basic.html#converting-neutron-energy">Converting Neutron Energy</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/basic.html#fitting-data">Fitting Data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/basic.html#calculating-triple-axis-resolution">Calculating Triple-Axis Resolution</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../examples/basic.html#using-the-triple-axis-resolution-gui">Using the Triple-Axis Resolution GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/basic.html">Basic introduction to using NeutronPy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/basic.html#importing-and-using-neutronpy">Importing and using NeutronPy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/basic.html#handling-data">Handling Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/basic.html#converting-neutron-energy">Converting Neutron Energy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/basic.html#fitting-data">Fitting Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/basic.html#calculating-triple-axis-resolution">Calculating Triple-Axis Resolution</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tutorials/basic.html#using-the-triple-axis-resolution-gui">Using the Triple-Axis Resolution GUI</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/basic.html#performing-lattice-geometry-calculations">Performing Lattice Geometry Calculations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/basic.html#performing-structure-factor-calculations">Performing Structure Factor Calculations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/basic.html#finding-aluminum-spurion-positions">Finding Aluminum Spurion Positions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/basic.html#performing-lattice-geometry-calculations">Performing Lattice Geometry Calculations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/basic.html#performing-structure-factor-calculations">Performing Structure Factor Calculations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/basic.html#finding-aluminum-spurion-positions">Finding Aluminum Spurion Positions</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../examples/data.html">Data handling with the Data Class</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../examples/data.html#initialization-loading-data">Initialization: loading data</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../examples/data.html#load-from-file">Load from file</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../examples/data.html#pass-pre-loaded-data">Pass pre-loaded data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/data.html">Data handling with the Data Class</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/data.html#initialization-loading-data">Initialization: loading data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tutorials/data.html#load-from-file">Load from file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tutorials/data.html#pass-pre-loaded-data">Pass pre-loaded data</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/data.html#data-properties"><code class="docutils literal"><span class="pre">Data</span></code> properties</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../examples/data.html#intensity-and-error">Intensity and error</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../examples/data.html#monitor-normalization">Monitor normalization</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../examples/data.html#time-normalization">Time normalization</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../examples/data.html#the-q-vector">The <code class="docutils literal"><span class="pre">Q</span></code> vector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/data.html#data-properties"><code class="docutils literal"><span class="pre">Data</span></code> properties</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tutorials/data.html#intensity-and-error">Intensity and error</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tutorials/data.html#monitor-normalization">Monitor normalization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tutorials/data.html#time-normalization">Time normalization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tutorials/data.html#the-q-vector">The <code class="docutils literal"><span class="pre">Q</span></code> vector</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/data.html#data-operations"><code class="docutils literal"><span class="pre">Data</span></code> operations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/data.html#quick-analysis">Quick analysis</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/data.html#binning-data">Binning data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/data.html#visualizing-data">Visualizing data</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../examples/data.html#basic-plotting">Basic plotting</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../examples/data.html#options">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/data.html#data-operations"><code class="docutils literal"><span class="pre">Data</span></code> operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/data.html#quick-analysis">Quick analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/data.html#binning-data">Binning data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/data.html#visualizing-data">Visualizing data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tutorials/data.html#basic-plotting">Basic plotting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tutorials/data.html#options">Options</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../examples/fitting.html">Least-squares fitting with the Fitter Class</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../examples/fitting.html#defining-the-problem">Defining the problem</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/fitting.html#initializing">Initializing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/fitting.html#initial-parameters-and-constraints">Initial parameters and Constraints</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/fitting.html#fitting">Fitting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/fitting.html#results">Results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/fitting.html">Least-squares fitting with the Fitter Class</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/fitting.html#defining-the-problem">Defining the problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/fitting.html#initializing">Initializing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/fitting.html#initial-parameters-and-constraints">Initial parameters and Constraints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/fitting.html#fitting">Fitting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/fitting.html#results">Results</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../examples/gui.html">Using the Resolution Calculation Graphical User Interface</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../examples/instrument.html">Resolution calculation with Instrument Class</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../examples/instrument.html#instrument-configuration">Instrument Configuration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/instrument.html#sample-configuration">Sample Configuration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/instrument.html#initializing-the-instrument">Initializing the Instrument</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/instrument.html#calculating-the-resolution">Calculating the resolution</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../examples/instrument.html#resolution-parameters">Resolution parameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../examples/instrument.html#resolution-ellipses">Resolution ellipses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/gui.html">Using the Resolution Calculation Graphical User Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/instrument.html">Resolution calculation with Instrument Class</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/instrument.html#instrument-configuration">Instrument Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/instrument.html#sample-configuration">Sample Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/instrument.html#initializing-the-instrument">Initializing the Instrument</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/instrument.html#calculating-the-resolution">Calculating the resolution</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tutorials/instrument.html#resolution-parameters">Resolution parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tutorials/instrument.html#resolution-ellipses">Resolution ellipses</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/instrument.html#popovici-calculation">Popovici calculation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/instrument.html#simple-plotting-of-resolution-ellipses">Simple Plotting of Resolution Ellipses</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/instrument.html#simple-plotting-of-the-3d-resolution-ellipsoid">Simple Plotting of the 3D Resolution Ellipsoid</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/instrument.html#plotting-of-the-instrument-setup-for-a-given-q-w">Plotting of the Instrument setup for a given (Q,W)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/instrument.html#loading-an-instrument-and-sample-from-files">Loading an Instrument and Sample from files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/instrument.html#popovici-calculation">Popovici calculation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/instrument.html#simple-plotting-of-resolution-ellipses">Simple Plotting of Resolution Ellipses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/instrument.html#simple-plotting-of-the-3d-resolution-ellipsoid">Simple Plotting of the 3D Resolution Ellipsoid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/instrument.html#plotting-of-the-instrument-setup-for-a-given-q-w">Plotting of the Instrument setup for a given (Q,W)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/instrument.html#loading-an-instrument-and-sample-from-files">Loading an Instrument and Sample from files</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../examples/material.html">Form Factor calculation with the Material Class</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../examples/material.html#defining-the-material">Defining the Material</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/material.html#initializing-the-material-class">Initializing the Material class</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/material.html#calculating-the-structure-factor">Calculating the structure factor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../examples/material.html#using-space-group-to-properly-symmetrize">Using space group to properly symmetrize</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/material.html">Form Factor calculation with the Material Class</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/material.html#defining-the-material">Defining the Material</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/material.html#initializing-the-material-class">Initializing the Material class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/material.html#calculating-the-structure-factor">Calculating the structure factor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tutorials/material.html#using-space-group-to-properly-symmetrize">Using space group to properly symmetrize</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../notebooks.html">Notebook Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/neutronpy_resolution_convolution_4D_example.html">Resolution Convolution (4D) Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../notebooks/neutronpy_resolution_convolution_SMA_example.html">Resolution Convolution (SMA) Example</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQs</a></li>
@@ -654,7 +662,7 @@
     <li class="wy-breadcrumbs-aside">
       
         
-          <a href="../../_sources/reference/generated/neutronpy.data.Data.l.txt" rel="nofollow"> View page source</a>
+          <a href="../../_sources/reference/generated/neutronpy.data.Data.l.rst.txt" rel="nofollow"> View page source</a>
         
       
     </li>
@@ -694,8 +702,8 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, David M Fobes.
-      Last updated on Feb 16, 2017.
+        &copy; Copyright 2017, David M Fobes.
+      Last updated on May 18, 2017.
 
     </p>
   </div>
@@ -717,7 +725,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.0.2-5-g01ec23d',
+            VERSION:'1.0.4.dev5',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
@@ -726,6 +734,7 @@
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

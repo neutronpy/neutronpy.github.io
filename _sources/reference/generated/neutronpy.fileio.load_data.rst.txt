@@ -1,0 +1,6 @@
+neutronpy\.fileio\.load\_data
+=============================
+
+.. currentmodule:: neutronpy.fileio
+
+.. autofunction:: load_data

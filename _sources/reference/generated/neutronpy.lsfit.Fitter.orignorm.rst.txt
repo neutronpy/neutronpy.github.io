@@ -1,0 +1,6 @@
+neutronpy\.lsfit\.Fitter\.orignorm
+==================================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.orignorm

@@ -1,0 +1,6 @@
+neutronpy\.lsfit\.Fitter\.chi2\_min
+===================================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.chi2_min

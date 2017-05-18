@@ -1,0 +1,6 @@
+neutronpy\.crystal\.Material\.alphastar
+=======================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. autoattribute:: Material.alphastar

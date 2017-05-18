@@ -1,0 +1,6 @@
+neutronpy\.crystal\.Material\.N\_atoms
+======================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. automethod:: Material.N_atoms

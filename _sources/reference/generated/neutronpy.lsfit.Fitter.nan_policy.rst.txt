@@ -1,0 +1,6 @@
+neutronpy\.lsfit\.Fitter\.nan\_policy
+=====================================
+
+.. currentmodule:: neutronpy.lsfit
+
+.. autoattribute:: Fitter.nan_policy

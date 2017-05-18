@@ -1,0 +1,6 @@
+neutronpy\.instrument\.Instrument\.resolution\_convolution
+==========================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: Instrument.resolution_convolution

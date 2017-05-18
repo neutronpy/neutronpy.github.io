@@ -1,0 +1,6 @@
+neutronpy\.fileio\.save\_data
+=============================
+
+.. currentmodule:: neutronpy.fileio
+
+.. autofunction:: save_data

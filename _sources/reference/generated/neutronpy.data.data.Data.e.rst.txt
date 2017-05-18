@@ -1,0 +1,6 @@
+neutronpy\.data\.data\.Data\.e
+==============================
+
+.. currentmodule:: neutronpy.data.data
+
+.. autoattribute:: Data.e

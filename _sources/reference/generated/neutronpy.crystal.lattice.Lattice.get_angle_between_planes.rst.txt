@@ -1,0 +1,6 @@
+neutronpy\.crystal\.lattice\.Lattice\.get\_angle\_between\_planes
+=================================================================
+
+.. currentmodule:: neutronpy.crystal.lattice
+
+.. automethod:: Lattice.get_angle_between_planes

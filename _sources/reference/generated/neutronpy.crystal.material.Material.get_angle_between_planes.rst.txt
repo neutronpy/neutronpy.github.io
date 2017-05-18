@@ -1,0 +1,6 @@
+neutronpy\.crystal\.material\.Material\.get\_angle\_between\_planes
+===================================================================
+
+.. currentmodule:: neutronpy.crystal.material
+
+.. automethod:: Material.get_angle_between_planes
