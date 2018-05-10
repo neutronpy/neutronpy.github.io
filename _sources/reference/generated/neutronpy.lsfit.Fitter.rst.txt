@@ -20,38 +20,3 @@ neutronpy\.lsfit\.Fitter
 
    
 
-   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
-      .. autosummary::
-         :toctree:
-      
-         Fitter.chi2_min
-         Fitter.covar
-         Fitter.covtol
-         Fitter.data
-         Fitter.deriv
-         Fitter.dof
-         Fitter.epsfcn
-         Fitter.ftol
-         Fitter.gtol
-         Fitter.maxfev
-         Fitter.maxiter
-         Fitter.message
-         Fitter.nan_policy
-         Fitter.nfev
-         Fitter.nfree
-         Fitter.niter
-         Fitter.nofinitecheck
-         Fitter.npar
-         Fitter.npegged
-         Fitter.orignorm
-         Fitter.params
-         Fitter.params0
-         Fitter.parinfo
-         Fitter.rchi2_min
-         Fitter.resid
-         Fitter.status
-         Fitter.stderr
-         Fitter.stepfactor
-         Fitter.xerror
-         Fitter.xtol
-

@@ -29,24 +29,3 @@ neutronpy\.instrument\.instrument\.Instrument
 
    
 
-   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
-      .. autosummary::
-         :toctree:
-      
-         Instrument.Smooth
-         Instrument.ana
-         Instrument.arms
-         Instrument.detector
-         Instrument.efixed
-         Instrument.guide
-         Instrument.hcol
-         Instrument.infin
-         Instrument.method
-         Instrument.moncor
-         Instrument.monitor
-         Instrument.mono
-         Instrument.orient1
-         Instrument.orient2
-         Instrument.sample
-         Instrument.vcol
-
