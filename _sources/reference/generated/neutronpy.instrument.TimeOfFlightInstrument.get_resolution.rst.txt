@@ -1,0 +1,6 @@
+neutronpy\.instrument\.TimeOfFlightInstrument\.get\_resolution
+==============================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: TimeOfFlightInstrument.get_resolution

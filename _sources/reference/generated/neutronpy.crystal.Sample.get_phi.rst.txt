@@ -1,0 +1,6 @@
+neutronpy\.crystal\.Sample\.get\_phi
+====================================
+
+.. currentmodule:: neutronpy.crystal
+
+.. automethod:: Sample.get_phi

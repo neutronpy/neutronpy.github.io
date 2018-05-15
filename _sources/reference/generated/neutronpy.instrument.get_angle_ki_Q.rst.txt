@@ -1,0 +1,6 @@
+neutronpy\.instrument\.get\_angle\_ki\_Q
+========================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. autofunction:: get_angle_ki_Q

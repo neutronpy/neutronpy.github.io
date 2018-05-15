@@ -1,0 +1,6 @@
+neutronpy\.instrument\.TimeOfFlightInstrument\.plot\_instrument
+===============================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: TimeOfFlightInstrument.plot_instrument

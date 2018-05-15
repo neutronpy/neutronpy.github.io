@@ -1,0 +1,6 @@
+neutronpy\.instrument\.tools\.GetTau
+====================================
+
+.. currentmodule:: neutronpy.instrument.tools
+
+.. autofunction:: GetTau

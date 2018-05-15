@@ -1,0 +1,6 @@
+neutronpy\.instrument\.TimeOfFlightInstrument\.calc\_resolution\_in\_Q\_coords
+==============================================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: TimeOfFlightInstrument.calc_resolution_in_Q_coords

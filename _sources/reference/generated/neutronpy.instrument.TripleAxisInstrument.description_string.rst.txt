@@ -1,0 +1,6 @@
+neutronpy\.instrument\.TripleAxisInstrument\.description\_string
+================================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: TripleAxisInstrument.description_string

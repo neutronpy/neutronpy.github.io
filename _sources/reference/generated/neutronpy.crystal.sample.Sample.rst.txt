@@ -13,6 +13,7 @@ neutronpy\.crystal\.sample\.Sample
       
          Sample.get_angle_between_planes
          Sample.get_d_spacing
+         Sample.get_phi
          Sample.get_q
          Sample.get_two_theta
 

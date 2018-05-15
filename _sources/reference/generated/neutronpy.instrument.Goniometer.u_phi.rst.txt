@@ -1,0 +1,6 @@
+neutronpy\.instrument\.Goniometer\.u\_phi
+=========================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: Goniometer.u_phi

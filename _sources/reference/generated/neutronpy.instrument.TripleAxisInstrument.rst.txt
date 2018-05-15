@@ -1,0 +1,31 @@
+neutronpy\.instrument\.TripleAxisInstrument
+===========================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. autoclass:: TripleAxisInstrument
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         TripleAxisInstrument.calc_projections
+         TripleAxisInstrument.calc_resolution
+         TripleAxisInstrument.calc_resolution_in_Q_coords
+         TripleAxisInstrument.get_angles_and_Q
+         TripleAxisInstrument.get_lattice
+         TripleAxisInstrument.get_resolution
+         TripleAxisInstrument.get_resolution_params
+         TripleAxisInstrument.plot_ellipsoid
+         TripleAxisInstrument.plot_instrument
+         TripleAxisInstrument.plot_projections
+         TripleAxisInstrument.plot_slice
+         TripleAxisInstrument.resolution_convolution
+         TripleAxisInstrument.resolution_convolution_SMA
+
+
+
+   
+

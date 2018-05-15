@@ -1,0 +1,6 @@
+neutronpy\.instrument\.TripleAxisInstrument\.plot\_slice
+========================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: TripleAxisInstrument.plot_slice

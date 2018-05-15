@@ -1,0 +1,6 @@
+neutronpy\.instrument\.TripleAxisInstrument\.plot\_ellipsoid
+============================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: TripleAxisInstrument.plot_ellipsoid

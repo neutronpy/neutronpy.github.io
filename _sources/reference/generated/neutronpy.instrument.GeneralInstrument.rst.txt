@@ -1,0 +1,21 @@
+neutronpy\.instrument\.GeneralInstrument
+========================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. autoclass:: GeneralInstrument
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         GeneralInstrument.calc_projections
+         GeneralInstrument.get_resolution
+         GeneralInstrument.get_resolution_params
+
+
+
+   
+

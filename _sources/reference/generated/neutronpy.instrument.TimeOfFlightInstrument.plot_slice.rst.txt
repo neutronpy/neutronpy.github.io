@@ -1,0 +1,6 @@
+neutronpy\.instrument\.TimeOfFlightInstrument\.plot\_slice
+==========================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: TimeOfFlightInstrument.plot_slice

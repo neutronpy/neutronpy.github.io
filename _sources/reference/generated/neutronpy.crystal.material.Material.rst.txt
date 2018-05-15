@@ -19,6 +19,7 @@ neutronpy\.crystal\.material\.Material
          Material.calc_optimal_thickness
          Material.get_angle_between_planes
          Material.get_d_spacing
+         Material.get_phi
          Material.get_q
          Material.get_two_theta
          Material.plot_unit_cell

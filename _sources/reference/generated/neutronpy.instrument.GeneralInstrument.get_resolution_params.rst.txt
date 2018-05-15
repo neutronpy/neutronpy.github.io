@@ -1,0 +1,6 @@
+neutronpy\.instrument\.GeneralInstrument\.get\_resolution\_params
+=================================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: GeneralInstrument.get_resolution_params

@@ -1,0 +1,6 @@
+neutronpy\.instrument\.tools\.get\_kfree
+========================================
+
+.. currentmodule:: neutronpy.instrument.tools
+
+.. autofunction:: get_kfree

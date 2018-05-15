@@ -1,0 +1,6 @@
+neutronpy\.instrument\.TimeOfFlightInstrument\.calc\_projections
+================================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: TimeOfFlightInstrument.calc_projections

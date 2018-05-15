@@ -1,0 +1,6 @@
+neutronpy\.crystal\.material\.Material\.get\_phi
+================================================
+
+.. currentmodule:: neutronpy.crystal.material
+
+.. automethod:: Material.get_phi

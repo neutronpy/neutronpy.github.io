@@ -1,0 +1,6 @@
+neutronpy\.instrument\.TripleAxisInstrument\.plot\_projections
+==============================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: TripleAxisInstrument.plot_projections

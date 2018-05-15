@@ -1,0 +1,6 @@
+neutronpy\.instrument\.TripleAxisInstrument\.get\_resolution
+============================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: TripleAxisInstrument.get_resolution

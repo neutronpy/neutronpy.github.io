@@ -1,0 +1,6 @@
+neutronpy\.instrument\.TripleAxisInstrument\.plot\_instrument
+=============================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: TripleAxisInstrument.plot_instrument

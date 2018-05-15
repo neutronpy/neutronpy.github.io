@@ -1,0 +1,6 @@
+neutronpy\.instrument\.TripleAxisInstrument\.resolution\_convolution\_SMA
+=========================================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: TripleAxisInstrument.resolution_convolution_SMA

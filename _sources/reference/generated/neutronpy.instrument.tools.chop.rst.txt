@@ -1,0 +1,6 @@
+neutronpy\.instrument\.tools\.chop
+==================================
+
+.. currentmodule:: neutronpy.instrument.tools
+
+.. autofunction:: chop

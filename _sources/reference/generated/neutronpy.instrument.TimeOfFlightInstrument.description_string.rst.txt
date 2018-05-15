@@ -1,0 +1,6 @@
+neutronpy\.instrument\.TimeOfFlightInstrument\.description\_string
+==================================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: TimeOfFlightInstrument.description_string

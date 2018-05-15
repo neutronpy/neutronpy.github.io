@@ -1,0 +1,6 @@
+neutronpy\.instrument\.TripleAxisInstrument\.resolution\_convolution
+====================================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: TripleAxisInstrument.resolution_convolution

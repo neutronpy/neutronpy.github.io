@@ -1,0 +1,6 @@
+neutronpy\.data\.PlotData\.plot\_line
+=====================================
+
+.. currentmodule:: neutronpy.data
+
+.. automethod:: PlotData.plot_line

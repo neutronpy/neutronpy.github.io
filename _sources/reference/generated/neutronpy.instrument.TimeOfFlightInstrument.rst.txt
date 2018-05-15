@@ -1,0 +1,27 @@
+neutronpy\.instrument\.TimeOfFlightInstrument
+=============================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. autoclass:: TimeOfFlightInstrument
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         TimeOfFlightInstrument.calc_projections
+         TimeOfFlightInstrument.calc_resolution
+         TimeOfFlightInstrument.calc_resolution_in_Q_coords
+         TimeOfFlightInstrument.get_resolution
+         TimeOfFlightInstrument.get_resolution_params
+         TimeOfFlightInstrument.plot_ellipsoid
+         TimeOfFlightInstrument.plot_instrument
+         TimeOfFlightInstrument.plot_projections
+         TimeOfFlightInstrument.plot_slice
+
+
+
+   
+

@@ -23,9 +23,9 @@ fig = plt.figure(facecolor='w', edgecolor='k')
 
 plt.pcolormesh(x, y, z, cmap=cm.jet)
 
-[x1, y1] = EXP.projections['QxQy'][:, :, 0]
+[x1, y1] = EXP.projections['QxQy'][0]
 plt.fill(x1, y1, 'r', alpha=0.25)
-[x1, y1] = EXP.projections['QxQySlice'][:, :, 0]
+[x1, y1] = EXP.projections['QxQySlice'][0]
 plt.plot(x1, y1, 'w--')
 
 plt.xlim(-0.05, 0.05)

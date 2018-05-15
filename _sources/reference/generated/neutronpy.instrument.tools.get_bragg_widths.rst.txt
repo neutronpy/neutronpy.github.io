@@ -1,0 +1,6 @@
+neutronpy\.instrument\.tools\.get\_bragg\_widths
+================================================
+
+.. currentmodule:: neutronpy.instrument.tools
+
+.. autofunction:: get_bragg_widths

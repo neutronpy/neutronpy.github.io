@@ -1,0 +1,6 @@
+neutronpy\.instrument\.TripleAxisInstrument\.get\_angles\_and\_Q
+================================================================
+
+.. currentmodule:: neutronpy.instrument
+
+.. automethod:: TripleAxisInstrument.get_angles_and_Q
