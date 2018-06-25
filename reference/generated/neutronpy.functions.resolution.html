@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>neutronpy.functions.resolution &mdash; neutronpy 1.1.0b2 documentation</title>
+  <title>neutronpy.functions.resolution &mdash; neutronpy 1.1.1 documentation</title>
   
 
   
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                1.1.0b2
+                1.1.1
               </div>
             
           
@@ -240,7 +240,7 @@
 <h1>neutronpy.functions.resolution<a class="headerlink" href="#neutronpy-functions-resolution" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="neutronpy.functions.resolution">
-<code class="descclassname">neutronpy.functions.</code><code class="descname">resolution</code><span class="sig-paren">(</span><em>p</em>, <em>q</em>, <em>mode='gaussian'</em><span class="sig-paren">)</span><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.0b2/neutronpy/functions.py#L318"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.functions.resolution" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">neutronpy.functions.</code><code class="descname">resolution</code><span class="sig-paren">(</span><em>p</em>, <em>q</em>, <em>mode='gaussian'</em><span class="sig-paren">)</span><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.1/neutronpy/functions.py#L318"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.functions.resolution" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a gaussian profile using a resolution matrix generated for a Triple Axis Spectrometer.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -310,8 +310,8 @@
 </table>
 <p class="rubric">Notes</p>
 <p>A resolution profile is defined as a two dimensional gaussian that is comprised of elements of a
-resolution matrix for a triple axis spectrometer, as produced by <code class="xref py py-meth docutils literal"><span class="pre">Instrument.calc_resolution</span></code></p>
-<div class="math">
+resolution matrix for a triple axis spectrometer, as produced by <code class="xref py py-meth docutils literal notranslate"><span class="pre">Instrument.calc_resolution</span></code></p>
+<div class="math notranslate nohighlight">
 \[f(q) = R_0 e^{-\frac{1}{2}(RM_{xx}^2 (x-x_0)^2 + RM_{yy}^2 (y-y_0)^2 + 2RM_{xy}(x-x_0)(y-y_0))},\]</div>
 <p>where RM is the resolution matrix.</p>
 </dd></dl>
@@ -339,7 +339,7 @@ resolution matrix for a triple axis spectrometer, as produced by <code class="xr
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, David M Fobes.
-      Last updated on May 15, 2018.
+      Last updated on Jun 25, 2018.
 
     </p>
   </div>
@@ -361,7 +361,7 @@ resolution matrix for a triple axis spectrometer, as produced by <code class="xr
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.1.0b2',
+            VERSION:'1.1.1',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

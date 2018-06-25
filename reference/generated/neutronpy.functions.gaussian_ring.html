@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>neutronpy.functions.gaussian_ring &mdash; neutronpy 1.1.0b2 documentation</title>
+  <title>neutronpy.functions.gaussian_ring &mdash; neutronpy 1.1.1 documentation</title>
   
 
   
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                1.1.0b2
+                1.1.1
               </div>
             
           
@@ -240,7 +240,7 @@
 <h1>neutronpy.functions.gaussian_ring<a class="headerlink" href="#neutronpy-functions-gaussian-ring" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="neutronpy.functions.gaussian_ring">
-<code class="descclassname">neutronpy.functions.</code><code class="descname">gaussian_ring</code><span class="sig-paren">(</span><em>p</em>, <em>q</em><span class="sig-paren">)</span><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.0b2/neutronpy/functions.py#L384"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.functions.gaussian_ring" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">neutronpy.functions.</code><code class="descname">gaussian_ring</code><span class="sig-paren">(</span><em>p</em>, <em>q</em><span class="sig-paren">)</span><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.1/neutronpy/functions.py#L384"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.functions.gaussian_ring" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a two dimensional gaussian ellipse profile.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -291,7 +291,7 @@
 </div></blockquote>
 </dd>
 <dt><strong>q</strong> <span class="classifier-delimiter">:</span> <span class="classifier">tuple of ndarray</span></dt>
-<dd><p class="first last">Two input arrays of equivalent size and shape, e.g. formed with <code class="xref py py-func docutils literal"><span class="pre">numpy.meshgrid</span></code>.</p>
+<dd><p class="first last">Two input arrays of equivalent size and shape, e.g. formed with <code class="xref py py-func docutils literal notranslate"><span class="pre">numpy.meshgrid</span></code>.</p>
 </dd>
 </dl>
 </td>
@@ -307,10 +307,10 @@
 </table>
 <p class="rubric">Notes</p>
 <p>A gaussian ellipse profile is defined as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[f(x,y) = \frac{1}{N} e^{-\frac{1}{2}\frac{(\sqrt{(x-x_0)^2 + \alpha^2(y-y_0)^2}-r_0)^2}{2 \sigma}},\]</div>
-<p>where <span class="math">\(FWHM = 2\sqrt{2\ln(2)}\sigma\)</span>, and N is the normalization pre-factor given by</p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(FWHM = 2\sqrt{2\ln(2)}\sigma\)</span>, and N is the normalization pre-factor given by</p>
+<div class="math notranslate nohighlight">
 \[N = \frac{2\pi}{\alpha} \left(\sigma^2 e^{-\frac{r_0^2}{2\sigma^2}} + \sqrt{\frac{\pi}{2}} r_0 \sigma \left(1 + \mathrm{Erf}\left(\frac{r_0}{\sqrt{2}\sigma}\right)\right)\right).\]</div>
 </dd></dl>
 
@@ -337,7 +337,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, David M Fobes.
-      Last updated on May 15, 2018.
+      Last updated on Jun 25, 2018.
 
     </p>
   </div>
@@ -359,7 +359,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.1.0b2',
+            VERSION:'1.1.1',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

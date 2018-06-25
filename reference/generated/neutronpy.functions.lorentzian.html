@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>neutronpy.functions.lorentzian &mdash; neutronpy 1.1.0b2 documentation</title>
+  <title>neutronpy.functions.lorentzian &mdash; neutronpy 1.1.1 documentation</title>
   
 
   
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                1.1.0b2
+                1.1.1
               </div>
             
           
@@ -240,7 +240,7 @@
 <h1>neutronpy.functions.lorentzian<a class="headerlink" href="#neutronpy-functions-lorentzian" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="neutronpy.functions.lorentzian">
-<code class="descclassname">neutronpy.functions.</code><code class="descname">lorentzian</code><span class="sig-paren">(</span><em>p</em>, <em>q</em><span class="sig-paren">)</span><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.0b2/neutronpy/functions.py#L173"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.functions.lorentzian" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">neutronpy.functions.</code><code class="descname">lorentzian</code><span class="sig-paren">(</span><em>p</em>, <em>q</em><span class="sig-paren">)</span><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.1/neutronpy/functions.py#L173"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.functions.lorentzian" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns an arbitrary number of Lorentz profiles.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -298,12 +298,12 @@
 </table>
 <p class="rubric">Notes</p>
 <p>A Lorentzian profile is defined as:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[f(q) = \frac{a}{\pi} \frac{\frac{1}{2} \Gamma}{(q-q_0)^2 + (\frac{1}{2} \Gamma)^2},\]</div>
 <p>where the integral over the whole function is <em>a</em>, and Γ is the full width at half maximum.</p>
 <p class="rubric">Examples</p>
 <p>Plot a single lorentzian with an integrated intensity of 1, centered at zero, and fwhm of 0.3:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">)</span>
@@ -313,7 +313,7 @@
 </pre></div>
 </div>
 <p>Plot two lorentzians, equidistant from the origin with the same intensity and fwhm as above:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">])</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">lorentzian</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
@@ -345,7 +345,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, David M Fobes.
-      Last updated on May 15, 2018.
+      Last updated on Jun 25, 2018.
 
     </p>
   </div>
@@ -367,7 +367,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.1.0b2',
+            VERSION:'1.1.1',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

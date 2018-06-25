@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Form Factor calculation with the Material Class &mdash; neutronpy 1.1.0b2 documentation</title>
+  <title>Form Factor calculation with the Material Class &mdash; neutronpy 1.1.1 documentation</title>
   
 
   
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                1.1.0b2
+                1.1.1
               </div>
             
           
@@ -178,11 +178,11 @@
   <div class="section" id="form-factor-calculation-with-the-material-class">
 <h1>Form Factor calculation with the Material Class<a class="headerlink" href="#form-factor-calculation-with-the-material-class" title="Permalink to this headline">¶</a></h1>
 <p><em>Note: This module is still a work-in-progress and the usage of these classes and/or functions may change in the future.</em></p>
-<p>The following are examples on the usage of the <a class="reference internal" href="../generated/neutronpy.crystal.Material.html#neutronpy.crystal.Material" title="neutronpy.crystal.Material"><code class="xref py py-class docutils literal"><span class="pre">Material</span></code></a> class, used to define a material and calculate the structural form factor in reciprocal lattice units for a given <span class="math">\(q\)</span>. This tutorial will cover the utilization of this class and its methods.</p>
+<p>The following are examples on the usage of the <a class="reference internal" href="../generated/neutronpy.crystal.Material.html#neutronpy.crystal.Material" title="neutronpy.crystal.Material"><code class="xref py py-class docutils literal notranslate"><span class="pre">Material</span></code></a> class, used to define a material and calculate the structural form factor in reciprocal lattice units for a given <span class="math notranslate nohighlight">\(q\)</span>. This tutorial will cover the utilization of this class and its methods.</p>
 <div class="section" id="defining-the-material">
 <h2>Defining the Material<a class="headerlink" href="#defining-the-material" title="Permalink to this headline">¶</a></h2>
-<p>For this example we will use Fe<sub>1.1</sub>Te, a high-temperature tetragonal <span class="math">\(P4/nmm\)</span> structure with Fe in the 2a positions, Te in the 2c positions, and excess Fe in the interstitial 2c positions. First we build the dictionary defining the material to pass it to the class:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">def_FeTe</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Fe1.1Te&#39;</span><span class="p">,</span>
+<p>For this example we will use Fe<sub>1.1</sub>Te, a high-temperature tetragonal <span class="math notranslate nohighlight">\(P4/nmm\)</span> structure with Fe in the 2a positions, Te in the 2c positions, and excess Fe in the interstitial 2c positions. First we build the dictionary defining the material to pass it to the class:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">def_FeTe</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Fe1.1Te&#39;</span><span class="p">,</span>
             <span class="s1">&#39;composition&#39;</span><span class="p">:</span> <span class="p">[{</span><span class="s1">&#39;ion&#39;</span><span class="p">:</span> <span class="s1">&#39;Fe&#39;</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">]},</span>
                             <span class="p">{</span><span class="s1">&#39;ion&#39;</span><span class="p">:</span> <span class="s1">&#39;Fe&#39;</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">]},</span>
                             <span class="p">{</span><span class="s1">&#39;ion&#39;</span><span class="p">:</span> <span class="s1">&#39;Te&#39;</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.2839</span><span class="p">]},</span>
@@ -198,13 +198,13 @@
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The <code class="docutils literal"><span class="pre">'massNorm'</span></code> key should be set to <code class="docutils literal"><span class="pre">False</span></code> to return the structure factor in units of <code class="docutils literal"><span class="pre">barns</span></code>. <code class="docutils literal"><span class="pre">'massNorm'</span></code> is used for calculation of the coherent one-phonon inelastic cross-section, which depends on a calculation of nuclear structure factor in which the coherent scattering lengths are normalized by the square-root of the atomic mass <em>i.e.</em> <span class="math">\(\bar{b}_d/\sqrt{M_d}\)</span> (see Eq. 4.88 in “Theory of neutron scattering from condensed matter, Volume 1” by Stephen W. Lovesey.</p>
+<p class="last">The <code class="docutils literal notranslate"><span class="pre">'massNorm'</span></code> key should be set to <code class="docutils literal notranslate"><span class="pre">False</span></code> to return the structure factor in units of <code class="docutils literal notranslate"><span class="pre">barns</span></code>. <code class="docutils literal notranslate"><span class="pre">'massNorm'</span></code> is used for calculation of the coherent one-phonon inelastic cross-section, which depends on a calculation of nuclear structure factor in which the coherent scattering lengths are normalized by the square-root of the atomic mass <em>i.e.</em> <span class="math notranslate nohighlight">\(\bar{b}_d/\sqrt{M_d}\)</span> (see Eq. 4.88 in “Theory of neutron scattering from condensed matter, Volume 1” by Stephen W. Lovesey.</p>
 </div>
 </div>
 <div class="section" id="initializing-the-material-class">
 <h2>Initializing the Material class<a class="headerlink" href="#initializing-the-material-class" title="Permalink to this headline">¶</a></h2>
 <p>Once we have built our material in the above format we can initialize the class.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">neutronpy</span> <span class="k">import</span> <span class="n">Material</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">neutronpy</span> <span class="k">import</span> <span class="n">Material</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">FeTe</span> <span class="o">=</span> <span class="n">Material</span><span class="p">(</span><span class="n">def_FeTe</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -213,14 +213,14 @@
 <h2>Calculating the structure factor<a class="headerlink" href="#calculating-the-structure-factor" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The structure factor calculation method <a class="reference internal" href="../generated/neutronpy.crystal.Material.calc_nuc_str_fac.html#neutronpy.crystal.Material.calc_nuc_str_fac" title="neutronpy.crystal.Material.calc_nuc_str_fac"><code class="xref py py-meth docutils literal"><span class="pre">calc_nuc_str_fac</span></code></a> returns the full structure factor term <span class="math">\(F(q)\)</span>, including any imaginary parts, and not <span class="math">\(\left|F(q)\right|^2\)</span> which is typically used in other calculations.</p>
+<p class="last">The structure factor calculation method <a class="reference internal" href="../generated/neutronpy.crystal.Material.calc_nuc_str_fac.html#neutronpy.crystal.Material.calc_nuc_str_fac" title="neutronpy.crystal.Material.calc_nuc_str_fac"><code class="xref py py-meth docutils literal notranslate"><span class="pre">calc_nuc_str_fac</span></code></a> returns the full structure factor term <span class="math notranslate nohighlight">\(F(q)\)</span>, including any imaginary parts, and not <span class="math notranslate nohighlight">\(\left|F(q)\right|^2\)</span> which is typically used in other calculations.</p>
 </div>
-<p>Now that our material is defined, we can calculate the structural form factor with <a class="reference internal" href="../generated/neutronpy.crystal.Material.calc_nuc_str_fac.html#neutronpy.crystal.Material.calc_nuc_str_fac" title="neutronpy.crystal.Material.calc_nuc_str_fac"><code class="xref py py-meth docutils literal"><span class="pre">calc_nuc_str_fac</span></code></a>. First, we will calculate it at a single point <span class="math">\(q\)</span>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">str_fac</span> <span class="o">=</span> <span class="n">FeTe</span><span class="o">.</span><span class="n">calc_nuc_str_fac</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<p>Now that our material is defined, we can calculate the structural form factor with <a class="reference internal" href="../generated/neutronpy.crystal.Material.calc_nuc_str_fac.html#neutronpy.crystal.Material.calc_nuc_str_fac" title="neutronpy.crystal.Material.calc_nuc_str_fac"><code class="xref py py-meth docutils literal notranslate"><span class="pre">calc_nuc_str_fac</span></code></a>. First, we will calculate it at a single point <span class="math notranslate nohighlight">\(q\)</span>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">str_fac</span> <span class="o">=</span> <span class="n">FeTe</span><span class="o">.</span><span class="n">calc_nuc_str_fac</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
 </pre></div>
 </div>
-<p>We can also calculate the structure factor over a range of values in a similar way. In this example we are calculating the structure factor in the (h, k, 0) plane where <span class="math">\(0 &lt; h,k &lt; 2\)</span>, with a step size of 0.025 r.l.u.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<p>We can also calculate the structure factor over a range of values in a similar way. In this example we are calculating the structure factor in the (h, k, 0) plane where <span class="math notranslate nohighlight">\(0 &lt; h,k &lt; 2\)</span>, with a step size of 0.025 r.l.u.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">h</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">41</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">41</span><span class="p">),</span> <span class="n">sparse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">str_fac</span> <span class="o">=</span> <span class="n">FeTe</span><span class="o">.</span><span class="n">calc_nuc_str_fac</span><span class="p">((</span><span class="n">h</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
 </pre></div>
@@ -234,7 +234,7 @@
 <p class="first admonition-title">Note</p>
 <p class="last">The above picture will only be reproducible if the structure factor is partially symmetrized, <em>i.e.</em> in this case the calculation would be:</p>
 </div>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">str_fac</span> <span class="o">=</span> <span class="mf">0.25</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">FeTe</span><span class="o">.</span><span class="n">calc_nuc_str_fac</span><span class="p">((</span><span class="n">h</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="mi">0</span><span class="p">)))</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">str_fac</span> <span class="o">=</span> <span class="mf">0.25</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">FeTe</span><span class="o">.</span><span class="n">calc_nuc_str_fac</span><span class="p">((</span><span class="n">h</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="mi">0</span><span class="p">)))</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span>
                   <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">FeTe</span><span class="o">.</span><span class="n">calc_nuc_str_fac</span><span class="p">((</span><span class="o">-</span><span class="n">h</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="mi">0</span><span class="p">)))</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span>
                   <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">FeTe</span><span class="o">.</span><span class="n">calc_nuc_str_fac</span><span class="p">((</span><span class="n">h</span><span class="p">,</span> <span class="o">-</span><span class="n">k</span><span class="p">,</span> <span class="mi">0</span><span class="p">)))</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span>
                   <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">FeTe</span><span class="o">.</span><span class="n">calc_nuc_str_fac</span><span class="p">((</span><span class="o">-</span><span class="n">h</span><span class="p">,</span> <span class="o">-</span><span class="n">k</span><span class="p">,</span> <span class="mi">0</span><span class="p">)))</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
@@ -244,7 +244,7 @@
 <div class="section" id="using-space-group-to-properly-symmetrize">
 <h2>Using space group to properly symmetrize<a class="headerlink" href="#using-space-group-to-properly-symmetrize" title="Permalink to this headline">¶</a></h2>
 <p>By providing a space group symbol or number in the following way it is possible to automatically symmetrize a crystal structure.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">def_FeTe</span><span class="p">[</span><span class="s1">&#39;space_group&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;P4/nmm&#39;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">def_FeTe</span><span class="p">[</span><span class="s1">&#39;space_group&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;P4/nmm&#39;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">FeTe</span> <span class="o">=</span> <span class="n">Material</span><span class="p">(</span><span class="n">def_FeTe</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -281,7 +281,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, David M Fobes.
-      Last updated on May 15, 2018.
+      Last updated on Jun 25, 2018.
 
     </p>
   </div>
@@ -303,7 +303,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.1.0b2',
+            VERSION:'1.1.1',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

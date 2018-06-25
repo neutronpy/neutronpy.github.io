@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>neutronpy.data.Data &mdash; neutronpy 1.1.0b2 documentation</title>
+  <title>neutronpy.data.Data &mdash; neutronpy 1.1.1 documentation</title>
   
 
   
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                1.1.0b2
+                1.1.1
               </div>
             
           
@@ -254,7 +254,7 @@
 <h1>neutronpy.data.Data<a class="headerlink" href="#neutronpy-data-data" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="neutronpy.data.Data">
-<em class="property">class </em><code class="descclassname">neutronpy.data.</code><code class="descname">Data</code><span class="sig-paren">(</span><em>Q=None</em>, <em>h=0.0</em>, <em>k=0.0</em>, <em>l=0.0</em>, <em>e=0.0</em>, <em>temp=0.0</em>, <em>detector=0.0</em>, <em>monitor=0.0</em>, <em>error=None</em>, <em>time=0.0</em>, <em>time_norm=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.0b2/neutronpy/data/data.py#L22"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.data.Data" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">neutronpy.data.</code><code class="descname">Data</code><span class="sig-paren">(</span><em>Q=None</em>, <em>h=0.0</em>, <em>k=0.0</em>, <em>l=0.0</em>, <em>e=0.0</em>, <em>temp=0.0</em>, <em>detector=0.0</em>, <em>monitor=0.0</em>, <em>error=None</em>, <em>time=0.0</em>, <em>time_norm=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.1/neutronpy/data/data.py#L22"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.data.Data" title="Permalink to this definition">¶</a></dt>
 <dd><p>Data class for handling multi-dimensional scattering data. If input
 file type is not supported, data can be entered manually.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -291,35 +291,35 @@ file type is not supported, data can be entered manually.</p>
 <dd><p class="first last">Default: 0. Array of time per point in minutes.</p>
 </dd>
 <dt><strong>time_norm</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool, optional</span></dt>
-<dd><p class="first last">Default: False. If True, calls to <code class="xref py py-attr docutils literal"><span class="pre">intensity</span></code> and <code class="xref py py-attr docutils literal"><span class="pre">error</span></code>
+<dd><p class="first last">Default: False. If True, calls to <code class="xref py py-attr docutils literal notranslate"><span class="pre">intensity</span></code> and <code class="xref py py-attr docutils literal notranslate"><span class="pre">error</span></code>
 with normalize to time instead of monitor</p>
 </dd>
 </dl>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
-<dt><code class="xref py py-obj docutils literal"><span class="pre">h</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">h</span></code></dt>
 <dd><p class="first last">Returns lattice parameter q<sub>x</sub>, <em>i.e.</em> h</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">k</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">k</span></code></dt>
 <dd><p class="first last">Returns lattice parameter q<sub>y</sub>, <em>i.e.</em> k</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">l</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">l</span></code></dt>
 <dd><p class="first last">Returns lattice parameter q<sub>z</sub>, <em>i.e.</em> l</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">e</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">e</span></code></dt>
 <dd><p class="first last">Returns energy transfer</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">temp</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">temp</span></code></dt>
 <dd><p class="first last">Returns temperature</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">intensity</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">intensity</span></code></dt>
 <dd><p class="first last">Returns the monitor or time normalized intensity</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">error</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">error</span></code></dt>
 <dd><p class="first last">Returns error of monitor or time normalized intensity</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">detailed_balance_factor</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">detailed_balance_factor</span></code></dt>
 <dd><p class="first last">Returns the detailed balance factor (sometimes called the Bose</p>
 </dd>
 </dl>
@@ -334,52 +334,52 @@ with normalize to time instead of monitor</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Data.bin.html#neutronpy.data.Data.bin" title="neutronpy.data.Data.bin"><code class="xref py py-obj docutils literal"><span class="pre">bin</span></code></a>(to_bin[,&nbsp;build_hkl])</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Data.bin.html#neutronpy.data.Data.bin" title="neutronpy.data.Data.bin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bin</span></code></a>(to_bin[,&nbsp;build_hkl])</td>
 <td>Rebin the data into the specified shape.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Data.combine_data.html#neutronpy.data.Data.combine_data" title="neutronpy.data.Data.combine_data"><code class="xref py py-obj docutils literal"><span class="pre">combine_data</span></code></a>(obj,&nbsp;**kwargs)</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Data.combine_data.html#neutronpy.data.Data.combine_data" title="neutronpy.data.Data.combine_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">combine_data</span></code></a>(obj,&nbsp;**kwargs)</td>
 <td>Combines multiple data sets</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Data.subtract_background.html#neutronpy.data.Data.subtract_background" title="neutronpy.data.Data.subtract_background"><code class="xref py py-obj docutils literal"><span class="pre">subtract_background</span></code></a>(background_data[,&nbsp;x,&nbsp;ret])</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Data.subtract_background.html#neutronpy.data.Data.subtract_background" title="neutronpy.data.Data.subtract_background"><code class="xref py py-obj docutils literal notranslate"><span class="pre">subtract_background</span></code></a>(background_data[,&nbsp;x,&nbsp;ret])</td>
 <td>Subtract background data.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Data.integrate.html#neutronpy.data.Data.integrate" title="neutronpy.data.Data.integrate"><code class="xref py py-obj docutils literal"><span class="pre">integrate</span></code></a>([bounds,&nbsp;background,&nbsp;hkle])</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Data.integrate.html#neutronpy.data.Data.integrate" title="neutronpy.data.Data.integrate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">integrate</span></code></a>([bounds,&nbsp;background,&nbsp;hkle])</td>
 <td>Returns the integrated intensity within given bounds</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Data.position.html#neutronpy.data.Data.position" title="neutronpy.data.Data.position"><code class="xref py py-obj docutils literal"><span class="pre">position</span></code></a>([bounds,&nbsp;background,&nbsp;hkle])</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Data.position.html#neutronpy.data.Data.position" title="neutronpy.data.Data.position"><code class="xref py py-obj docutils literal notranslate"><span class="pre">position</span></code></a>([bounds,&nbsp;background,&nbsp;hkle])</td>
 <td>Returns the position of a peak within the given bounds</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Data.width.html#neutronpy.data.Data.width" title="neutronpy.data.Data.width"><code class="xref py py-obj docutils literal"><span class="pre">width</span></code></a>([bounds,&nbsp;background,&nbsp;fwhm,&nbsp;hkle])</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Data.width.html#neutronpy.data.Data.width" title="neutronpy.data.Data.width"><code class="xref py py-obj docutils literal notranslate"><span class="pre">width</span></code></a>([bounds,&nbsp;background,&nbsp;fwhm,&nbsp;hkle])</td>
 <td>Returns the mean-squared width of a peak within the given bounds</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Data.estimate_background.html#neutronpy.data.Data.estimate_background" title="neutronpy.data.Data.estimate_background"><code class="xref py py-obj docutils literal"><span class="pre">estimate_background</span></code></a>(bg_params)</td>
-<td>Estimate the background according to <code class="docutils literal"><span class="pre">type</span></code> specified.</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Data.estimate_background.html#neutronpy.data.Data.estimate_background" title="neutronpy.data.Data.estimate_background"><code class="xref py py-obj docutils literal notranslate"><span class="pre">estimate_background</span></code></a>(bg_params)</td>
+<td>Estimate the background according to <code class="docutils literal notranslate"><span class="pre">type</span></code> specified.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Data.subtract_background.html#neutronpy.data.Data.subtract_background" title="neutronpy.data.Data.subtract_background"><code class="xref py py-obj docutils literal"><span class="pre">subtract_background</span></code></a>(background_data[,&nbsp;x,&nbsp;ret])</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Data.subtract_background.html#neutronpy.data.Data.subtract_background" title="neutronpy.data.Data.subtract_background"><code class="xref py py-obj docutils literal notranslate"><span class="pre">subtract_background</span></code></a>(background_data[,&nbsp;x,&nbsp;ret])</td>
 <td>Subtract background data.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Data.dynamic_susceptibility.html#neutronpy.data.Data.dynamic_susceptibility" title="neutronpy.data.Data.dynamic_susceptibility"><code class="xref py py-obj docutils literal"><span class="pre">dynamic_susceptibility</span></code></a>(material,&nbsp;ei)</td>
-<td>Returns the dynamic susceptibility</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Data.dynamic_susceptibility.html#neutronpy.data.Data.dynamic_susceptibility" title="neutronpy.data.Data.dynamic_susceptibility"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dynamic_susceptibility</span></code></a>(material,&nbsp;ei)</td>
+<td>Returns the dynamic susceptibility <span class="math notranslate nohighlight">\(\chi^{\prime\prime}(\mathbf{Q},\hbar\omega)\)</span></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Data.scattering_function.html#neutronpy.data.Data.scattering_function" title="neutronpy.data.Data.scattering_function"><code class="xref py py-obj docutils literal"><span class="pre">scattering_function</span></code></a>(material,&nbsp;ei)</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Data.scattering_function.html#neutronpy.data.Data.scattering_function" title="neutronpy.data.Data.scattering_function"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scattering_function</span></code></a>(material,&nbsp;ei)</td>
 <td>Returns the neutron scattering function, i.e.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Data.plot.html#neutronpy.data.Data.plot" title="neutronpy.data.Data.plot"><code class="xref py py-obj docutils literal"><span class="pre">plot</span></code></a>([x,&nbsp;y,&nbsp;z,&nbsp;w,&nbsp;show_err,&nbsp;to_bin,&nbsp;…])</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Data.plot.html#neutronpy.data.Data.plot" title="neutronpy.data.Data.plot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot</span></code></a>([x,&nbsp;y,&nbsp;z,&nbsp;w,&nbsp;show_err,&nbsp;to_bin,&nbsp;…])</td>
 <td>Plots the data in the class.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Data.plot_volume.html#neutronpy.data.Data.plot_volume" title="neutronpy.data.Data.plot_volume"><code class="xref py py-obj docutils literal"><span class="pre">plot_volume</span></code></a>(x,&nbsp;y,&nbsp;z,&nbsp;w[,&nbsp;to_bin,&nbsp;…])</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Data.plot_volume.html#neutronpy.data.Data.plot_volume" title="neutronpy.data.Data.plot_volume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_volume</span></code></a>(x,&nbsp;y,&nbsp;z,&nbsp;w[,&nbsp;to_bin,&nbsp;…])</td>
 <td>Plots a 3D volume of 4D data</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Data.plot_contour.html#neutronpy.data.Data.plot_contour" title="neutronpy.data.Data.plot_contour"><code class="xref py py-obj docutils literal"><span class="pre">plot_contour</span></code></a>(x,&nbsp;y,&nbsp;z[,&nbsp;to_bin,&nbsp;…])</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Data.plot_contour.html#neutronpy.data.Data.plot_contour" title="neutronpy.data.Data.plot_contour"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_contour</span></code></a>(x,&nbsp;y,&nbsp;z[,&nbsp;to_bin,&nbsp;…])</td>
 <td>Method for plotting a 2D contour plot of 3D data</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Data.plot_line.html#neutronpy.data.Data.plot_line" title="neutronpy.data.Data.plot_line"><code class="xref py py-obj docutils literal"><span class="pre">plot_line</span></code></a>(x,&nbsp;y[,&nbsp;show_err,&nbsp;to_bin,&nbsp;…])</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Data.plot_line.html#neutronpy.data.Data.plot_line" title="neutronpy.data.Data.plot_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_line</span></code></a>(x,&nbsp;y[,&nbsp;show_err,&nbsp;to_bin,&nbsp;…])</td>
 <td>Method to Plot a line of 2D data</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Data.get_keys.html#neutronpy.data.Data.get_keys" title="neutronpy.data.Data.get_keys"><code class="xref py py-obj docutils literal"><span class="pre">get_keys</span></code></a>(hkle)</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Data.get_keys.html#neutronpy.data.Data.get_keys" title="neutronpy.data.Data.get_keys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_keys</span></code></a>(hkle)</td>
 <td>Returns all of the Dictionary key names</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Data.get_bounds.html#neutronpy.data.Data.get_bounds" title="neutronpy.data.Data.get_bounds"><code class="xref py py-obj docutils literal"><span class="pre">get_bounds</span></code></a>(bounds)</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Data.get_bounds.html#neutronpy.data.Data.get_bounds" title="neutronpy.data.Data.get_bounds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_bounds</span></code></a>(bounds)</td>
 <td>Generates a to_fit tuple if bounds is present in kwargs</td>
 </tr>
 </tbody>
@@ -409,7 +409,7 @@ with normalize to time instead of monitor</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, David M Fobes.
-      Last updated on May 15, 2018.
+      Last updated on Jun 25, 2018.
 
     </p>
   </div>
@@ -431,7 +431,7 @@ with normalize to time instead of monitor</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.1.0b2',
+            VERSION:'1.1.1',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

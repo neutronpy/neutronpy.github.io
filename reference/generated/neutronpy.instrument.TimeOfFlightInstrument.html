@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>neutronpy.instrument.TimeOfFlightInstrument &mdash; neutronpy 1.1.0b2 documentation</title>
+  <title>neutronpy.instrument.TimeOfFlightInstrument &mdash; neutronpy 1.1.1 documentation</title>
   
 
   
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                1.1.0b2
+                1.1.1
               </div>
             
           
@@ -271,7 +271,7 @@
 <h1>neutronpy.instrument.TimeOfFlightInstrument<a class="headerlink" href="#neutronpy-instrument-timeofflightinstrument" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="neutronpy.instrument.TimeOfFlightInstrument">
-<em class="property">class </em><code class="descclassname">neutronpy.instrument.</code><code class="descname">TimeOfFlightInstrument</code><span class="sig-paren">(</span><em>ei=3.0</em>, <em>choppers=None</em>, <em>sample=None</em>, <em>detector=None</em>, <em>guides=None</em>, <em>theta_i=0</em>, <em>phi_i=0</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.0b2/neutronpy/instrument/tof_instrument.py#L19"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.instrument.TimeOfFlightInstrument" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">neutronpy.instrument.</code><code class="descname">TimeOfFlightInstrument</code><span class="sig-paren">(</span><em>ei=3.0</em>, <em>choppers=None</em>, <em>sample=None</em>, <em>detector=None</em>, <em>guides=None</em>, <em>theta_i=0</em>, <em>phi_i=0</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.1/neutronpy/instrument/tof_instrument.py#L19"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.instrument.TimeOfFlightInstrument" title="Permalink to this definition">¶</a></dt>
 <dd><p>An object representing a Time of Flight (TOF) instrument experimental
 configuration, including a sample.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -316,8 +316,8 @@ Nuclear Instruments and Methods in Physics Research A 736 (2014) 31-39.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
-<dt><code class="xref py py-obj docutils literal"><span class="pre">ei</span></code></dt>
-<dd><p class="first last">Incident Energy object of type <a class="reference internal" href="neutronpy.energy.Energy.html#neutronpy.energy.Energy" title="neutronpy.energy.Energy"><code class="xref py py-class docutils literal"><span class="pre">Energy</span></code></a></p>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">ei</span></code></dt>
+<dd><p class="first last">Incident Energy object of type <a class="reference internal" href="neutronpy.energy.Energy.html#neutronpy.energy.Energy" title="neutronpy.energy.Energy"><code class="xref py py-class docutils literal notranslate"><span class="pre">Energy</span></code></a></p>
 </dd>
 <dt><strong>choppers</strong></dt>
 <dd></dd>
@@ -327,7 +327,7 @@ Nuclear Instruments and Methods in Physics Research A 736 (2014) 31-39.</p>
 <dd></dd>
 <dt><strong>guides</strong></dt>
 <dd></dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">description_string</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">description_string</span></code></dt>
 <dd><p class="first last">Generates text string describing most recent resolution calculation</p>
 </dd>
 </dl>
@@ -342,31 +342,31 @@ Nuclear Instruments and Methods in Physics Research A 736 (2014) 31-39.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.instrument.TimeOfFlightInstrument.calc_resolution.html#neutronpy.instrument.TimeOfFlightInstrument.calc_resolution" title="neutronpy.instrument.TimeOfFlightInstrument.calc_resolution"><code class="xref py py-obj docutils literal"><span class="pre">calc_resolution</span></code></a>(hkle)</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.instrument.TimeOfFlightInstrument.calc_resolution.html#neutronpy.instrument.TimeOfFlightInstrument.calc_resolution" title="neutronpy.instrument.TimeOfFlightInstrument.calc_resolution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_resolution</span></code></a>(hkle)</td>
 <td>For a scattering vector (H,K,L) and  energy transfers W, given experimental conditions specified in the object, calculates the resolution matrix RMS and Resolution prefactor R0 in a coordinate system defined by the crystallographic axes of the sample, (h, k, l, w) in reciprocal lattice units (rlu).</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.instrument.TimeOfFlightInstrument.calc_resolution_in_Q_coords.html#neutronpy.instrument.TimeOfFlightInstrument.calc_resolution_in_Q_coords" title="neutronpy.instrument.TimeOfFlightInstrument.calc_resolution_in_Q_coords"><code class="xref py py-obj docutils literal"><span class="pre">calc_resolution_in_Q_coords</span></code></a>(Q,&nbsp;W)</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.instrument.TimeOfFlightInstrument.calc_resolution_in_Q_coords.html#neutronpy.instrument.TimeOfFlightInstrument.calc_resolution_in_Q_coords" title="neutronpy.instrument.TimeOfFlightInstrument.calc_resolution_in_Q_coords"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_resolution_in_Q_coords</span></code></a>(Q,&nbsp;W)</td>
 <td>For a momentum transfer Q and energy transfers W, given experimental conditions specified in EXP, calculates the Cooper-Nathans or Popovici resolution matrix RM and resolution prefactor R0 in the Q coordinate system (defined by the scattering vector and the scattering plane, [Q_prep, Q_para, Qz, W]).</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.instrument.TimeOfFlightInstrument.calc_projections.html#neutronpy.instrument.TimeOfFlightInstrument.calc_projections" title="neutronpy.instrument.TimeOfFlightInstrument.calc_projections"><code class="xref py py-obj docutils literal"><span class="pre">calc_projections</span></code></a>(hkle[,&nbsp;npts])</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.instrument.TimeOfFlightInstrument.calc_projections.html#neutronpy.instrument.TimeOfFlightInstrument.calc_projections" title="neutronpy.instrument.TimeOfFlightInstrument.calc_projections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_projections</span></code></a>(hkle[,&nbsp;npts])</td>
 <td>Calculates the resolution ellipses for projections and slices from the resolution matrix.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.instrument.TimeOfFlightInstrument.get_resolution_params.html#neutronpy.instrument.TimeOfFlightInstrument.get_resolution_params" title="neutronpy.instrument.TimeOfFlightInstrument.get_resolution_params"><code class="xref py py-obj docutils literal"><span class="pre">get_resolution_params</span></code></a>(hkle,&nbsp;plane[,&nbsp;mode])</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.instrument.TimeOfFlightInstrument.get_resolution_params.html#neutronpy.instrument.TimeOfFlightInstrument.get_resolution_params" title="neutronpy.instrument.TimeOfFlightInstrument.get_resolution_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_resolution_params</span></code></a>(hkle,&nbsp;plane[,&nbsp;mode])</td>
 <td>Returns parameters for the resolution gaussian.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.instrument.TimeOfFlightInstrument.get_resolution.html#neutronpy.instrument.TimeOfFlightInstrument.get_resolution" title="neutronpy.instrument.TimeOfFlightInstrument.get_resolution"><code class="xref py py-obj docutils literal"><span class="pre">get_resolution</span></code></a>(hkle)</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.instrument.TimeOfFlightInstrument.get_resolution.html#neutronpy.instrument.TimeOfFlightInstrument.get_resolution" title="neutronpy.instrument.TimeOfFlightInstrument.get_resolution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_resolution</span></code></a>(hkle)</td>
 <td>Returns the resolution matrix and r0 correction at a given Q in rlu</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.instrument.TimeOfFlightInstrument.plot_projections.html#neutronpy.instrument.TimeOfFlightInstrument.plot_projections" title="neutronpy.instrument.TimeOfFlightInstrument.plot_projections"><code class="xref py py-obj docutils literal"><span class="pre">plot_projections</span></code></a>(hkle[,&nbsp;npts,&nbsp;dpi])</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.instrument.TimeOfFlightInstrument.plot_projections.html#neutronpy.instrument.TimeOfFlightInstrument.plot_projections" title="neutronpy.instrument.TimeOfFlightInstrument.plot_projections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_projections</span></code></a>(hkle[,&nbsp;npts,&nbsp;dpi])</td>
 <td>Plots resolution ellipses in the QxQy, QxW, and QyW zones</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.instrument.TimeOfFlightInstrument.plot_ellipsoid.html#neutronpy.instrument.TimeOfFlightInstrument.plot_ellipsoid" title="neutronpy.instrument.TimeOfFlightInstrument.plot_ellipsoid"><code class="xref py py-obj docutils literal"><span class="pre">plot_ellipsoid</span></code></a>(hkle[,&nbsp;dpi])</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.instrument.TimeOfFlightInstrument.plot_ellipsoid.html#neutronpy.instrument.TimeOfFlightInstrument.plot_ellipsoid" title="neutronpy.instrument.TimeOfFlightInstrument.plot_ellipsoid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_ellipsoid</span></code></a>(hkle[,&nbsp;dpi])</td>
 <td>Plots the resolution ellipsoid in the $Q_x$, $Q_y$, $W$ zone</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.instrument.TimeOfFlightInstrument.plot_instrument.html#neutronpy.instrument.TimeOfFlightInstrument.plot_instrument" title="neutronpy.instrument.TimeOfFlightInstrument.plot_instrument"><code class="xref py py-obj docutils literal"><span class="pre">plot_instrument</span></code></a>(hkle)</td>
-<td>Plots the instrument configuration using angles for a given position</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.instrument.TimeOfFlightInstrument.plot_instrument.html#neutronpy.instrument.TimeOfFlightInstrument.plot_instrument" title="neutronpy.instrument.TimeOfFlightInstrument.plot_instrument"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_instrument</span></code></a>(hkle)</td>
+<td>Plots the instrument configuration using angles for a given position in Q and energy transfer</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.instrument.TimeOfFlightInstrument.plot_slice.html#neutronpy.instrument.TimeOfFlightInstrument.plot_slice" title="neutronpy.instrument.TimeOfFlightInstrument.plot_slice"><code class="xref py py-obj docutils literal"><span class="pre">plot_slice</span></code></a>(axis,&nbsp;qslice,&nbsp;projections,&nbsp;u,&nbsp;v)</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.instrument.TimeOfFlightInstrument.plot_slice.html#neutronpy.instrument.TimeOfFlightInstrument.plot_slice" title="neutronpy.instrument.TimeOfFlightInstrument.plot_slice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_slice</span></code></a>(axis,&nbsp;qslice,&nbsp;projections,&nbsp;u,&nbsp;v)</td>
 <td>Class method for plotting individual projections.</td>
 </tr>
 </tbody>
@@ -396,7 +396,7 @@ Nuclear Instruments and Methods in Physics Research A 736 (2014) 31-39.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, David M Fobes.
-      Last updated on May 15, 2018.
+      Last updated on Jun 25, 2018.
 
     </p>
   </div>
@@ -418,7 +418,7 @@ Nuclear Instruments and Methods in Physics Research A 736 (2014) 31-39.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.1.0b2',
+            VERSION:'1.1.1',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>neutronpy.crystal.material.Material &mdash; neutronpy 1.1.0b2 documentation</title>
+  <title>neutronpy.crystal.material.Material &mdash; neutronpy 1.1.1 documentation</title>
   
 
   
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                1.1.0b2
+                1.1.1
               </div>
             
           
@@ -218,7 +218,7 @@
 <h1>neutronpy.crystal.material.Material<a class="headerlink" href="#neutronpy-crystal-material-material" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="neutronpy.crystal.material.Material">
-<em class="property">class </em><code class="descclassname">neutronpy.crystal.material.</code><code class="descname">Material</code><span class="sig-paren">(</span><em>crystal</em><span class="sig-paren">)</span><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.0b2/neutronpy/crystal/material.py#L54"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.crystal.material.Material" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">neutronpy.crystal.material.</code><code class="descname">Material</code><span class="sig-paren">(</span><em>crystal</em><span class="sig-paren">)</span><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.1/neutronpy/crystal/material.py#L54"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.crystal.material.Material" title="Permalink to this definition">¶</a></dt>
 <dd><p>Class for the Material being supplied for the structure factor calculation</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -231,7 +231,7 @@ and their positions, with optional occupancy
 and variances in positions (dpos), which may be
 used for Debye-Waller factor. This dictionary has
 the format:</p>
-<div class="last highlight-python"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<div class="last highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
  <span class="s1">&#39;composition&#39;</span><span class="p">:</span> <span class="p">[{</span><span class="s1">&#39;ion&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
                   <span class="s1">&#39;pos&#39;</span><span class="p">:</span> <span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">float</span><span class="p">,</span> <span class="nb">float</span><span class="p">],</span>
                   <span class="s1">&#39;Uiso&#39;</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span>
@@ -282,7 +282,7 @@ site</p>
 is useful for the calculation of the coherent one-phonon inelastic
 cross-section, which is dependent on a nuclear structure factor in
 which the nuclear scattering length is normalized by the square-root
-of the mass, <em>i.e.</em> <span class="math">\(\bar{b}_d/\sqrt{M_d}\)</span>, see Eq. 4.88 in
+of the mass, <em>i.e.</em> <span class="math notranslate nohighlight">\(\bar{b}_d/\sqrt{M_d}\)</span>, see Eq. 4.88 in
 “Theory of neutron scattering from condensed matter, Volume 1” by
 Stephen W. Lovesey.</p>
 </dd>
@@ -307,106 +307,106 @@ Stephen W. Lovesey.</p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
-<dt><code class="xref py py-obj docutils literal"><span class="pre">volume</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">volume</span></code></dt>
 <dd><p class="first last">Volume of the unit cell in Å<sup>3</sup></p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">total_scattering_cross_section</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">total_scattering_cross_section</span></code></dt>
 <dd><p class="first last">Returns total scattering cross-section of unit cell</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">a</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">a</span></code></dt>
 <dd><p class="first last">First lattice constant in Angstrom</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">b</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">b</span></code></dt>
 <dd><p class="first last">Second lattice constant in Angstrom</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">c</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">c</span></code></dt>
 <dd><p class="first last">Third lattice constant in Angstrom</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">astar</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">astar</span></code></dt>
 <dd><p class="first last">First inverse lattice constant in inverse Angstrom</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">bstar</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">bstar</span></code></dt>
 <dd><p class="first last">Second inverse lattice constant in inverse Angstrom</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">cstar</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">cstar</span></code></dt>
 <dd><p class="first last">Third inverse lattice constant in inverse Angstrom</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">alpha</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">alpha</span></code></dt>
 <dd><p class="first last">First lattice angle in degrees</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">beta</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">beta</span></code></dt>
 <dd><p class="first last">Second lattice angle in degrees</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">gamma</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">gamma</span></code></dt>
 <dd><p class="first last">Third lattice angle in degrees</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">alpha_rad</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">alpha_rad</span></code></dt>
 <dd><p class="first last">First lattice angle in radians</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">beta_rad</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">beta_rad</span></code></dt>
 <dd><p class="first last">Second lattice angle in radians</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">gamma_rad</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">gamma_rad</span></code></dt>
 <dd><p class="first last">Third lattice angle in radians</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">alphastar</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">alphastar</span></code></dt>
 <dd><p class="first last">First inverse lattice angle in degrees</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">betastar</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">betastar</span></code></dt>
 <dd><p class="first last">First inverse lattice angle in degrees</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">gammastar</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">gammastar</span></code></dt>
 <dd><p class="first last">First inverse lattice angle in degrees</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">alphastar_rad</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">alphastar_rad</span></code></dt>
 <dd><p class="first last">First inverse lattice angle in radians</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">betastar_rad</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">betastar_rad</span></code></dt>
 <dd><p class="first last">Second inverse lattice angle in radians</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">gammastar_rad</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">gammastar_rad</span></code></dt>
 <dd><p class="first last">Third inverse lattice angle in radians</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">abg_rad</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">abg_rad</span></code></dt>
 <dd><p class="first last">Lattice angles in radians returned in list</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">reciprocal_abc</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">reciprocal_abc</span></code></dt>
 <dd><p class="first last">Reciprocal lattice constants in inverse Angstrom returned in list</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">reciprocal_abg</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">reciprocal_abg</span></code></dt>
 <dd><p class="first last">Reciprocal lattice angles in degrees returned in list</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">reciprocal_abg_rad</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">reciprocal_abg_rad</span></code></dt>
 <dd><p class="first last">Reciprocal lattice angles in radians returned in list</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">lattice_type</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">lattice_type</span></code></dt>
 <dd><p class="first last">Type of lattice determined by the provided lattice constants and angles</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">volume</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">volume</span></code></dt>
 <dd><p class="first last">Volume of the unit cell in Å<sup>3</sup></p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">reciprocal_volume</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">reciprocal_volume</span></code></dt>
 <dd><p class="first last">Volume of the reciprocal unit cell in (Å<sup>-1</sup>)<sup>3</sup></p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">G</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">G</span></code></dt>
 <dd><p class="first last">Metric tensor of the real space lattice</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">Gstar</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gstar</span></code></dt>
 <dd><p class="first last">Metric tensor of the reciprocal lattice</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">Bmatrix</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">Bmatrix</span></code></dt>
 <dd><p class="first last">Cartesian basis matrix in reciprocal units such that</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">Umatrix</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">Umatrix</span></code></dt>
 <dd><p class="first last">Rotation matrix that rotates the sample’s reference frame into the spectrometer’s</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">UBmatrix</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">UBmatrix</span></code></dt>
 <dd><p class="first last">Orientation matrix of the sample</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">u</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">u</span></code></dt>
 <dd><p class="first last">First orientation vector</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal"><span class="pre">v</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">v</span></code></dt>
 <dd><p class="first last">Second orientation vector</p>
 </dd>
 </dl>
@@ -421,40 +421,40 @@ Stephen W. Lovesey.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.crystal.material.Material.calc_nuc_str_fac.html#neutronpy.crystal.material.Material.calc_nuc_str_fac" title="neutronpy.crystal.material.Material.calc_nuc_str_fac"><code class="xref py py-obj docutils literal"><span class="pre">calc_nuc_str_fac</span></code></a>(hkl)</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.crystal.material.Material.calc_nuc_str_fac.html#neutronpy.crystal.material.Material.calc_nuc_str_fac" title="neutronpy.crystal.material.Material.calc_nuc_str_fac"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_nuc_str_fac</span></code></a>(hkl)</td>
 <td>Calculates the structural form factor of the material.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.crystal.material.Material.calc_mag_str_fac.html#neutronpy.crystal.material.Material.calc_mag_str_fac" title="neutronpy.crystal.material.Material.calc_mag_str_fac"><code class="xref py py-obj docutils literal"><span class="pre">calc_mag_str_fac</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.crystal.material.Material.calc_mag_str_fac.html#neutronpy.crystal.material.Material.calc_mag_str_fac" title="neutronpy.crystal.material.Material.calc_mag_str_fac"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_mag_str_fac</span></code></a>()</td>
 <td>Calculates magnetic structure factor</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.crystal.material.Material.calc_mag_int_vec.html#neutronpy.crystal.material.Material.calc_mag_int_vec" title="neutronpy.crystal.material.Material.calc_mag_int_vec"><code class="xref py py-obj docutils literal"><span class="pre">calc_mag_int_vec</span></code></a>()</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.crystal.material.Material.calc_mag_int_vec.html#neutronpy.crystal.material.Material.calc_mag_int_vec" title="neutronpy.crystal.material.Material.calc_mag_int_vec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_mag_int_vec</span></code></a>()</td>
 <td>Calculates magnetic interaction vector</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.crystal.material.Material.calc_incoh_elas_xs.html#neutronpy.crystal.material.Material.calc_incoh_elas_xs" title="neutronpy.crystal.material.Material.calc_incoh_elas_xs"><code class="xref py py-obj docutils literal"><span class="pre">calc_incoh_elas_xs</span></code></a>([mass])</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.crystal.material.Material.calc_incoh_elas_xs.html#neutronpy.crystal.material.Material.calc_incoh_elas_xs" title="neutronpy.crystal.material.Material.calc_incoh_elas_xs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_incoh_elas_xs</span></code></a>([mass])</td>
 <td>Calculates the incoherent elastic cross section.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.crystal.material.Material.calc_optimal_thickness.html#neutronpy.crystal.material.Material.calc_optimal_thickness" title="neutronpy.crystal.material.Material.calc_optimal_thickness"><code class="xref py py-obj docutils literal"><span class="pre">calc_optimal_thickness</span></code></a>([energy,&nbsp;transmission])</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.crystal.material.Material.calc_optimal_thickness.html#neutronpy.crystal.material.Material.calc_optimal_thickness" title="neutronpy.crystal.material.Material.calc_optimal_thickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calc_optimal_thickness</span></code></a>([energy,&nbsp;transmission])</td>
 <td>Calculates the optimal sample thickess to avoid problems with extinction, multiple coherent scattering and absorption.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.crystal.material.Material.plot_unit_cell.html#neutronpy.crystal.material.Material.plot_unit_cell" title="neutronpy.crystal.material.Material.plot_unit_cell"><code class="xref py py-obj docutils literal"><span class="pre">plot_unit_cell</span></code></a>()</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.crystal.material.Material.plot_unit_cell.html#neutronpy.crystal.material.Material.plot_unit_cell" title="neutronpy.crystal.material.Material.plot_unit_cell"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_unit_cell</span></code></a>()</td>
 <td>Plots the unit cell and atoms of the material.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.crystal.material.Material.get_angle_between_planes.html#neutronpy.crystal.material.Material.get_angle_between_planes" title="neutronpy.crystal.material.Material.get_angle_between_planes"><code class="xref py py-obj docutils literal"><span class="pre">get_angle_between_planes</span></code></a>(v1,&nbsp;v2)</td>
-<td>Returns the angle <span class="math">\(\phi\)</span> between two reciprocal lattice vectors (or planes as defined by the vectors normal to the plane).</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.crystal.material.Material.get_angle_between_planes.html#neutronpy.crystal.material.Material.get_angle_between_planes" title="neutronpy.crystal.material.Material.get_angle_between_planes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_angle_between_planes</span></code></a>(v1,&nbsp;v2)</td>
+<td>Returns the angle <span class="math notranslate nohighlight">\(\phi\)</span> between two reciprocal lattice vectors (or planes as defined by the vectors normal to the plane).</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.crystal.material.Material.get_d_spacing.html#neutronpy.crystal.material.Material.get_d_spacing" title="neutronpy.crystal.material.Material.get_d_spacing"><code class="xref py py-obj docutils literal"><span class="pre">get_d_spacing</span></code></a>(hkl)</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.crystal.material.Material.get_d_spacing.html#neutronpy.crystal.material.Material.get_d_spacing" title="neutronpy.crystal.material.Material.get_d_spacing"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_d_spacing</span></code></a>(hkl)</td>
 <td>Returns the d-spacing of a given reciprocal lattice vector.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.crystal.material.Material.get_q.html#neutronpy.crystal.material.Material.get_q" title="neutronpy.crystal.material.Material.get_q"><code class="xref py py-obj docutils literal"><span class="pre">get_q</span></code></a>(hkl)</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.crystal.material.Material.get_q.html#neutronpy.crystal.material.Material.get_q" title="neutronpy.crystal.material.Material.get_q"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_q</span></code></a>(hkl)</td>
 <td>Returns the magnitude of <em>Q</em> for a given reciprocal lattice vector in Å<sup>-1</sup>.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.crystal.material.Material.get_two_theta.html#neutronpy.crystal.material.Material.get_two_theta" title="neutronpy.crystal.material.Material.get_two_theta"><code class="xref py py-obj docutils literal"><span class="pre">get_two_theta</span></code></a>(hkl,&nbsp;wavelength)</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.crystal.material.Material.get_two_theta.html#neutronpy.crystal.material.Material.get_two_theta" title="neutronpy.crystal.material.Material.get_two_theta"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_two_theta</span></code></a>(hkl,&nbsp;wavelength)</td>
 <td>Returns the detector angle 2𝜃 for a given reciprocal lattice vector and incident wavelength.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.crystal.material.Material.get_phi.html#neutronpy.crystal.material.Material.get_phi" title="neutronpy.crystal.material.Material.get_phi"><code class="xref py py-obj docutils literal"><span class="pre">get_phi</span></code></a>(Q)</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.crystal.material.Material.get_phi.html#neutronpy.crystal.material.Material.get_phi" title="neutronpy.crystal.material.Material.get_phi"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_phi</span></code></a>(Q)</td>
 <td>Get out-of-plane scattering angle.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.crystal.material.Material.N_atoms.html#neutronpy.crystal.material.Material.N_atoms" title="neutronpy.crystal.material.Material.N_atoms"><code class="xref py py-obj docutils literal"><span class="pre">N_atoms</span></code></a>(mass)</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.crystal.material.Material.N_atoms.html#neutronpy.crystal.material.Material.N_atoms" title="neutronpy.crystal.material.Material.N_atoms"><code class="xref py py-obj docutils literal notranslate"><span class="pre">N_atoms</span></code></a>(mass)</td>
 <td>Number of atoms in the defined Material, given the mass of the sample.</td>
 </tr>
 </tbody>
@@ -504,7 +504,7 @@ Stephen W. Lovesey.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, David M Fobes.
-      Last updated on May 15, 2018.
+      Last updated on Jun 25, 2018.
 
     </p>
   </div>
@@ -526,7 +526,7 @@ Stephen W. Lovesey.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.1.0b2',
+            VERSION:'1.1.1',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

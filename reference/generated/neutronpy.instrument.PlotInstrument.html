@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>neutronpy.instrument.PlotInstrument &mdash; neutronpy 1.1.0b2 documentation</title>
+  <title>neutronpy.instrument.PlotInstrument &mdash; neutronpy 1.1.1 documentation</title>
   
 
   
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                1.1.0b2
+                1.1.1
               </div>
             
           
@@ -266,14 +266,14 @@
 <h1>neutronpy.instrument.PlotInstrument<a class="headerlink" href="#neutronpy-instrument-plotinstrument" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="neutronpy.instrument.PlotInstrument">
-<em class="property">class </em><code class="descclassname">neutronpy.instrument.</code><code class="descname">PlotInstrument</code><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.0b2/neutronpy/instrument/plot.py#L11"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.instrument.PlotInstrument" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">neutronpy.instrument.</code><code class="descname">PlotInstrument</code><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.1/neutronpy/instrument/plot.py#L11"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.instrument.PlotInstrument" title="Permalink to this definition">¶</a></dt>
 <dd><p>Class containing resolution plotting methods</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
-<dt><code class="xref py py-obj docutils literal"><span class="pre">description_string</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">description_string</span></code></dt>
 <dd><p class="first last">Generates text string describing most recent resolution calculation</p>
 </dd>
 </dl>
@@ -288,16 +288,16 @@
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.instrument.PlotInstrument.plot_projections.html#neutronpy.instrument.PlotInstrument.plot_projections" title="neutronpy.instrument.PlotInstrument.plot_projections"><code class="xref py py-obj docutils literal"><span class="pre">plot_projections</span></code></a>(hkle[,&nbsp;npts,&nbsp;dpi])</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.instrument.PlotInstrument.plot_projections.html#neutronpy.instrument.PlotInstrument.plot_projections" title="neutronpy.instrument.PlotInstrument.plot_projections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_projections</span></code></a>(hkle[,&nbsp;npts,&nbsp;dpi])</td>
 <td>Plots resolution ellipses in the QxQy, QxW, and QyW zones</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.instrument.PlotInstrument.plot_ellipsoid.html#neutronpy.instrument.PlotInstrument.plot_ellipsoid" title="neutronpy.instrument.PlotInstrument.plot_ellipsoid"><code class="xref py py-obj docutils literal"><span class="pre">plot_ellipsoid</span></code></a>(hkle[,&nbsp;dpi])</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.instrument.PlotInstrument.plot_ellipsoid.html#neutronpy.instrument.PlotInstrument.plot_ellipsoid" title="neutronpy.instrument.PlotInstrument.plot_ellipsoid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_ellipsoid</span></code></a>(hkle[,&nbsp;dpi])</td>
 <td>Plots the resolution ellipsoid in the $Q_x$, $Q_y$, $W$ zone</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.instrument.PlotInstrument.plot_instrument.html#neutronpy.instrument.PlotInstrument.plot_instrument" title="neutronpy.instrument.PlotInstrument.plot_instrument"><code class="xref py py-obj docutils literal"><span class="pre">plot_instrument</span></code></a>(hkle)</td>
-<td>Plots the instrument configuration using angles for a given position</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.instrument.PlotInstrument.plot_instrument.html#neutronpy.instrument.PlotInstrument.plot_instrument" title="neutronpy.instrument.PlotInstrument.plot_instrument"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_instrument</span></code></a>(hkle)</td>
+<td>Plots the instrument configuration using angles for a given position in Q and energy transfer</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.instrument.PlotInstrument.plot_slice.html#neutronpy.instrument.PlotInstrument.plot_slice" title="neutronpy.instrument.PlotInstrument.plot_slice"><code class="xref py py-obj docutils literal"><span class="pre">plot_slice</span></code></a>(axis,&nbsp;qslice,&nbsp;projections,&nbsp;u,&nbsp;v)</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.instrument.PlotInstrument.plot_slice.html#neutronpy.instrument.PlotInstrument.plot_slice" title="neutronpy.instrument.PlotInstrument.plot_slice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plot_slice</span></code></a>(axis,&nbsp;qslice,&nbsp;projections,&nbsp;u,&nbsp;v)</td>
 <td>Class method for plotting individual projections.</td>
 </tr>
 </tbody>
@@ -327,7 +327,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, David M Fobes.
-      Last updated on May 15, 2018.
+      Last updated on Jun 25, 2018.
 
     </p>
   </div>
@@ -349,7 +349,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.1.0b2',
+            VERSION:'1.1.1',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

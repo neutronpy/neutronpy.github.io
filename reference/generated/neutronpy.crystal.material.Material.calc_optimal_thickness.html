@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>neutronpy.crystal.material.Material.calc_optimal_thickness &mdash; neutronpy 1.1.0b2 documentation</title>
+  <title>neutronpy.crystal.material.Material.calc_optimal_thickness &mdash; neutronpy 1.1.1 documentation</title>
   
 
   
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                1.1.0b2
+                1.1.1
               </div>
             
           
@@ -220,7 +220,7 @@
 <h1>neutronpy.crystal.material.Material.calc_optimal_thickness<a class="headerlink" href="#neutronpy-crystal-material-material-calc-optimal-thickness" title="Permalink to this headline">¶</a></h1>
 <dl class="method">
 <dt id="neutronpy.crystal.material.Material.calc_optimal_thickness">
-<code class="descclassname">Material.</code><code class="descname">calc_optimal_thickness</code><span class="sig-paren">(</span><em>energy=25.3</em>, <em>transmission=0.36787944117144233</em><span class="sig-paren">)</span><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.0b2/neutronpy/crystal/material.py#L296"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.crystal.material.Material.calc_optimal_thickness" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">Material.</code><code class="descname">calc_optimal_thickness</code><span class="sig-paren">(</span><em>energy=25.3</em>, <em>transmission=0.36787944117144233</em><span class="sig-paren">)</span><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.1/neutronpy/crystal/material.py#L296"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.crystal.material.Material.calc_optimal_thickness" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculates the optimal sample thickess to avoid problems with
 extinction, multiple coherent scattering and absorption.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -233,7 +233,7 @@ extinction, multiple coherent scattering and absorption.</p>
 </dd>
 <dt><strong>transmission: float, optional</strong></dt>
 <dd><p class="first last">The transmission through the material in decimal percentage,
-<span class="math">\(0 &lt; T &lt; 1.0\)</span>. Default: <span class="math">\(1/e\)</span>.</p>
+<span class="math notranslate nohighlight">\(0 &lt; T &lt; 1.0\)</span>. Default: <span class="math notranslate nohighlight">\(1/e\)</span>.</p>
 </dd>
 </dl>
 </td>
@@ -249,26 +249,26 @@ extinction, multiple coherent scattering and absorption.</p>
 </table>
 <p class="rubric">Notes</p>
 <p>The total transmission of neutrons through a material is defined as</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[T = \frac{I}{I_0} = e^{-\Sigma_T d},\]</div>
-<p>where <span class="math">\(\Sigma_T\)</span> is the total scattering cross-section, <em>i.e.</em></p>
-<div class="math">
+<p>where <span class="math notranslate nohighlight">\(\Sigma_T\)</span> is the total scattering cross-section, <em>i.e.</em></p>
+<div class="math notranslate nohighlight">
 \[\Sigma_T = \Sigma_{coh} + \Sigma_{inc} + \Sigma_{abs},\]</div>
-<p>and <span class="math">\(d\)</span> is the thickness in cm.</p>
+<p>and <span class="math notranslate nohighlight">\(d\)</span> is the thickness in cm.</p>
 <p>Scattered intensity is thus defined to be</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[I_s \propto dT\left(\frac{d\Sigma_{coh}}{d\Omega}\right) \propto d e^{-\Sigma_T d}.\]</div>
-<p><span class="math">\(I_s\)</span> is therefore a maximum when <span class="math">\(d=1/\Sigma_T\)</span>, resulting
-a transmission of approximately <span class="math">\(T=37\%\)</span>. This is valid when the
+<p><span class="math notranslate nohighlight">\(I_s\)</span> is therefore a maximum when <span class="math notranslate nohighlight">\(d=1/\Sigma_T\)</span>, resulting
+a transmission of approximately <span class="math notranslate nohighlight">\(T=37\%\)</span>. This is valid when the
 coherent cross-section is much less than the total cross-section,
 <em>i.e.</em></p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\Sigma_{coh} \ll \Sigma_T \approx \Sigma_{inc} + \Sigma{abs}.\]</div>
 <p>However, if the coherent cross-section of the material is the dominant
 part of the total scattering cross-section, <em>i.e.</em>
-<span class="math">\(\Sigma_T \approx \Sigma_{coh}\)</span>, then <span class="math">\(d = 1/\Sigma_T\)</span> is
+<span class="math notranslate nohighlight">\(\Sigma_T \approx \Sigma_{coh}\)</span>, then <span class="math notranslate nohighlight">\(d = 1/\Sigma_T\)</span> is
 too large and there will be a problem with multiple scattering.
-Therefore a transmission of <span class="math">\(T\geq90\%\)</span> is desirable.</p>
+Therefore a transmission of <span class="math notranslate nohighlight">\(T\geq90\%\)</span> is desirable.</p>
 </dd></dl>
 
 </div>
@@ -294,7 +294,7 @@ Therefore a transmission of <span class="math">\(T\geq90\%\)</span> is desirable
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, David M Fobes.
-      Last updated on May 15, 2018.
+      Last updated on Jun 25, 2018.
 
     </p>
   </div>
@@ -316,7 +316,7 @@ Therefore a transmission of <span class="math">\(T\geq90\%\)</span> is desirable
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.1.0b2',
+            VERSION:'1.1.1',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

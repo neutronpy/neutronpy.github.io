@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Least-squares fitting with the Fitter Class &mdash; neutronpy 1.1.0b2 documentation</title>
+  <title>Least-squares fitting with the Fitter Class &mdash; neutronpy 1.1.1 documentation</title>
   
 
   
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                1.1.0b2
+                1.1.1
               </div>
             
           
@@ -179,25 +179,25 @@
   <div class="section" id="least-squares-fitting-with-the-fitter-class">
 <h1>Least-squares fitting with the Fitter Class<a class="headerlink" href="#least-squares-fitting-with-the-fitter-class" title="Permalink to this headline">¶</a></h1>
 <p><em>Note: This module is still a work-in-progress and the usage of these classes and/or functions may change in the future.</em></p>
-<p>The follow is an example of how to use the <a class="reference internal" href="../generated/neutronpy.lsfit.Fitter.html#neutronpy.lsfit.Fitter" title="neutronpy.lsfit.Fitter"><code class="xref py py-class docutils literal"><span class="pre">Fitter</span></code></a> class, which is an interface to the non-linear least-squares minimization routine <code class="xref py py-func docutils literal"><span class="pre">scipy.optimize.leastsq</span></code>, with some features based on <code class="xref py py-func docutils literal"><span class="pre">lmfit.minimize</span></code>.</p>
+<p>The follow is an example of how to use the <a class="reference internal" href="../generated/neutronpy.lsfit.Fitter.html#neutronpy.lsfit.Fitter" title="neutronpy.lsfit.Fitter"><code class="xref py py-class docutils literal notranslate"><span class="pre">Fitter</span></code></a> class, which is an interface to the non-linear least-squares minimization routine <code class="xref py py-func docutils literal notranslate"><span class="pre">scipy.optimize.leastsq</span></code>, with some features based on <code class="xref py py-func docutils literal notranslate"><span class="pre">lmfit.minimize</span></code>.</p>
 <div class="section" id="defining-the-problem">
 <h2>Defining the problem<a class="headerlink" href="#defining-the-problem" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="../generated/neutronpy.lsfit.Fitter.html#neutronpy.lsfit.Fitter" title="neutronpy.lsfit.Fitter"><code class="xref py py-class docutils literal"><span class="pre">Fitter</span></code></a> requires you to pass a <code class="docutils literal"><span class="pre">residuals</span></code> function, rather than the function to which you desire to fit your data. This gives more flexibility because the form of the residuals can be defined by the user, rather than being confined to the standard formula for residuals:</p>
-<div class="math">
+<p><a class="reference internal" href="../generated/neutronpy.lsfit.Fitter.html#neutronpy.lsfit.Fitter" title="neutronpy.lsfit.Fitter"><code class="xref py py-class docutils literal notranslate"><span class="pre">Fitter</span></code></a> requires you to pass a <code class="docutils literal notranslate"><span class="pre">residuals</span></code> function, rather than the function to which you desire to fit your data. This gives more flexibility because the form of the residuals can be defined by the user, rather than being confined to the standard formula for residuals:</p>
+<div class="math notranslate nohighlight">
 \[S = \sum_{i}\frac{y_i - f(x_i)}{\sigma_i}.\]</div>
-<p>Assuming you already have your <code class="docutils literal"><span class="pre">function</span></code> prepared, defining the residuals function is trivial. For the sake of this example we will assume that <code class="docutils literal"><span class="pre">function</span></code> is the one dimensional <a class="reference internal" href="../generated/neutronpy.functions.gaussian.html#neutronpy.functions.gaussian" title="neutronpy.functions.gaussian"><code class="xref py py-func docutils literal"><span class="pre">functions.gaussian</span></code></a>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">neutronpy.functions</span> <span class="kn">import</span> <span class="n">gaussian</span>
+<p>Assuming you already have your <code class="docutils literal notranslate"><span class="pre">function</span></code> prepared, defining the residuals function is trivial. For the sake of this example we will assume that <code class="docutils literal notranslate"><span class="pre">function</span></code> is the one dimensional <a class="reference internal" href="../generated/neutronpy.functions.gaussian.html#neutronpy.functions.gaussian" title="neutronpy.functions.gaussian"><code class="xref py py-func docutils literal notranslate"><span class="pre">functions.gaussian</span></code></a>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">neutronpy.functions</span> <span class="kn">import</span> <span class="n">gaussian</span>
 <span class="k">def</span> <span class="nf">residuals</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
     <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">err</span> <span class="o">=</span> <span class="n">data</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">y</span> <span class="o">-</span> <span class="n">gaussian</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span> <span class="o">/</span> <span class="n">err</span>
 </pre></div>
 </div>
-<p>Notice that I did not square the residuals function. This is because <a class="reference internal" href="../generated/neutronpy.lsfit.Fitter.html#neutronpy.lsfit.Fitter" title="neutronpy.lsfit.Fitter"><code class="xref py py-class docutils literal"><span class="pre">Fitter</span></code></a> will square the residuals as part of the <em>Least-squares</em> fitting.</p>
+<p>Notice that I did not square the residuals function. This is because <a class="reference internal" href="../generated/neutronpy.lsfit.Fitter.html#neutronpy.lsfit.Fitter" title="neutronpy.lsfit.Fitter"><code class="xref py py-class docutils literal notranslate"><span class="pre">Fitter</span></code></a> will square the residuals as part of the <em>Least-squares</em> fitting.</p>
 </div>
 <div class="section" id="initializing">
 <h2>Initializing<a class="headerlink" href="#initializing" title="Permalink to this headline">¶</a></h2>
-<p>Once the problem is defined, we can initialize our object using <a class="reference internal" href="../generated/neutronpy.lsfit.Fitter.html#neutronpy.lsfit.Fitter" title="neutronpy.lsfit.Fitter"><code class="xref py py-class docutils literal"><span class="pre">Fitter</span></code></a>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">neutronpy</span> <span class="k">import</span> <span class="n">Fitter</span>
+<p>Once the problem is defined, we can initialize our object using <a class="reference internal" href="../generated/neutronpy.lsfit.Fitter.html#neutronpy.lsfit.Fitter" title="neutronpy.lsfit.Fitter"><code class="xref py py-class docutils literal notranslate"><span class="pre">Fitter</span></code></a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">neutronpy</span> <span class="k">import</span> <span class="n">Fitter</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">fitobj</span> <span class="o">=</span> <span class="n">Fitter</span><span class="p">(</span><span class="n">residuals</span><span class="o">=</span><span class="n">residuals</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">err</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -205,25 +205,25 @@
 <div class="section" id="initial-parameters-and-constraints">
 <h2>Initial parameters and Constraints<a class="headerlink" href="#initial-parameters-and-constraints" title="Permalink to this headline">¶</a></h2>
 <p>The parameters and constraints will obviously depend on the specific problem. Initial parameters can be defined as a list; in this example we will define a single gaussian peak with no background:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">params</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">]</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">params</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">]</span>
 </pre></div>
 </div>
-<p>Defining constraints is slightly more complicated however. It is possible to define whether the parameter is fixed, its limits, its step size, and its sidedness, for each parameter. Like the parameters, constraints, <em>i.e.</em> <code class="docutils literal"><span class="pre">parinfo</span></code> is defined as a list, but with either dictionaries or <code class="docutils literal"><span class="pre">None</span></code> for each parameter. For example, let us fix the background terms:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fitobj</span><span class="o">.</span><span class="n">parinfo</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;fixed&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;fixed&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;fixed&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;fixed&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">},</span> <span class="kc">None</span><span class="p">]</span>
+<p>Defining constraints is slightly more complicated however. It is possible to define whether the parameter is fixed, its limits, its step size, and its sidedness, for each parameter. Like the parameters, constraints, <em>i.e.</em> <code class="docutils literal notranslate"><span class="pre">parinfo</span></code> is defined as a list, but with either dictionaries or <code class="docutils literal notranslate"><span class="pre">None</span></code> for each parameter. For example, let us fix the background terms:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fitobj</span><span class="o">.</span><span class="n">parinfo</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;fixed&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;fixed&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;fixed&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;fixed&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">},</span> <span class="kc">None</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>The above illustrates equivalent ways to either fix (the first two list members), or leave unfixed (the last three list members) the parameters.</p>
 </div>
 <div class="section" id="fitting">
 <h2>Fitting<a class="headerlink" href="#fitting" title="Permalink to this headline">¶</a></h2>
-<p>To fit the function we simply call <a class="reference internal" href="../generated/neutronpy.lsfit.Fitter.fit.html#neutronpy.lsfit.Fitter.fit" title="neutronpy.lsfit.Fitter.fit"><code class="xref py py-meth docutils literal"><span class="pre">Fitter.fit</span></code></a> with our initial parameters:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fitobj</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">params0</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+<p>To fit the function we simply call <a class="reference internal" href="../generated/neutronpy.lsfit.Fitter.fit.html#neutronpy.lsfit.Fitter.fit" title="neutronpy.lsfit.Fitter.fit"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Fitter.fit</span></code></a> with our initial parameters:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fitobj</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">params0</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="results">
 <h2>Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h2>
-<p>Results of the fit are stored in <code class="docutils literal"><span class="pre">fitobj.params</span></code>. <span class="math">\(\chi^2\)</span> is stored in <code class="docutils literal"><span class="pre">fitobj.chi2_min</span></code>, and the parameter errors are stored in <code class="docutils literal"><span class="pre">fitobj.xerror</span></code>.</p>
+<p>Results of the fit are stored in <code class="docutils literal notranslate"><span class="pre">fitobj.params</span></code>. <span class="math notranslate nohighlight">\(\chi^2\)</span> is stored in <code class="docutils literal notranslate"><span class="pre">fitobj.chi2_min</span></code>, and the parameter errors are stored in <code class="docutils literal notranslate"><span class="pre">fitobj.xerror</span></code>.</p>
 </div>
 </div>
 
@@ -248,7 +248,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, David M Fobes.
-      Last updated on May 15, 2018.
+      Last updated on Jun 25, 2018.
 
     </p>
   </div>
@@ -270,7 +270,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.1.0b2',
+            VERSION:'1.1.1',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

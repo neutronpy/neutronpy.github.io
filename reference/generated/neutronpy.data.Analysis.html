@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>neutronpy.data.Analysis &mdash; neutronpy 1.1.0b2 documentation</title>
+  <title>neutronpy.data.Analysis &mdash; neutronpy 1.1.1 documentation</title>
   
 
   
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                1.1.0b2
+                1.1.1
               </div>
             
           
@@ -246,14 +246,14 @@
 <h1>neutronpy.data.Analysis<a class="headerlink" href="#neutronpy-data-analysis" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="neutronpy.data.Analysis">
-<em class="property">class </em><code class="descclassname">neutronpy.data.</code><code class="descname">Analysis</code><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.0b2/neutronpy/data/analysis.py#L10"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.data.Analysis" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">neutronpy.data.</code><code class="descname">Analysis</code><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.1/neutronpy/data/analysis.py#L10"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.data.Analysis" title="Permalink to this definition">¶</a></dt>
 <dd><p>Class containing methods for the Data class</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
-<dt><code class="xref py py-obj docutils literal"><span class="pre">detailed_balance_factor</span></code></dt>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">detailed_balance_factor</span></code></dt>
 <dd><p class="first last">Returns the detailed balance factor (sometimes called the Bose</p>
 </dd>
 </dl>
@@ -268,28 +268,28 @@
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Analysis.integrate.html#neutronpy.data.Analysis.integrate" title="neutronpy.data.Analysis.integrate"><code class="xref py py-obj docutils literal"><span class="pre">integrate</span></code></a>([bounds,&nbsp;background,&nbsp;hkle])</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Analysis.integrate.html#neutronpy.data.Analysis.integrate" title="neutronpy.data.Analysis.integrate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">integrate</span></code></a>([bounds,&nbsp;background,&nbsp;hkle])</td>
 <td>Returns the integrated intensity within given bounds</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Analysis.position.html#neutronpy.data.Analysis.position" title="neutronpy.data.Analysis.position"><code class="xref py py-obj docutils literal"><span class="pre">position</span></code></a>([bounds,&nbsp;background,&nbsp;hkle])</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Analysis.position.html#neutronpy.data.Analysis.position" title="neutronpy.data.Analysis.position"><code class="xref py py-obj docutils literal notranslate"><span class="pre">position</span></code></a>([bounds,&nbsp;background,&nbsp;hkle])</td>
 <td>Returns the position of a peak within the given bounds</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Analysis.width.html#neutronpy.data.Analysis.width" title="neutronpy.data.Analysis.width"><code class="xref py py-obj docutils literal"><span class="pre">width</span></code></a>([bounds,&nbsp;background,&nbsp;fwhm,&nbsp;hkle])</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Analysis.width.html#neutronpy.data.Analysis.width" title="neutronpy.data.Analysis.width"><code class="xref py py-obj docutils literal notranslate"><span class="pre">width</span></code></a>([bounds,&nbsp;background,&nbsp;fwhm,&nbsp;hkle])</td>
 <td>Returns the mean-squared width of a peak within the given bounds</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Analysis.scattering_function.html#neutronpy.data.Analysis.scattering_function" title="neutronpy.data.Analysis.scattering_function"><code class="xref py py-obj docutils literal"><span class="pre">scattering_function</span></code></a>(material,&nbsp;ei)</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Analysis.scattering_function.html#neutronpy.data.Analysis.scattering_function" title="neutronpy.data.Analysis.scattering_function"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scattering_function</span></code></a>(material,&nbsp;ei)</td>
 <td>Returns the neutron scattering function, i.e.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Analysis.dynamic_susceptibility.html#neutronpy.data.Analysis.dynamic_susceptibility" title="neutronpy.data.Analysis.dynamic_susceptibility"><code class="xref py py-obj docutils literal"><span class="pre">dynamic_susceptibility</span></code></a>(material,&nbsp;ei)</td>
-<td>Returns the dynamic susceptibility</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Analysis.dynamic_susceptibility.html#neutronpy.data.Analysis.dynamic_susceptibility" title="neutronpy.data.Analysis.dynamic_susceptibility"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dynamic_susceptibility</span></code></a>(material,&nbsp;ei)</td>
+<td>Returns the dynamic susceptibility <span class="math notranslate nohighlight">\(\chi^{\prime\prime}(\mathbf{Q},\hbar\omega)\)</span></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Analysis.estimate_background.html#neutronpy.data.Analysis.estimate_background" title="neutronpy.data.Analysis.estimate_background"><code class="xref py py-obj docutils literal"><span class="pre">estimate_background</span></code></a>(bg_params)</td>
-<td>Estimate the background according to <code class="docutils literal"><span class="pre">type</span></code> specified.</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Analysis.estimate_background.html#neutronpy.data.Analysis.estimate_background" title="neutronpy.data.Analysis.estimate_background"><code class="xref py py-obj docutils literal notranslate"><span class="pre">estimate_background</span></code></a>(bg_params)</td>
+<td>Estimate the background according to <code class="docutils literal notranslate"><span class="pre">type</span></code> specified.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Analysis.get_keys.html#neutronpy.data.Analysis.get_keys" title="neutronpy.data.Analysis.get_keys"><code class="xref py py-obj docutils literal"><span class="pre">get_keys</span></code></a>(hkle)</td>
+<tr class="row-odd"><td><a class="reference internal" href="neutronpy.data.Analysis.get_keys.html#neutronpy.data.Analysis.get_keys" title="neutronpy.data.Analysis.get_keys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_keys</span></code></a>(hkle)</td>
 <td>Returns all of the Dictionary key names</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Analysis.get_bounds.html#neutronpy.data.Analysis.get_bounds" title="neutronpy.data.Analysis.get_bounds"><code class="xref py py-obj docutils literal"><span class="pre">get_bounds</span></code></a>(bounds)</td>
+<tr class="row-even"><td><a class="reference internal" href="neutronpy.data.Analysis.get_bounds.html#neutronpy.data.Analysis.get_bounds" title="neutronpy.data.Analysis.get_bounds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_bounds</span></code></a>(bounds)</td>
 <td>Generates a to_fit tuple if bounds is present in kwargs</td>
 </tr>
 </tbody>
@@ -319,7 +319,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, David M Fobes.
-      Last updated on May 15, 2018.
+      Last updated on Jun 25, 2018.
 
     </p>
   </div>
@@ -341,7 +341,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.1.0b2',
+            VERSION:'1.1.1',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

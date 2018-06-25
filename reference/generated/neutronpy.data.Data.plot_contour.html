@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>neutronpy.data.Data.plot_contour &mdash; neutronpy 1.1.0b2 documentation</title>
+  <title>neutronpy.data.Data.plot_contour &mdash; neutronpy 1.1.1 documentation</title>
   
 
   
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                1.1.0b2
+                1.1.1
               </div>
             
           
@@ -256,7 +256,7 @@
 <h1>neutronpy.data.Data.plot_contour<a class="headerlink" href="#neutronpy-data-data-plot-contour" title="Permalink to this headline">¶</a></h1>
 <dl class="method">
 <dt id="neutronpy.data.Data.plot_contour">
-<code class="descclassname">Data.</code><code class="descname">plot_contour</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z</em>, <em>to_bin=None</em>, <em>plot_options=None</em>, <em>smooth_options=None</em>, <em>output_file=''</em>, <em>show_plot=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.0b2/neutronpy/data/plot.py#L208"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.data.Data.plot_contour" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">Data.</code><code class="descname">plot_contour</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z</em>, <em>to_bin=None</em>, <em>plot_options=None</em>, <em>smooth_options=None</em>, <em>output_file=''</em>, <em>show_plot=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="http://github.com/neutronpy/neutronpy/blob/v1.1.1/neutronpy/data/plot.py#L208"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#neutronpy.data.Data.plot_contour" title="Permalink to this definition">¶</a></dt>
 <dd><p>Method for plotting a 2D contour plot of 3D data</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -265,11 +265,11 @@
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
 <dt><strong>x</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last"><em class="xref py py-obj">data_column</em> key defining the x-axis.
-Default: <code class="xref py py-attr docutils literal"><span class="pre">plot_default_x</span></code>.</p>
+Default: <code class="xref py py-attr docutils literal notranslate"><span class="pre">plot_default_x</span></code>.</p>
 </dd>
 <dt><strong>y</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last"><em class="xref py py-obj">data_column</em> key defining the y-axis.
-Default: <code class="xref py py-attr docutils literal"><span class="pre">plot_default_y</span></code>.</p>
+Default: <code class="xref py py-attr docutils literal notranslate"><span class="pre">plot_default_y</span></code>.</p>
 </dd>
 <dt><strong>z</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last"><em class="xref py py-obj">data_column</em> key defining the z-axis.
@@ -278,7 +278,7 @@ Default: None</p>
 <dt><strong>bounds</strong> <span class="classifier-delimiter">:</span> <span class="classifier">dict, optional</span></dt>
 <dd><p class="first last">If set, data will be rebinned to the specified parameters, in the
 format <em class="xref py py-obj">[min, max, num points]</em> for each <em class="xref py py-obj">data_column</em> key. See
-documentation for <a class="reference internal" href="neutronpy.data.Data.bin.html#neutronpy.data.Data.bin" title="neutronpy.data.Data.bin"><code class="xref py py-meth docutils literal"><span class="pre">Data.bin</span></code></a>. Default: None</p>
+documentation for <a class="reference internal" href="neutronpy.data.Data.bin.html#neutronpy.data.Data.bin" title="neutronpy.data.Data.bin"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Data.bin</span></code></a>. Default: None</p>
 </dd>
 <dt><strong>show_err</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool, optional</span></dt>
 <dd><p class="first last">Plot error bars. Only applies to xy scatter plots. Default: True</p>
@@ -300,7 +300,7 @@ Default: None</p>
 </dd>
 <dt><strong>smooth_otions</strong> <span class="classifier-delimiter">:</span> <span class="classifier">dict, optional</span></dt>
 <dd><p class="first last">Smoothing options for Gaussian smoothing from
-<code class="xref py py-obj docutils literal"><span class="pre">scipy.ndimage.filters.gaussian_filter</span></code>. Default: None</p>
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">scipy.ndimage.filters.gaussian_filter</span></code>. Default: None</p>
 </dd>
 <dt><strong>kwargs</strong> <span class="classifier-delimiter">:</span> <span class="classifier">optional</span></dt>
 <dd><p class="first last">Additional plotting keyword arguments passed to the plotting
@@ -336,7 +336,7 @@ function.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, David M Fobes.
-      Last updated on May 15, 2018.
+      Last updated on Jun 25, 2018.
 
     </p>
   </div>
@@ -358,7 +358,7 @@ function.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'1.1.0b2',
+            VERSION:'1.1.1',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

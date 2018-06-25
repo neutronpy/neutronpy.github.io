@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Development &mdash; neutronpy 1.1.0b2 documentation</title>
+  <title>Development &mdash; neutronpy 1.1.1 documentation</title>
   
 
   
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                1.1.0b2
+                1.1.1
               </div>
             
           
@@ -103,7 +103,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#fork-and-clone">Fork and clone</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#create-a-branch">Create a branch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#commit-changes">Commit changes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#rebase-on-neutronpy-master">Rebase on neutronpy <code class="docutils literal"><span class="pre">master</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rebase-on-neutronpy-master">Rebase on neutronpy <code class="docutils literal notranslate"><span class="pre">master</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#create-pull-request">Create pull request</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#cleanup">Cleanup</a></li>
 </ul>
@@ -200,8 +200,8 @@
 <p>Some frequent issues you may encounter include:</p>
 <blockquote>
 <div><ul class="simple">
-<li>File encoding: file should explicitly have the following encoding on the first line: <code class="docutils literal"><span class="pre">#</span> <span class="pre">-*-</span> <span class="pre">coding:</span> <span class="pre">utf-8</span> <span class="pre">-*-</span></code>. This is a problem with both 2.6 and 2.7</li>
-<li><code class="docutils literal"><span class="pre">*args</span></code> and <code class="docutils literal"><span class="pre">**kwargs</span></code> can only be used like <code class="docutils literal"><span class="pre">function(*args,</span> <span class="pre">**kwargs)</span></code> in Python 2, whereas in Python 3 you could for instance do <code class="docutils literal"><span class="pre">function(*args</span> <span class="pre">keyword=None)</span></code>, explicitly naming a <code class="docutils literal"><span class="pre">kwarg</span></code> after <code class="docutils literal"><span class="pre">*args</span></code>.</li>
+<li>File encoding: file should explicitly have the following encoding on the first line: <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">-*-</span> <span class="pre">coding:</span> <span class="pre">utf-8</span> <span class="pre">-*-</span></code>. This is a problem with both 2.6 and 2.7</li>
+<li><code class="docutils literal notranslate"><span class="pre">*args</span></code> and <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code> can only be used like <code class="docutils literal notranslate"><span class="pre">function(*args,</span> <span class="pre">**kwargs)</span></code> in Python 2, whereas in Python 3 you could for instance do <code class="docutils literal notranslate"><span class="pre">function(*args</span> <span class="pre">keyword=None)</span></code>, explicitly naming a <code class="docutils literal notranslate"><span class="pre">kwarg</span></code> after <code class="docutils literal notranslate"><span class="pre">*args</span></code>.</li>
 </ul>
 </div></blockquote>
 </div>
@@ -214,17 +214,17 @@
 <li>Variable names can be capitalized or be only one character, e.g. in neutron scattering <strong>Q</strong>, <em>h</em>, <em>k</em>, <em>l</em>, etc. all have well known meanings, so we defer to neutron scattering terminology</li>
 </ul>
 </div></blockquote>
-<p>It is suggested that you run e.g. <code class="docutils literal"><span class="pre">pep8</span> <span class="pre">--ignore=E501</span></code> on your code to find obvious easy-to-fix PEP8 problems. More detailed analysis with e.g. <code class="docutils literal"><span class="pre">pylint</span></code> can be helpful but is not necessary.</p>
+<p>It is suggested that you run e.g. <code class="docutils literal notranslate"><span class="pre">pep8</span> <span class="pre">--ignore=E501</span></code> on your code to find obvious easy-to-fix PEP8 problems. More detailed analysis with e.g. <code class="docutils literal notranslate"><span class="pre">pylint</span></code> can be helpful but is not necessary.</p>
 </div>
 <div class="section" id="documentation">
 <h3>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h3>
-<p>All classes, methods, attributes, functions, etc. should have complete documentation in the form of docstrings detailing their proper usage. The documentation seen at neutronpy.github.io is automatically generated using <code class="xref py py-mod docutils literal"><span class="pre">sphinx</span></code> and <code class="xref py py-mod docutils literal"><span class="pre">numpydoc</span></code>. This means that documentation should be in the <a class="reference external" href="https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt">numpy style</a>.</p>
+<p>All classes, methods, attributes, functions, etc. should have complete documentation in the form of docstrings detailing their proper usage. The documentation seen at neutronpy.github.io is automatically generated using <code class="xref py py-mod docutils literal notranslate"><span class="pre">sphinx</span></code> and <code class="xref py py-mod docutils literal notranslate"><span class="pre">numpydoc</span></code>. This means that documentation should be in the <a class="reference external" href="https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt">numpy style</a>.</p>
 <p>Docstrings are written in the <a class="reference external" href="http://www.sphinx-doc.org/en/stable/rest.html">reStructuredText (reST)</a> format, which makes it easy to refer and link to other functions/classes/etc. from inside docstrings.</p>
 <p>In order to build documentation you must have</p>
 </div>
 <div class="section" id="unit-tests">
 <h3>Unit tests<a class="headerlink" href="#unit-tests" title="Permalink to this headline">¶</a></h3>
-<p>In neutronpy, all unit tests are performed using the <a class="reference external" href="https://docs.python.org/dev/library/unittest.html#module-unittest" title="(in Python v3.8)"><code class="xref py py-mod docutils literal"><span class="pre">unittest</span></code></a> Standard Python Library, and some using <code class="xref py py-mod docutils literal"><span class="pre">mock</span></code> which was only added to the Standard Library in py33, but is available from pypi for earlier versions. See existing tests in the <code class="docutils literal"><span class="pre">tests</span></code> top-level directory for examples.</p>
+<p>In neutronpy, all unit tests are performed using the <a class="reference external" href="https://docs.python.org/dev/library/unittest.html#module-unittest" title="(in Python v3.8)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">unittest</span></code></a> Standard Python Library, and some using <code class="xref py py-mod docutils literal notranslate"><span class="pre">mock</span></code> which was only added to the Standard Library in py33, but is available from pypi for earlier versions. See existing tests in the <code class="docutils literal notranslate"><span class="pre">tests</span></code> top-level directory for examples.</p>
 <p>Development should generally take a test-driven approach, i.e. expected behavior of new functions should be known in advance and tests should be written first. A basic introduction to test-driven development can be found at <a class="reference external" href="http://code.tutsplus.com/tutorials/beginning-test-driven-development-in-python--net-30137">tutsplus.com</a>.</p>
 <p>If you plan to make a significant contribution to neutronpy, I highly recommend making at least a <a class="reference external" href="https://travis-ci.org/">Travis-ci</a> account to run the tests on your commits before you submit a pull request. It will help you make changes before making them public.</p>
 </div>
@@ -234,28 +234,28 @@
 <p>The following is an outline of the basic workflow, otherwise known as <a class="reference external" href="https://gist.github.com/Chaser324/ce0505fbed06b947d962">“fork and pull”</a>, which you should follow when you want to contribute to neutronpy:</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li>Fork <code class="docutils literal"><span class="pre">master</span></code> to your account (forked repo) and clone to your machine (local repo)</li>
+<li>Fork <code class="docutils literal notranslate"><span class="pre">master</span></code> to your account (forked repo) and clone to your machine (local repo)</li>
 <li>Create a new branch for your bug-fix/feature/etc with a descriptive name</li>
 <li>Make your changes and commit them with a appropriate git commit message</li>
-<li>Rebase your branch based on the most up-to-date neutronpy <code class="docutils literal"><span class="pre">master</span></code> branch</li>
+<li>Rebase your branch based on the most up-to-date neutronpy <code class="docutils literal notranslate"><span class="pre">master</span></code> branch</li>
 <li>Push your branch to your forked repo</li>
-<li>Create a pull request from your forked branch to neutronpy <code class="docutils literal"><span class="pre">master</span></code></li>
+<li>Create a pull request from your forked branch to neutronpy <code class="docutils literal notranslate"><span class="pre">master</span></code></li>
 </ol>
 </div></blockquote>
-<p>You will need to have some comfort level with <code class="docutils literal"><span class="pre">git</span></code>, for which there are quite a few guides. Github has an <a class="reference external" href="https://try.github.io/">interactive introduction</a>, and a useful <a class="reference external" href="https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf">cheat sheet</a> with commonly used commands. If you want to use a good visual <code class="docutils literal"><span class="pre">git</span></code> interface, I highly recommend <a class="reference external" href="https://github.com/FredrikNoren/ungit">ungit</a></p>
+<p>You will need to have some comfort level with <code class="docutils literal notranslate"><span class="pre">git</span></code>, for which there are quite a few guides. Github has an <a class="reference external" href="https://try.github.io/">interactive introduction</a>, and a useful <a class="reference external" href="https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf">cheat sheet</a> with commonly used commands. If you want to use a good visual <code class="docutils literal notranslate"><span class="pre">git</span></code> interface, I highly recommend <a class="reference external" href="https://github.com/FredrikNoren/ungit">ungit</a></p>
 <div class="section" id="fork-and-clone">
 <h3>Fork and clone<a class="headerlink" href="#fork-and-clone" title="Permalink to this headline">¶</a></h3>
-<p>First, <a class="reference external" href="https://github.com/neutronpy/neutronpy#fork-destination-box">fork</a> the existing neutronpy repo onto your personal github account. Then clone the fork to your local machine using <code class="docutils literal"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">git&#64;github.com:username/neutronpy.git</span></code>. Now you have a local copy that you can make your changes to.</p>
+<p>First, <a class="reference external" href="https://github.com/neutronpy/neutronpy#fork-destination-box">fork</a> the existing neutronpy repo onto your personal github account. Then clone the fork to your local machine using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">git&#64;github.com:username/neutronpy.git</span></code>. Now you have a local copy that you can make your changes to.</p>
 </div>
 <div class="section" id="create-a-branch">
 <h3>Create a branch<a class="headerlink" href="#create-a-branch" title="Permalink to this headline">¶</a></h3>
-<p>With <code class="docutils literal"><span class="pre">master</span></code> checked out, create a new local branch <code class="docutils literal"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">[branch-name]</span></code> with a descriptive <code class="docutils literal"><span class="pre">[branch-name]</span></code> that indicates the feature you are adding/changing. A good place to start is with the git-flow naming convention, i.e. <code class="docutils literal"><span class="pre">feature/feature-name</span></code>, or <code class="docutils literal"><span class="pre">bugfix/fix-name</span></code>. I don’t necessarily advocate directly using git-flow, although you certainly may if you are comfortable operating this way, but I like the naming convention because it makes the future pull request easy to parse at a glance.</p>
+<p>With <code class="docutils literal notranslate"><span class="pre">master</span></code> checked out, create a new local branch <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">[branch-name]</span></code> with a descriptive <code class="docutils literal notranslate"><span class="pre">[branch-name]</span></code> that indicates the feature you are adding/changing. A good place to start is with the git-flow naming convention, i.e. <code class="docutils literal notranslate"><span class="pre">feature/feature-name</span></code>, or <code class="docutils literal notranslate"><span class="pre">bugfix/fix-name</span></code>. I don’t necessarily advocate directly using git-flow, although you certainly may if you are comfortable operating this way, but I like the naming convention because it makes the future pull request easy to parse at a glance.</p>
 </div>
 <div class="section" id="commit-changes">
 <h3>Commit changes<a class="headerlink" href="#commit-changes" title="Permalink to this headline">¶</a></h3>
 <p>When you commit your changes to the branch you should write a description title and message for your commit.</p>
 <p>Acronyms that should be used for neutronpy include:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">REF</span><span class="p">:</span> <span class="n">Refactor</span> <span class="p">(</span><span class="n">incl</span><span class="o">.</span> <span class="n">PEP8</span> <span class="n">fixes</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">REF</span><span class="p">:</span> <span class="n">Refactor</span> <span class="p">(</span><span class="n">incl</span><span class="o">.</span> <span class="n">PEP8</span> <span class="n">fixes</span><span class="p">)</span>
 <span class="n">FIX</span><span class="p">:</span> <span class="n">Bug</span> <span class="n">fix</span>
 <span class="n">DOC</span><span class="p">:</span> <span class="n">Documentation</span> <span class="n">update</span>
 <span class="n">ADD</span><span class="p">:</span> <span class="n">Add</span> <span class="n">new</span> <span class="n">feature</span>
@@ -269,20 +269,20 @@
 </div>
 </div>
 <div class="section" id="rebase-on-neutronpy-master">
-<h3>Rebase on neutronpy <code class="docutils literal"><span class="pre">master</span></code><a class="headerlink" href="#rebase-on-neutronpy-master" title="Permalink to this headline">¶</a></h3>
-<p>Once you have completed your changes it is possible that the neutronpy <code class="docutils literal"><span class="pre">master</span></code> branch is ahead of the place where you created your local branch. In this case, you will need to update your local <code class="docutils literal"><span class="pre">master</span></code> branch from <code class="docutils literal"><span class="pre">upstream</span></code> and then perform a <code class="docutils literal"><span class="pre">rebase</span></code>.</p>
-<p>To do this you first add the <code class="docutils literal"><span class="pre">upstream</span></code> repo:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">upstream</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">neutronpy</span><span class="o">/</span><span class="n">neutronpy</span><span class="o">.</span><span class="n">git</span>
+<h3>Rebase on neutronpy <code class="docutils literal notranslate"><span class="pre">master</span></code><a class="headerlink" href="#rebase-on-neutronpy-master" title="Permalink to this headline">¶</a></h3>
+<p>Once you have completed your changes it is possible that the neutronpy <code class="docutils literal notranslate"><span class="pre">master</span></code> branch is ahead of the place where you created your local branch. In this case, you will need to update your local <code class="docutils literal notranslate"><span class="pre">master</span></code> branch from <code class="docutils literal notranslate"><span class="pre">upstream</span></code> and then perform a <code class="docutils literal notranslate"><span class="pre">rebase</span></code>.</p>
+<p>To do this you first add the <code class="docutils literal notranslate"><span class="pre">upstream</span></code> repo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">upstream</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">neutronpy</span><span class="o">/</span><span class="n">neutronpy</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
 </div>
-<p>Next, you fetch the <code class="docutils literal"><span class="pre">upstream</span></code> repo, checkout your local <code class="docutils literal"><span class="pre">master</span></code>, and merge. Since you are doing all of your own work on your new branch, this should simply fast forward the master branch:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">fetch</span> <span class="n">upstream</span>
+<p>Next, you fetch the <code class="docutils literal notranslate"><span class="pre">upstream</span></code> repo, checkout your local <code class="docutils literal notranslate"><span class="pre">master</span></code>, and merge. Since you are doing all of your own work on your new branch, this should simply fast forward the master branch:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">fetch</span> <span class="n">upstream</span>
 <span class="n">git</span> <span class="n">checkout</span> <span class="n">master</span>
 <span class="n">git</span> <span class="n">merge</span> <span class="n">upstream</span><span class="o">/</span><span class="n">master</span>
 </pre></div>
 </div>
 <p>Now you can begin your rebase by checking out your feature branch, and then rebasing:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">feature</span><span class="o">-</span><span class="n">branch</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">feature</span><span class="o">-</span><span class="n">branch</span>
 <span class="n">git</span> <span class="n">rebase</span> <span class="n">master</span>
 </pre></div>
 </div>
@@ -290,10 +290,10 @@
 </div>
 <div class="section" id="create-pull-request">
 <h3>Create pull request<a class="headerlink" href="#create-pull-request" title="Permalink to this headline">¶</a></h3>
-<p>Once you are happy with the changes you have made and would like to submit them to be merged into neutronpy you should push them to your github fork with <code class="docutils literal"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">[branch-name]</span></code> and then create a <strong>Pull Request</strong> (PR) for neutronpy <code class="docutils literal"><span class="pre">master</span></code> using <a class="reference external" href="https://github.com">Github.com</a>. To create a PR you first switch to the branch you want to submit, and then click the “New pull request” button next to it.</p>
-<p>Once you have created your PR, your changes will be tested automatically by continuous integration services, Travis-CI (linux and osx) and Appveyor (win). All tests must pass before a PR can be merged into <code class="docutils literal"><span class="pre">master</span></code>. If your PR does not pass the tests you must follow steps 3–5 above until it passes. You can keep pushing new commits to the same branch on your own fork and they will automatically be added to the PR.</p>
+<p>Once you are happy with the changes you have made and would like to submit them to be merged into neutronpy you should push them to your github fork with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">[branch-name]</span></code> and then create a <strong>Pull Request</strong> (PR) for neutronpy <code class="docutils literal notranslate"><span class="pre">master</span></code> using <a class="reference external" href="https://github.com">Github.com</a>. To create a PR you first switch to the branch you want to submit, and then click the “New pull request” button next to it.</p>
+<p>Once you have created your PR, your changes will be tested automatically by continuous integration services, Travis-CI (linux and osx) and Appveyor (win). All tests must pass before a PR can be merged into <code class="docutils literal notranslate"><span class="pre">master</span></code>. If your PR does not pass the tests you must follow steps 3–5 above until it passes. You can keep pushing new commits to the same branch on your own fork and they will automatically be added to the PR.</p>
 <p>During this phase there may also be discussion concerning your PR, and you could be asked for example to make changes to conform to style conventions or to established neutronpy coding conventions.</p>
-<p>You should also try to keep the number of commits to a minimum. You can start with many commits and then <code class="docutils literal"><span class="pre">git</span> <span class="pre">rebase</span> <span class="pre">-i</span> <span class="pre">master</span></code> to alter the history of the commits since the last one in <code class="docutils literal"><span class="pre">master</span></code>, and <a class="reference external" href="https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History">squash</a> your changes into a reasonable number of commits. It is also important to rebase to master before This is one of the powers of the Fork and Pull method; you can force push and destroy your own branch history, and neutronpy’s history should always remain in tact because until the changes are merged, they are not part of the main repo.</p>
+<p>You should also try to keep the number of commits to a minimum. You can start with many commits and then <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rebase</span> <span class="pre">-i</span> <span class="pre">master</span></code> to alter the history of the commits since the last one in <code class="docutils literal notranslate"><span class="pre">master</span></code>, and <a class="reference external" href="https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History">squash</a> your changes into a reasonable number of commits. It is also important to rebase to master before This is one of the powers of the Fork and Pull method; you can force push and destroy your own branch history, and neutronpy’s history should always remain in tact because until the changes are merged, they are not part of the main repo.</p>
 </div>
 <div class="section" id="cleanup">
 <h3>Cleanup<a class="headerlink" href="#cleanup" title="Permalink to this headline">¶</a></h3>
@@ -303,7 +303,7 @@
 <div class="section" id="development-environment">
 <h2>Development Environment<a class="headerlink" href="#development-environment" title="Permalink to this headline">¶</a></h2>
 <p>Often you will want to test your new features while still maintaining the stable version of neutronpy on your machine. In this case you should use a virtual environment, using either <a class="reference external" href="https://virtualenv.pypa.io/en/stable/">virtualenv</a> or <a class="reference external" href="https://www.continuum.io/downloads">Anaconda</a>, which is probably easier. For example, using anaconda you can easily create a conda virtualenv with Python 3.6 called py36 and then activate it to install neutronpy (in linux or osx terminal) by:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">add</span> <span class="n">channels</span> <span class="n">mmcauliffe</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">add</span> <span class="n">channels</span> <span class="n">mmcauliffe</span>
 <span class="n">conda</span> <span class="n">create</span> <span class="o">--</span><span class="n">yes</span> <span class="o">-</span><span class="n">q</span> <span class="o">-</span><span class="n">n</span> <span class="n">py36</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.6</span> <span class="n">numpy</span> <span class="n">scipy</span> <span class="n">pqt5</span> <span class="n">h5py</span> <span class="n">matplotlib</span>
 <span class="n">source</span> <span class="n">activate</span> <span class="n">py34</span>
 <span class="n">pip</span> <span class="n">install</span> <span class="n">neutronpy</span>
@@ -313,7 +313,7 @@
 </div>
 <div class="section" id="versions">
 <h2>Versions<a class="headerlink" href="#versions" title="Permalink to this headline">¶</a></h2>
-<p>Version number incrementation should follow <a class="reference external" href="http://semver.org/">Semantic Versioning 2.0.0</a>. This means that the version numbers should follow the general pattern <code class="docutils literal"><span class="pre">X.Y.Z</span></code>, where <code class="docutils literal"><span class="pre">X</span></code> is a major version number, indicating a break in backwards compatibility, <code class="docutils literal"><span class="pre">Y</span></code> is a minor version number indicating the addition of features which DO NOT break backwards compatibility, <code class="docutils literal"><span class="pre">Z</span></code> is a patch version number indicating patches which DO NOT add major features or break backwards compatibility. <code class="docutils literal"><span class="pre">X</span></code>, <code class="docutils literal"><span class="pre">Y</span></code>, and <code class="docutils literal"><span class="pre">Z</span></code> must all be non-negative integer numbers. The more general pattern that a version must match is <code class="docutils literal"><span class="pre">[N!]N(.N)*[{a|b|rc}N][.postN][.devN]</span></code>. See <a class="reference external" href="https://www.python.org/dev/peps/pep-0440/#public-version-identifiers">Python Public version identifiers</a>.</p>
+<p>Version number incrementation should follow <a class="reference external" href="http://semver.org/">Semantic Versioning 2.0.0</a>. This means that the version numbers should follow the general pattern <code class="docutils literal notranslate"><span class="pre">X.Y.Z</span></code>, where <code class="docutils literal notranslate"><span class="pre">X</span></code> is a major version number, indicating a break in backwards compatibility, <code class="docutils literal notranslate"><span class="pre">Y</span></code> is a minor version number indicating the addition of features which DO NOT break backwards compatibility, <code class="docutils literal notranslate"><span class="pre">Z</span></code> is a patch version number indicating patches which DO NOT add major features or break backwards compatibility. <code class="docutils literal notranslate"><span class="pre">X</span></code>, <code class="docutils literal notranslate"><span class="pre">Y</span></code>, and <code class="docutils literal notranslate"><span class="pre">Z</span></code> must all be non-negative integer numbers. The more general pattern that a version must match is <code class="docutils literal notranslate"><span class="pre">[N!]N(.N)*[{a|b|rc}N][.postN][.devN]</span></code>. See <a class="reference external" href="https://www.python.org/dev/peps/pep-0440/#public-version-identifiers">Python Public version identifiers</a>.</p>
 </div>
 </div>
 
@@ -338,7 +338,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, David M Fobes.
-      Last updated on May 15, 2018.
+      Last updated on Jun 25, 2018.
 
     </p>
   </div>
@@ -360,7 +360,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'1.1.0b2',
+            VERSION:'1.1.1',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
